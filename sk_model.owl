@@ -1043,6 +1043,16 @@
 	<!-- E33_E41_Linguistic_Appellation rdfs:label "NAME" -->
 	<!-- E21_Person crm:P1_is_identified_by crm:E_42_Identifier - see above -->
 	
+	<!-- owl sameAs - for identical entities in the three source data sets; converted with easyRDF -->
+	
+	<rdf:Property rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+		<rdfs:label>sameAs</rdfs:label>
+		<rdfs:comment>The property that determines that two given individuals are equal.</rdfs:comment>
+		<rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</rdf:Property>
+	
 	<!-- BIRTH -->
 	<!-- cidoc:E67_Birth P98_brought_into_life E21_Person -->
 	<rdfs:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E67_Birth">
@@ -1177,10 +1187,6 @@
 	
 	
 	
-	<!-- URIs -->
-	<!-- cidoc:E21_Person owl:sameAs [pmb uri] -->
-	<!-- cidoc:E21_Person owl:sameAs [gnd uri] -->
-	
 	<!-- PLACE -->
 	<!-- cidoc:E53_Place P1_is_identified_by crm:E33_E41_Linguistic_Appellation  - see above -->
 	<!-- crm:E33_E41_Linguistic_Appellation rdf:value [place name] - see above -->
@@ -1203,10 +1209,7 @@
 	</rdf:Property>
 	
 	<!-- cidoc:E53_Place cidoc:P168_place_is_defined_by "xx.xxxxx xx.xxxxx" - see above -->
-	<!-- cidoc:E53_Place owl:sameAs [geonames uri] -->
-	<!-- cidoc:E53_Place owl:sameAs [pmb uri] -->
-	<!-- cidoc:E53_Place owl:sameAs [gnd uri] -->
-
+	
 	
 	<!-- OCCUPATION -->
 	<!-- E21_Person P14i_performed frbroo:F51 Pursuit -->
