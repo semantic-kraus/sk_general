@@ -1,0 +1,25 @@
+name: Build and publish
+
+on: push
+
+jobs:
+  build_pages:
+    name: Creates HTML-Documentation of the Ontology
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    - name: Install dependencies
+      run: |
+        pip install pylode
+    - name: Build the Documentation
+      run: |
+        mkdir html
+        python -m pylode sk_model.owl -o ./html/index.html
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_dir: ./html 
