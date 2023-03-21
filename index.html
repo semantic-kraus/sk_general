@@ -283,6 +283,11 @@ code{
         "@value": "Bernhard Oberreither"
       }
     ],
+    "https://schema.org/description": [
+      {
+        "@value": "\n\t\t\tThis is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. \n\t\t\tIt consists entirely of re-used classes and properties from other ontologies.\n\t\t\tMost notably: \n\t\t\tFRBRoo 2.4\n\t\t\tCIDOC crm 7.1.2 (URIs always resolve to the current version)\n\t\t\tINTRO [Version pending]\n\t\t"
+      }
+    ],
     "https://schema.org/name": [
       {
         "@language": "en",
@@ -332,6 +337,18 @@ code{
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
             </dt>
             <dd><p>BETA 202211</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+            </dt>
+            <dd><pre><code>        This is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. 
+        It consists entirely of re-used classes and properties from other ontologies.
+        Most notably: 
+        FRBRoo 2.4
+        CIDOC crm 7.1.2 (URIs always resolve to the current version)
+        INTRO [Version pending]
+</code></pre></dd>
           </div>
         </dl>
       </div>
@@ -1790,6 +1807,102 @@ code{
               </th>
               <td>
                 <a href="http://www.cidoc-crm.org/cidoc-crm/E65_Creation">crm:E65_Creation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="usedspecificobject">
+          <h3>used specific objectbenutzte das bestimmte Objektχρησιμοποίησε αντικείμενοa utilisé l'objet spécifiqueusou objeto específicoиспользовал особый объект使用特定对象
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://sk.acdh.oeaw.ac.at/P16_used_specific_object</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>This property describes the use of material or immaterial things in a way essential to the performance or the outcome of an instance of E7 Activity.
+            This property typically applies to tools, instruments, moulds, raw materials and items embedded in a product. It implies that the presence of the object in question was a necessary condition for the action. For example, the activity of writing this text required the use of a computer. An immaterial thing can be used if at least one of its carriers is present. For example, the software tools on a computer.
+            Another example is the use of a particular name by a particular group of people over some span to identify a thing, such as a settlement. In this case, the physical carriers of this name are at least the people understanding its use.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://sk.acdh.oeaw.ac.at/P12_occurred_in_the_presence_of">ns1:P12_occurred_in_the_presence_of</a>
+                  </li>
+                  <li>
+                    <a href="https://sk.acdh.oeaw.ac.at/P15_was_influenced_by">ns1:P15_was_influenced_by</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="https://sk.acdh.oeaw.ac.at/E7_Activity">ns1:E7_Activity</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="https://sk.acdh.oeaw.ac.at/E70_Thing">ns1:E70_Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="wasusedfor">
+          <h3>was used forwurde benutzt fürχρησιμοποιήθηκε γιαa été utilisé pourfoi usado porбыл использован для用于
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://sk.acdh.oeaw.ac.at/P16i_was_used_for</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://sk.acdh.oeaw.ac.at/P12i_was_present_at">ns1:P12i_was_present_at</a>
+                  </li>
+                  <li>
+                    <a href="https://sk.acdh.oeaw.ac.at/P15i_influenced">ns1:P15i_influenced</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="https://sk.acdh.oeaw.ac.at/E70_Thing">ns1:E70_Thing</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="https://sk.acdh.oeaw.ac.at/E7_Activity">ns1:E7_Activity</a>
               </td>
             </tr>
           </table>
@@ -4192,10 +4305,10 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
@@ -4229,16 +4342,16 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
   <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4295,10 +4408,10 @@ code{
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4327,13 +4440,13 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
   <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
@@ -4527,16 +4640,16 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+  <a href="http://www.w3.org/ns/prov#InstantaneousEvent">prov:InstantaneousEvent</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.w3.org/ns/prov#InstantaneousEvent">prov:InstantaneousEvent</a>
+  <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+  <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4693,10 +4806,10 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">intro:INT1_TextPassage</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">intro:INT1_TextPassage</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4925,6 +5038,12 @@ code{
             </li>
             <li>
               <a href="#P94i_was_created_by">was created bywurde erschaffen durchδημιουργήθηκε απόa été créé parfoi criado porбыл создан посредством被创建</a>
+            </li>
+            <li>
+              <a href="#usedspecificobject">used specific objectbenutzte das bestimmte Objektχρησιμοποίησε αντικείμενοa utilisé l'objet spécifiqueusou objeto específicoиспользовал особый объект使用特定对象</a>
+            </li>
+            <li>
+              <a href="#wasusedfor">was used forwurde benutzt fürχρησιμοποιήθηκε γιαa été utilisé pourfoi usado porбыл использован для用于</a>
             </li>
             <li>
               <a href="#hascomponent">has component</a>
