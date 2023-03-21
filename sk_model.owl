@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF 
+<rdf:RDF xmlns="https://sk.acdh.oeaw.ac.at/model#"
 	xml:lang="en" 
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
 	xmlns:owl="http://www.w3.org/2002/07/owl#" 
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xml:base="https://sk.acdh.oeaw.ac.at/model/"
-	xmlns="https://sk.acdh.oeaw.ac.at/model/"
-	
+	xml:base="https://sk.acdh.oeaw.ac.at/model#"
 	xmlns:frbroo="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#"
 	xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
 	xmlns:intro="https://w3id.org/lso/intro/beta202210#"
@@ -16,7 +14,7 @@
 	xmlns:prov="http://www.w3.org/ns/prov#"
 	xmlns:dcterms="http://purl.org/dc/terms/"
 	>
-	<owl:Ontology rdf:about="https://sk.acdh.oeaw.ac.at/model/">
+	<owl:Ontology rdf:about="https://sk.acdh.oeaw.ac.at/model">
 		<dc:title xml:lang="en">SemanticKraus Project Ontology</dc:title>
 		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sk_model</rdfs:label>
 		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
