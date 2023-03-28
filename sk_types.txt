@@ -1,5 +1,6 @@
 status 2023-03-02:
 
+https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE
 https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht
 https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel
 https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames
@@ -26,3 +27,4 @@ https://sk.acdh.oeaw.ac.at/types/place/placename/alternative-name
 https://sk.acdh.oeaw.ac.at/types/place/placename/alt-label
 https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name
 https://sk.acdh.oeaw.ac.at/types/place/placename/simple-name
+https://sk.acdh.oeaw.ac.at/types/title/prov
