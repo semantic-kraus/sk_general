@@ -1,5 +1,12 @@
-status 2023-03-02:
+status 2023-04-17:
 
+https://sk.acdh.oeaw.ac.at/types/appellation/date
+https://sk.acdh.oeaw.ac.at/types/appellation/ed
+https://sk.acdh.oeaw.ac.at/types/appellation/num/issue
+https://sk.acdh.oeaw.ac.at/types/appellation/num/volume
+https://sk.acdh.oeaw.ac.at/types/appellation/place
+https://sk.acdh.oeaw.ac.at/types/appellation/title/main
+https://sk.acdh.oeaw.ac.at/types/appellation/title/sub
 https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE
 https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht
 https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel
