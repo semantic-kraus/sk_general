@@ -34,6 +34,7 @@ https://sk.acdh.oeaw.ac.at/types/place/placename/alternative-name
 https://sk.acdh.oeaw.ac.at/types/place/placename/alt-label
 https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name
 https://sk.acdh.oeaw.ac.at/types/place/placename/simple-name
+https://sk.acdh.oeaw.ac.at/types/text/chiffre/[@chiffreShort]
 https://sk.acdh.oeaw.ac.at/types/title/main
 https://sk.acdh.oeaw.ac.at/types/title/prov
 https://sk.acdh.oeaw.ac.at/types/title/sub
