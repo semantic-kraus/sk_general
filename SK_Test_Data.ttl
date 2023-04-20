@@ -36,14 +36,22 @@
 	rdfs:label "Person: Kerr, Alfred"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11910/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11910/occupation/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in> <https://sk.acdh.oeaw.ac.at/D_000068> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11910/D_000068> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/pmb11910/birth> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/pmb11910/death> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
 	rdfs:label "Legal Case: \"Karl Kraus ca. Alfred Kerr\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P11_had_participant> <https://sk.acdh.oeaw.ac.at/pmb11910> , <https://sk.acdh.oeaw.ac.at/pmb11988> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <https://sk.acdh.oeaw.ac.at/pmb11910/D_000068> , <https://sk.acdh.oeaw.ac.at/pmb11988/D_000068> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+	rdfs:label "Kerr as a participant in legal case D_000068"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+	rdfs:label "Kraus as a participant in legal case D_000068"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F4_Manifestation_Singleton> ;
 	rdfs:label "Carrier of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
@@ -77,7 +85,7 @@
 	rdfs:label "Person: Kraus, Karl"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in> <https://sk.acdh.oeaw.ac.at/D_000068> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11988/D_000068> ; ;
 	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
