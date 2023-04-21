@@ -152,7 +152,7 @@
 
 <https://sk.acdh.oeaw.ac.at/DWint00003> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
 	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" – \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R24_has_related_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> ;
+	<https://w3id.org/lso/intro/beta202210#R24_has_related_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl02632> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
@@ -168,7 +168,7 @@
 	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 56" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.130#DWquote1488" ;
 	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> ;
+	
 	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" ;
 	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> .
 
@@ -1124,6 +1124,7 @@
 	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 56" ;
 	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
+	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> ;
 	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/2> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
