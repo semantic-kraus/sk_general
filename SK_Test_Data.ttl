@@ -55,13 +55,10 @@
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F4_Manifestation_Singleton> ;
 	rdfs:label "Carrier of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P128_carries> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P128_carries> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> <https://sk.acdh.oeaw.ac.at/D_000068> .
 
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	rdfs:label "Segment containing \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> .
+
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> a <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> ;
 	rdfs:label "Creation of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
