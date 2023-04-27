@@ -24,9 +24,10 @@
 			FRBRoo 2.4
 			CIDOC crm 7.1.2 (URIs always resolve to the current version)
 			INTRO [Version pending]
+			Data modeling itself very much influenced by PRESSoo
 		</rdfs:comment>
 		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bernhard Oberreither</dc:creator>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BETA 202211</owl:versionInfo>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BETA 202304</owl:versionInfo>
 	</owl:Ontology>
 <!-- TABLE "TEXT" -->
 	
@@ -942,7 +943,7 @@
 	
 	<!-- INTERTEXTUAL RELATIONSHIP -->
 	
-	<!-- INT03 Intertextual Relationship r24 has related entity [Textpassage, Text as F22 or E73] -->
+	<!-- INT03 Intertextual Relationship r24 has related entity OR has referring / referred to entity  [Textpassage, Text as F22 or E73] -->
 	<owl:Class rdf:about="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">
 		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
 		<rdfs:comment>This class is meant for the abstract notion of an intertextual relationship as it is identified by a reader (and is not to be confused with the rhetorical entity &apos;quotation&apos;). Every INT3 Intertextual Relationship has at least 2 related entities, which are texts (on
@@ -979,6 +980,73 @@
 		</rdfs:domain>
 		<rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship"/>
 		<rdfs:comment>Links any text (on any ontological level) or INT2 Actualization of Feature to the INT3 Intertextual Relationship it is a part of.</rdfs:comment>
+	</owl:ObjectProperty>
+	
+	<!-- More precisely:  -->
+	<!-- has / is referred to entity  -->
+	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202210#R12_has_referred_to_entity">
+		<rdfs:subPropertyOf rdf:resource="https://w3id.org/lso/intro/beta202210#R24_has_related_entity"/>
+		<owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202210#R12_is_referred_to_entity"/>
+		<rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+					<rdf:Description rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:comment>Links an INT3 Intertextual Relationship to the entity referred to in the intertextual relationship (a text on any ontological level or a feature actualized in the text in question).</rdfs:comment>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202210#R12_is_referred_to_entity">
+		<rdfs:subPropertyOf rdf:resource="https://w3id.org/lso/intro/beta202210#R24_is_related_entity"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+					<rdf:Description rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship"/>
+		<rdfs:comment>Links the referred tp entity (a text on any ontological level or a feature actualized in a text) to the INT3 Intertextual Relationship it is a part of.</rdfs:comment>
+	</owl:ObjectProperty>
+	
+	<!-- has / is referring entity -->
+	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202210#R13_has_referring_entity">
+		<rdfs:subPropertyOf rdf:resource="https://w3id.org/lso/intro/beta202210#R24_has_related_entity"/>
+		<owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202210#R13_is_referring_entity"/>
+		<rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+					<rdf:Description rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:comment>Links an INT3 Intertextual Relationship to a referring entity (a text on any ontological level or a feature actualized in the text in question).</rdfs:comment>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202210#R13_is_referring_entity">
+		<rdfs:subPropertyOf rdf:resource="https://w3id.org/lso/intro/beta202210#R24_is_related_entity"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+					<rdf:Description rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature"/>
+					<rdf:Description rdf:about="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship"/>
+		<rdfs:comment>Links the referring entity (a text on any ontological level or a feature actualized in a text) to the INT3 Intertextual Relationship it is a part of.</rdfs:comment>
 	</owl:ObjectProperty>
 	
 	
