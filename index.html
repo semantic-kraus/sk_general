@@ -5,14 +5,14 @@
     <style>
         #pylode {
             position: fixed;
-            top: 130px;
-            left: -80px;
+            top: 205px;
+            left: -150px;
             font-size: small;
             transform: rotate(-90deg);
             color: grey;
         }
         #pylode a {
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: bold;
             text-decoration: none;
             color: #005A9C;
@@ -28,6 +28,12 @@
         }
         #pylode #version {
             font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
         }
 
         .cardinality {
@@ -136,7 +142,7 @@
             background-position: top left;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            text-align: justify;
+            text-align: left;
         }
 
         section {
@@ -260,13 +266,16 @@
 code{
     word-wrap: break-word;
   }
-  table {
+table {
     table-layout: fixed;
     width: 100%;
-  }
-  td {
+}
+td {
     word-wrap: break-word;
-  }
+}
+#legend table.entity {
+    width: 25%;
+}
 	</style>
     <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png">
     <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png">
@@ -285,7 +294,7 @@ code{
     ],
     "https://schema.org/description": [
       {
-        "@value": "\n\t\t\tThis is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. \n\t\t\tIt consists entirely of re-used classes and properties from other ontologies.\n\t\t\tMost notably: \n\t\t\tFRBRoo 2.4\n\t\t\tCIDOC crm 7.1.2 (URIs always resolve to the current version)\n\t\t\tINTRO [Version pending]\n\t\t"
+        "@value": "\n\t\t\tThis is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. \n\t\t\tIt consists entirely of re-used classes and properties from other ontologies.\n\t\t\tMost notably: \n\t\t\tFRBRoo 2.4\n\t\t\tCIDOC crm 7.1.2 (URIs always resolve to the current version)\n\t\t\tINTRO [Version pending]\n\t\t\tData modeling itself very much influenced by PRESSoo\n\t\t"
       }
     ],
     "https://schema.org/name": [
@@ -336,7 +345,7 @@ code{
             <dt>
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
             </dt>
-            <dd><p>BETA 202211</p></dd>
+            <dd><p>BETA 202304</p></dd>
           </div>
           <div>
             <dt>
@@ -348,6 +357,7 @@ code{
         FRBRoo 2.4
         CIDOC crm 7.1.2 (URIs always resolve to the current version)
         INTRO [Version pending]
+        Data modeling itself very much influenced by PRESSoo
 </code></pre></dd>
           </div>
         </dl>
@@ -378,7 +388,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
             <tr>
@@ -459,7 +469,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">frbroo:F2_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">Expression</a>
               </td>
             </tr>
             <tr>
@@ -509,7 +519,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">crm:E28_Conceptual_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">Conceptual Object</a>
               </td>
             </tr>
             <tr>
@@ -517,10 +527,26 @@ code{
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
               </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#R24_has_related_entity">intro:R24_has_related_entity</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R24_has_related_entity">intro:R24_has_related_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R12_has_referred_to_entity">intro:R12_has_referred_to_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R13_has_referring_entity">intro:R13_has_referring_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -528,10 +554,26 @@ code{
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
               </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#R24_is_related_entity">intro:R24_is_related_entity</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R24_is_related_entity">intro:R24_is_related_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R12_is_referred_to_entity">intro:R12_is_referred_to_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R13_is_referring_entity">intro:R13_is_referring_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -559,7 +601,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">crm:E28_Conceptual_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">Conceptual Object</a>
               </td>
             </tr>
             <tr>
@@ -630,11 +672,11 @@ code{
               <td>
                 <ul>
                   <li>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">crm:E89_Propositional_Object</a>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">Propositional Object</a>
                   </li>
                   <li>
                     <span>
-                      <a href="https://w3id.org/lso/intro/beta202210#INT9_SemanticFeature">intro:INT9_SemanticFeature</a>
+                      <a href="https://w3id.org/lso/intro/beta202210#INT9_SemanticFeature">INT9 Semantic Feature</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -659,7 +701,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
               </th>
               <td>
-                <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+                <a href="http://www.w3.org/ns/prov-o#">W3C PROVenance Interchange Ontology (PROV-O)</a>
               </td>
             </tr>
             <tr>
@@ -668,7 +710,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#wasDerivedFrom">prov:wasDerivedFrom</a>
+                  <a href="http://www.w3.org/ns/prov#wasDerivedFrom">was derived from</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -679,7 +721,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#wasDerivedFrom">prov:wasDerivedFrom</a>
+                  <a href="http://www.w3.org/ns/prov#wasDerivedFrom">was derived from</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -710,7 +752,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT4_ReceptionalEntity">intro:INT4_ReceptionalEntity</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT4_ReceptionalEntity">INT4 Receptional Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -721,7 +763,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT18_Reference">intro:INT18_Reference</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT18_Reference">INT18 Reference</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -754,7 +796,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">crm:E28_Conceptual_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">Conceptual Object</a>
               </td>
             </tr>
             <tr>
@@ -785,7 +827,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT9_SemanticFeature">intro:INT9_SemanticFeature</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT9_SemanticFeature">INT9 Semantic Feature</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -817,7 +859,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation">frbroo:F28_Expression_Creation</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation">Expression Creation</a>
               </td>
             </tr>
             <tr>
@@ -825,7 +867,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">frbroo:F2_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">Expression</a>
               </td>
             </tr>
           </table>
@@ -852,7 +894,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">frbroo:F2_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">Expression</a>
               </td>
             </tr>
             <tr>
@@ -860,7 +902,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation">frbroo:F28_Expression_Creation</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation">Expression Creation</a>
               </td>
             </tr>
           </table>
@@ -889,7 +931,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">crm:P11_had_participant</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">had participant</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -899,7 +941,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">crm:E7_Activity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">Activity</a>
               </td>
             </tr>
             <tr>
@@ -907,7 +949,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
           </table>
@@ -929,7 +971,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">crm:P11i_participated_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">participated in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -939,7 +981,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
             <tr>
@@ -947,7 +989,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">crm:E7_Activity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">Activity</a>
               </td>
             </tr>
           </table>
@@ -974,7 +1016,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event">frbroo:F30_Publication_Event</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event">Publication Event</a>
               </td>
             </tr>
             <tr>
@@ -982,7 +1024,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">frbroo:F24_Publication_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">Publication Expression</a>
               </td>
             </tr>
           </table>
@@ -1009,7 +1051,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">frbroo:F24_Publication_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">Publication Expression</a>
               </td>
             </tr>
             <tr>
@@ -1017,7 +1059,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event">frbroo:F30_Publication_Event</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event">Publication Event</a>
               </td>
             </tr>
           </table>
@@ -1051,7 +1093,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of">crm:P106_is_composed_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of">is composed of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1061,7 +1103,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
             <tr>
@@ -1069,7 +1111,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
           </table>
@@ -1091,7 +1133,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of">crm:P106i_forms_part_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of">forms part of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1101,7 +1143,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
             <tr>
@@ -1109,7 +1151,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
           </table>
@@ -1136,7 +1178,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity">crm:E2_Temporal_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity">Temporal Entity</a>
               </td>
             </tr>
             <tr>
@@ -1144,7 +1186,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">crm:E52_Time-Span</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">Time-Span</a>
               </td>
             </tr>
           </table>
@@ -1165,7 +1207,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">crm:E52_Time-Span</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">Time-Span</a>
               </td>
             </tr>
             <tr>
@@ -1173,7 +1215,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity">crm:E2_Temporal_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity">Temporal Entity</a>
               </td>
             </tr>
           </table>
@@ -1195,7 +1237,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within">crm:P82_at_some_time_within</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within">at some time within</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1205,7 +1247,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">crm:E52_Time-Span</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">Time-Span</a>
               </td>
             </tr>
             <tr>
@@ -1213,7 +1255,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -1235,7 +1277,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within">crm:P82_at_some_time_within</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within">at some time within</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1245,7 +1287,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">crm:E52_Time-Span</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">Time-Span</a>
               </td>
             </tr>
             <tr>
@@ -1253,7 +1295,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -1282,7 +1324,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F31_Performance">frbroo:F31_Performance</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F31_Performance">Performance</a>
               </td>
             </tr>
             <tr>
@@ -1290,7 +1332,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">crm:E89_Propositional_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">Propositional Object</a>
               </td>
             </tr>
           </table>
@@ -1317,7 +1359,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">crm:E89_Propositional_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">Propositional Object</a>
               </td>
             </tr>
             <tr>
@@ -1325,7 +1367,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F31_Performance">frbroo:F31_Performance</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F31_Performance">Performance</a>
               </td>
             </tr>
           </table>
@@ -1354,7 +1396,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
               </td>
             </tr>
             <tr>
@@ -1362,7 +1404,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Type</a>
               </td>
             </tr>
           </table>
@@ -1383,7 +1425,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Type</a>
               </td>
             </tr>
             <tr>
@@ -1391,7 +1433,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
               </td>
             </tr>
           </table>
@@ -1420,7 +1462,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Type</a>
               </td>
             </tr>
             <tr>
@@ -1428,7 +1470,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Type</a>
               </td>
             </tr>
           </table>
@@ -1449,7 +1491,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Type</a>
               </td>
             </tr>
             <tr>
@@ -1457,7 +1499,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Type</a>
               </td>
             </tr>
           </table>
@@ -1487,7 +1529,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P161_has_spatial_projection">crm:P161_has_spatial_projection</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P161_has_spatial_projection">has spatial projection</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1497,7 +1539,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">crm:E4_Period</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">Period</a>
               </td>
             </tr>
             <tr>
@@ -1505,7 +1547,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Place</a>
               </td>
             </tr>
           </table>
@@ -1527,7 +1569,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P161i_is_spatial_projection_of">crm:P161i_is_spatial_projection_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P161i_is_spatial_projection_of">is spatial projection of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1537,7 +1579,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Place</a>
               </td>
             </tr>
             <tr>
@@ -1545,7 +1587,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">crm:E4_Period</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">Period</a>
               </td>
             </tr>
           </table>
@@ -1575,7 +1617,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by">crm:P1_is_identified_by</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by">is identified by</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1585,7 +1627,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing">crm:E71_Human-Made_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing">Human-Made Thing</a>
               </td>
             </tr>
             <tr>
@@ -1593,7 +1635,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E35_Title">crm:E35_Title</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E35_Title">Title</a>
               </td>
             </tr>
           </table>
@@ -1615,7 +1657,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P1i_identifies">crm:P1i_identifies</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P1i_identifies">identifies</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1625,7 +1667,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E35_Title">crm:E35_Title</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E35_Title">Title</a>
               </td>
             </tr>
             <tr>
@@ -1633,7 +1675,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing">crm:E71_Human-Made_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing">Human-Made Thing</a>
               </td>
             </tr>
           </table>
@@ -1661,7 +1703,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of">crm:P130_shows_features_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of">shows features of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1679,7 +1721,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
           </table>
@@ -1701,7 +1743,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on">crm:P130i_features_are_also_found_on</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on">features are also found on</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1711,7 +1753,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
             <tr>
@@ -1748,7 +1790,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">crm:P92_brought_into_existence</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">создал</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1758,7 +1800,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E65_Creation">crm:E65_Creation</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E65_Creation">Creation</a>
               </td>
             </tr>
             <tr>
@@ -1766,7 +1808,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">crm:E28_Conceptual_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">Conceptual Object</a>
               </td>
             </tr>
           </table>
@@ -1788,7 +1830,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">crm:P92i_was_brought_into_existence_by</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">был создан посредством</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -1798,7 +1840,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">crm:E28_Conceptual_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">Conceptual Object</a>
               </td>
             </tr>
             <tr>
@@ -1806,7 +1848,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E65_Creation">crm:E65_Creation</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E65_Creation">Creation</a>
               </td>
             </tr>
           </table>
@@ -1930,7 +1972,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">frbroo:F2_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">Expression</a>
               </td>
             </tr>
             <tr>
@@ -1938,7 +1980,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression">frbroo:F22_Self-Contained_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression">Self-Contained Expression</a>
               </td>
             </tr>
           </table>
@@ -1965,7 +2007,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression">frbroo:F22_Self-Contained_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression">Self-Contained Expression</a>
               </td>
             </tr>
             <tr>
@@ -1973,7 +2015,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">frbroo:F2_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression">Expression</a>
               </td>
             </tr>
           </table>
@@ -2165,7 +2207,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P102_has_title">crm:P102_has_title</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P102_has_title">has title</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2175,7 +2217,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
               </td>
             </tr>
             <tr>
@@ -2205,7 +2247,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of">crm:P102i_is_title_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of">is title of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2223,7 +2265,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
               </td>
             </tr>
           </table>
@@ -2252,7 +2294,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P165_incorporates">crm:P165_incorporates</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P165_incorporates">incorporates</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2262,7 +2304,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
             <tr>
@@ -2270,7 +2312,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
           </table>
@@ -2292,7 +2334,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in">crm:P165i_is_incorporated_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in">is incorporated in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2302,7 +2344,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
             <tr>
@@ -2310,7 +2352,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">crm:E90_Symbolic_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">Symbolic Object</a>
               </td>
             </tr>
           </table>
@@ -2331,7 +2373,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
               </th>
               <td>
-                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">rdf:</a>
+                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">The RDF Concepts Vocabulary (RDF)</a>
               </td>
             </tr>
             <tr>
@@ -2345,7 +2387,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
               </td>
             </tr>
             <tr>
@@ -2353,7 +2395,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
               </td>
             </tr>
           </table>
@@ -2380,7 +2422,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Place</a>
               </td>
             </tr>
             <tr>
@@ -2388,7 +2430,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -2419,19 +2461,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">crm:P11_had_participant</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">had participant</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">crm:P92_brought_into_existence</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">создал</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence">crm:P93_took_out_of_existence</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence">took out of existence</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -2443,7 +2485,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">Event</a>
               </td>
             </tr>
             <tr>
@@ -2451,7 +2493,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">crm:E77_Persistent_Item</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">Persistent Item</a>
               </td>
             </tr>
           </table>
@@ -2475,19 +2517,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">crm:P11i_participated_in</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">participated in</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">crm:P92i_was_brought_into_existence_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">был создан посредством</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by">crm:P93i_was_taken_out_of_existence_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by">was taken out of existence by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -2499,7 +2541,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">crm:E77_Persistent_Item</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">Persistent Item</a>
               </td>
             </tr>
             <tr>
@@ -2507,7 +2549,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">Event</a>
               </td>
             </tr>
           </table>
@@ -2534,7 +2576,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">crm:E89_Propositional_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">Propositional Object</a>
               </td>
             </tr>
             <tr>
@@ -2542,7 +2584,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
               </td>
             </tr>
           </table>
@@ -2563,7 +2605,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
               </td>
             </tr>
             <tr>
@@ -2571,7 +2613,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">crm:E89_Propositional_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">Propositional Object</a>
               </td>
             </tr>
           </table>
@@ -2607,7 +2649,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2618,7 +2660,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2649,7 +2691,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">crm:P92_brought_into_existence</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">создал</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2659,7 +2701,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E67_Birth">crm:E67_Birth</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E67_Birth">Birth</a>
               </td>
             </tr>
             <tr>
@@ -2667,7 +2709,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">crm:E21_Person</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">Person</a>
               </td>
             </tr>
           </table>
@@ -2689,7 +2731,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">crm:P92i_was_brought_into_existence_by</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">был создан посредством</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2699,7 +2741,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">crm:E21_Person</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">Person</a>
               </td>
             </tr>
             <tr>
@@ -2707,7 +2749,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E67_Birth">crm:E67_Birth</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E67_Birth">Birth</a>
               </td>
             </tr>
           </table>
@@ -2737,7 +2779,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence">crm:P93_took_out_of_existence</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence">took out of existence</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2747,7 +2789,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E69_Death">crm:E69_Death</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E69_Death">Death</a>
               </td>
             </tr>
             <tr>
@@ -2755,7 +2797,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">crm:E21_Person</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">Person</a>
               </td>
             </tr>
           </table>
@@ -2777,7 +2819,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by">crm:P93i_was_taken_out_of_existence_by</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by">was taken out of existence by</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2787,7 +2829,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">crm:E21_Person</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E21_Person">Person</a>
               </td>
             </tr>
             <tr>
@@ -2795,7 +2837,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E69_Death">crm:E69_Death</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E69_Death">Death</a>
               </td>
             </tr>
           </table>
@@ -2825,7 +2867,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of">crm:P12_occurred_in_the_presence_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of">occurred in the presence of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2838,31 +2880,31 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">crm:P14_carried_out_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">carried out by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P143_joined">crm:P143_joined</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P143_joined">加入</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P144_joined_with">crm:P144_joined_with</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P144_joined_with">加入</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P145_separated">crm:P145_separated</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P145_separated">离开</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P146_separated_from">crm:P146_separated_from</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P146_separated_from">separated from</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -2874,7 +2916,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">Event</a>
               </td>
             </tr>
             <tr>
@@ -2882,7 +2924,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
           </table>
@@ -2904,7 +2946,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at">crm:P12i_was_present_at</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at">was present at</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -2917,31 +2959,31 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P14i_performed">crm:P14i_performed</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P14i_performed">performed</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P143i_was_joined_by">crm:P143i_was_joined_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P143i_was_joined_by">was joined by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P144i_gained_member_by">crm:P144i_gained_member_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P144i_gained_member_by">gained member by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P145i_left_by">crm:P145i_left_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P145i_left_by">left by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P146i_lost_member_by">crm:P146i_lost_member_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P146i_lost_member_by">lost member by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -2953,7 +2995,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
             <tr>
@@ -2961,7 +3003,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">Event</a>
               </td>
             </tr>
           </table>
@@ -3055,7 +3097,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P132_spatiotemporally_overlaps_with">crm:P132_spatiotemporally_overlaps_with</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P132_spatiotemporally_overlaps_with">spatiotemporally overlaps with</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3095,7 +3137,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P132_spatiotemporally_overlaps_with">crm:P132_spatiotemporally_overlaps_with</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P132_spatiotemporally_overlaps_with">spatiotemporally overlaps with</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3142,7 +3184,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">crm:P11_had_participant</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">had participant</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3152,7 +3194,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">crm:E85_Joining</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">Joining</a>
               </td>
             </tr>
             <tr>
@@ -3160,7 +3202,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
           </table>
@@ -3182,7 +3224,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">crm:P11i_participated_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">participated in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3192,7 +3234,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
             <tr>
@@ -3200,7 +3242,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">crm:E85_Joining</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">Joining</a>
               </td>
             </tr>
           </table>
@@ -3231,7 +3273,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">crm:P11_had_participant</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">had participant</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3241,7 +3283,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">crm:E85_Joining</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">Joining</a>
               </td>
             </tr>
             <tr>
@@ -3249,7 +3291,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">crm:E74_Group</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">Group</a>
               </td>
             </tr>
           </table>
@@ -3271,7 +3313,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">crm:P11i_participated_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">participated in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3281,7 +3323,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">crm:E74_Group</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">Group</a>
               </td>
             </tr>
             <tr>
@@ -3289,7 +3331,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">crm:E85_Joining</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E85_Joining">Joining</a>
               </td>
             </tr>
           </table>
@@ -3317,7 +3359,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">crm:P11_had_participant</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">had participant</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3327,7 +3369,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">crm:E86_Leaving</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">Leaving</a>
               </td>
             </tr>
             <tr>
@@ -3335,7 +3377,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
           </table>
@@ -3357,7 +3399,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">crm:P11i_participated_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">participated in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3367,7 +3409,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
               </td>
             </tr>
             <tr>
@@ -3375,7 +3417,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">crm:E86_Leaving</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">Leaving</a>
               </td>
             </tr>
           </table>
@@ -3404,7 +3446,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">crm:P11_had_participant</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">had participant</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3414,7 +3456,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">crm:E86_Leaving</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">Leaving</a>
               </td>
             </tr>
             <tr>
@@ -3422,7 +3464,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">crm:E74_Group</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">Group</a>
               </td>
             </tr>
           </table>
@@ -3444,7 +3486,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">crm:P11i_participated_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">participated in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3454,7 +3496,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">crm:E74_Group</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E74_Group">Group</a>
               </td>
             </tr>
             <tr>
@@ -3462,7 +3504,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">crm:E86_Leaving</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving">Leaving</a>
               </td>
             </tr>
           </table>
@@ -3483,7 +3525,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
               </th>
               <td>
-                <a href="http://purl.org/dc/terms/">dcterms:</a>
+                <a href="http://purl.org/dc/terms/">DCMI Metadata Terms</a>
               </td>
             </tr>
             <tr>
@@ -3509,7 +3551,7 @@ code{
                   </li>
                   <li>
                     <span>
-                      <a href="http://purl.org/dc/terms/identifier">dcterms:identifier</a>
+                      <a href="http://purl.org/dc/terms/identifier">Identifier</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -3521,7 +3563,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -3551,13 +3593,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin">crm:P82a_begin_of_the_begin</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin">begin of the begin</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end">crm:P82b_end_of_the_end</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end">end of the end</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -3569,7 +3611,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">crm:E52_Time-Span</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">Time-Span</a>
               </td>
             </tr>
             <tr>
@@ -3577,7 +3619,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -3610,7 +3652,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at">crm:P7_took_place_at</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at">took place at</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3628,7 +3670,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Place</a>
               </td>
             </tr>
           </table>
@@ -3650,7 +3692,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed">crm:P7i_witnessed</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed">witnessed</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3660,7 +3702,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Place</a>
               </td>
             </tr>
             <tr>
@@ -3699,7 +3741,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P128_carries">crm:P128_carries</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P128_carries">carries</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3709,7 +3751,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">crm:E70_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">Thing</a>
               </td>
             </tr>
             <tr>
@@ -3717,7 +3759,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">crm:E70_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">Thing</a>
               </td>
             </tr>
           </table>
@@ -3739,7 +3781,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by">crm:P128i_is_carried_by</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by">is carried by</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3749,7 +3791,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">crm:E70_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">Thing</a>
               </td>
             </tr>
             <tr>
@@ -3757,7 +3799,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">crm:E70_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">Thing</a>
               </td>
             </tr>
           </table>
@@ -3786,7 +3828,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of">crm:P12_occurred_in_the_presence_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of">occurred in the presence of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3799,13 +3841,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P94_has_created">crm:P94_has_created</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P94_has_created">has created</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life">crm:P98_brought_into_life</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life">brought into life</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -3817,7 +3859,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence">crm:E63_Beginning_of_Existence</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence">Beginning of Existence</a>
               </td>
             </tr>
             <tr>
@@ -3825,7 +3867,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">crm:E77_Persistent_Item</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">Persistent Item</a>
               </td>
             </tr>
           </table>
@@ -3847,7 +3889,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at">crm:P12i_was_present_at</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at">was present at</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3860,13 +3902,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by">crm:P94i_was_created_by</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by">was created by</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P98i_was_born">crm:P98i_was_born</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P98i_was_born">was born</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -3878,7 +3920,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">crm:E77_Persistent_Item</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">Persistent Item</a>
               </td>
             </tr>
             <tr>
@@ -3886,7 +3928,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence">crm:E63_Beginning_of_Existence</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence">Beginning of Existence</a>
               </td>
             </tr>
           </table>
@@ -3916,7 +3958,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of">crm:P12_occurred_in_the_presence_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of">occurred in the presence of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3927,7 +3969,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of">crm:P100_was_death_of</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of">was death of</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3937,7 +3979,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence">crm:E64_End_of_Existence</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence">End of Existence</a>
               </td>
             </tr>
             <tr>
@@ -3945,7 +3987,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">crm:E77_Persistent_Item</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">Persistent Item</a>
               </td>
             </tr>
           </table>
@@ -3967,7 +4009,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at">crm:P12i_was_present_at</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at">was present at</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3978,7 +4020,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/P100i_died_in">crm:P100i_died_in</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/P100i_died_in">died in</a>
                   <sup class="sup-p" title="RDF Property">p</sup>
                 </span>
               </td>
@@ -3988,7 +4030,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">crm:E77_Persistent_Item</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item">Persistent Item</a>
               </td>
             </tr>
             <tr>
@@ -3996,7 +4038,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence">crm:E64_End_of_Existence</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence">End of Existence</a>
               </td>
             </tr>
           </table>
@@ -4028,13 +4070,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P10_falls_within">crm:P10_falls_within</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P10_falls_within">falls within</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/P10i_contains">crm:P10i_contains</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/P10i_contains">contains</a>
                       <sup class="sup-p" title="RDF Property">p</sup>
                     </span>
                   </li>
@@ -4079,7 +4121,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4089,7 +4131,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
           </table>
@@ -4116,7 +4158,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
             <tr>
@@ -4125,7 +4167,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4148,7 +4190,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">frbroo:F24_Publication_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">Publication Expression</a>
               </td>
             </tr>
             <tr>
@@ -4157,7 +4199,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4181,7 +4223,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4191,7 +4233,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">frbroo:F24_Publication_Expression</a>
+                <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression">Publication Expression</a>
               </td>
             </tr>
           </table>
@@ -4218,7 +4260,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
             <tr>
@@ -4227,7 +4269,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">intro:INT1_TextPassage</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">INT1 TextPassage</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4257,7 +4299,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">intro:INT1_TextPassage</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">INT1 TextPassage</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4267,7 +4309,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
               </td>
             </tr>
           </table>
@@ -4291,11 +4333,32 @@ code{
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R12_has_referred_to_entity">intro:R12_has_referred_to_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R13_has_referring_entity">intro:R13_has_referring_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">intro:INT3_IntertextualRelationship</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">INT3 Intertextual Relationship</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4308,13 +4371,13 @@ code{
   <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4339,16 +4402,155 @@ code{
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R12_is_referred_to_entity">intro:R12_is_referred_to_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://w3id.org/lso/intro/beta202210#R13_is_referring_entity">intro:R13_is_referring_entity</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">INT3 Intertextual Relationship</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="R12_has_referred_to_entity">
+          <h3>R12_Has_Referred_To_Entity
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/lso/intro/beta202210#R12_has_referred_to_entity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>Links an INT3 Intertextual Relationship to the entity referred to in the intertextual relationship (a text on any ontological level or a feature actualized in the text in question).</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#R24_has_related_entity">intro:R24_has_related_entity</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">INT3 Intertextual Relationship</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td><span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="R12_is_referred_to_entity">
+          <h3>R12_Is_Referred_To_Entity
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/lso/intro/beta202210#R12_is_referred_to_entity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>Links the referred tp entity (a text on any ontological level or a feature actualized in a text) to the INT3 Intertextual Relationship it is a part of.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#R24_is_related_entity">intro:R24_is_related_entity</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td><span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
@@ -4361,7 +4563,125 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">intro:INT3_IntertextualRelationship</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">INT3 Intertextual Relationship</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="R13_has_referring_entity">
+          <h3>R13_Has_Referring_Entity
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/lso/intro/beta202210#R13_has_referring_entity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>Links an INT3 Intertextual Relationship to a referring entity (a text on any ontological level or a feature actualized in the text in question).</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#R24_has_related_entity">intro:R24_has_related_entity</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">INT3 Intertextual Relationship</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td><span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="R13_is_referring_entity">
+          <h3>R13_Is_Referring_Entity
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/lso/intro/beta202210#R13_is_referring_entity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>Links the referring entity (a text on any ontological level or a feature actualized in a text) to the INT3 Intertextual Relationship it is a part of.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#R24_is_related_entity">intro:R24_is_related_entity</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td><span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship">INT3 Intertextual Relationship</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4392,7 +4712,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4402,16 +4722,16 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4440,16 +4760,16 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4459,7 +4779,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4489,7 +4809,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4500,7 +4820,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT4_ReceptionalEntity">intro:INT4_ReceptionalEntity</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT4_ReceptionalEntity">INT4 Receptional Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4530,7 +4850,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT4_ReceptionalEntity">intro:INT4_ReceptionalEntity</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT4_ReceptionalEntity">INT4 Receptional Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4541,7 +4861,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4564,7 +4884,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
               </th>
               <td>
-                <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+                <a href="http://www.w3.org/ns/prov-o#">W3C PROVenance Interchange Ontology (PROV-O)</a>
               </td>
             </tr>
             <tr>
@@ -4578,7 +4898,10 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
               </th>
               <td>
-                <a href="http://www.w3.org/ns/prov#wasInfluencedBy">prov:wasInfluencedBy</a>
+                <span>
+                  <a href="http://www.w3.org/ns/prov#wasInfluencedBy">was influenced by</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
               </td>
             </tr>
             <tr>
@@ -4587,7 +4910,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+                  <a href="http://www.w3.org/ns/prov#Entity">Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4598,7 +4921,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+                  <a href="http://www.w3.org/ns/prov#Entity">Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4621,7 +4944,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
               </th>
               <td>
-                <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+                <a href="http://www.w3.org/ns/prov-o#">W3C PROVenance Interchange Ontology (PROV-O)</a>
               </td>
             </tr>
             <tr>
@@ -4640,16 +4963,16 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+  <a href="http://www.w3.org/ns/prov#InstantaneousEvent">Instantaneous Event</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+  <a href="http://www.w3.org/ns/prov#Agent">Agent</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.w3.org/ns/prov#InstantaneousEvent">prov:InstantaneousEvent</a>
+  <a href="http://www.w3.org/ns/prov#Entity">Entity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
+  <a href="http://www.w3.org/ns/prov#Activity">Activity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4658,14 +4981,17 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/ns/prov#Location">prov:Location</a>
+                <span>
+                  <a href="http://www.w3.org/ns/prov#Location">Location</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
         </div>
       </div>
       <span>
-        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4673,7 +4999,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4681,7 +5007,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4689,7 +5015,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4697,7 +5023,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4705,7 +5031,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4713,7 +5039,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">crm:E73_Information_Object</a>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4721,7 +5047,7 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">intro:INT2_ActualizationOfFeature</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -4729,19 +5055,83 @@ code{
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+        <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://www.w3.org/ns/prov#InstantaneousEvent">prov:InstantaneousEvent</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="https://w3id.org/lso/intro/beta202210#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.w3.org/ns/prov#Activity">Activity</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.w3.org/ns/prov#Agent">Agent</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.w3.org/ns/prov#Entity">Entity</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="http://www.w3.org/ns/prov#InstantaneousEvent">Instantaneous Event</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <div class="section" id="datatypeproperties">
@@ -4769,7 +5159,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+                  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4806,10 +5196,10 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">intro:INT1_TextPassage</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+  <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">INT1 TextPassage</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4817,11 +5207,11 @@ code{
         </div>
       </div>
       <span>
-        <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">intro:INT16_Segment</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT16_Segment">INT16 Segment</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">intro:INT1_TextPassage</a>
+        <a href="https://w3id.org/lso/intro/beta202210#INT1_TextPassage">INT1 TextPassage</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <div id="namespaces">
@@ -4914,7 +5304,10 @@ code{
           <span id="y">y</span>
           <span>LODE</span>
         </a>
-        <a href="https://github.com/rdflib/pyLODE/release/3.0.4" id="version">3.0.4</a>
+        <a href="https://github.com/rdflib/pyLODE/release/3.0.5" id="version">3.0.5</a>
+        <span> with the </span>
+        <a href="https://w3id.org/profile/ontpub" id="profile">OntPub</a>
+        <span>profile</span>
       </p>
     </div>
     <div id="toc">
@@ -5207,6 +5600,18 @@ code{
             </li>
             <li>
               <a href="#R24_is_related_entity">R24_Is_Related_Entity</a>
+            </li>
+            <li>
+              <a href="#R12_has_referred_to_entity">R12_Has_Referred_To_Entity</a>
+            </li>
+            <li>
+              <a href="#R12_is_referred_to_entity">R12_Is_Referred_To_Entity</a>
+            </li>
+            <li>
+              <a href="#R13_has_referring_entity">R13_Has_Referring_Entity</a>
+            </li>
+            <li>
+              <a href="#R13_is_referring_entity">R13_Is_Referring_Entity</a>
             </li>
             <li>
               <a href="#R18_actualization_found_on">R18_Actualization_Found_On</a>
