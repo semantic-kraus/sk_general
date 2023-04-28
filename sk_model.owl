@@ -562,7 +562,7 @@
 		P14_carried_out_by E21_Person[author of original]
 	
 	-->
-	<rdf:Property rdf:about="P16_used_specific_object">
+	<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">
 		<rdfs:label xml:lang="en">used specific object</rdfs:label>
 		<rdfs:label xml:lang="de">benutzte das bestimmte Objekt</rdfs:label>
 		<rdfs:label xml:lang="el">χρησιμοποίησε αντικείμενο</rdfs:label>
@@ -575,11 +575,11 @@
 			Another example is the use of a particular name by a particular group of people over some span to identify a thing, such as a settlement. In this case, the physical carriers of this name are at least the people understanding its use.</rdfs:comment>
 		<rdfs:domain rdf:resource="E7_Activity" />
 		<rdfs:range rdf:resource="E70_Thing" />
-		<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of" />
-		<rdfs:subPropertyOf rdf:resource="P15_was_influenced_by" />
-		<owl:inverseOf rdf:resource="P16i_was_used_for" />
+		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of" />
+		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by" />
+		<owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for" />
 	</rdf:Property>
-	<rdf:Property rdf:about="P16i_was_used_for">
+	<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for">
 		<rdfs:label xml:lang="en">was used for</rdfs:label>
 		<rdfs:label xml:lang="de">wurde benutzt für</rdfs:label>
 		<rdfs:label xml:lang="el">χρησιμοποιήθηκε για</rdfs:label>
@@ -589,9 +589,9 @@
 		<rdfs:label xml:lang="zh">用于</rdfs:label>
 		<rdfs:domain rdf:resource="E70_Thing" />
 		<rdfs:range rdf:resource="E7_Activity" />
-		<rdfs:subPropertyOf rdf:resource="P12i_was_present_at" />
-		<rdfs:subPropertyOf rdf:resource="P15i_influenced" />
-		<owl:inverseOf rdf:resource="P16_used_specific_object" />
+		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at" />
+		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P15i_influenced" />
+		<owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object" />
 	</rdf:Property>
 	
 	
