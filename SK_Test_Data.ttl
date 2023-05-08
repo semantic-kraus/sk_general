@@ -5,256 +5,54 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> rdf:value "D_000068-053-000" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/LK> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> ;
-	rdfs:label "Identifier for \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en .
+<https://sk.acdh.oeaw.ac.at/DWpers0188> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+	rdfs:label "Person: Pollak, Oscar"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/01> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/0> ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00001> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P145i_left_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P143i_was_joined_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> .
 
-<https://sk.acdh.oeaw.ac.at/types/idno/LK> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> ;
-	rdfs:label "Type: ID-Number from Research Project \"Karl Kraus Rechtsakten\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
-	rdfs:comment "Some comment here."@en .
+<https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/2> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&letter=P#DWpers0188" ;
+	rdfs:label "Identifier for \"Pollak, Oscar\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
 
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000> a <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> ;
-	rdfs:label "File: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> ;
-	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> <https://sk.acdh.oeaw.ac.at/D_000068> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> .
+<https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdfs:label "Identifier for \"Kraus, Karl\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
 
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> rdf:value "68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
-	rdfs:label "Title: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en .
+<https://sk.acdh.oeaw.ac.at/DWpers0000> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+	rdfs:label "Person: Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/DWpers0000/birth> .
 
 <https://sk.acdh.oeaw.ac.at/pmb11910> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
 	rdfs:label "Person: Kerr, Alfred"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11910/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11910/occupation/0> , <https://sk.acdh.oeaw.ac.at/pmb11910/C_000068> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11910/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11910/occupation/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11910/D_000068> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/pmb11910/birth> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/pmb11910/death> .
 
-<https://sk.acdh.oeaw.ac.at/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-	rdfs:label "Legal Case: \"Karl Kraus ca. Alfred Kerr\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <https://sk.acdh.oeaw.ac.at/pmb11910/D_000068> , <https://sk.acdh.oeaw.ac.at/pmb11988/D_000068> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
-	rdfs:label "Kerr as a participant in legal case D_000068"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
-	rdfs:label "Kraus as a participant in legal case D_000068"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F4_Manifestation_Singleton> ;
-	rdfs:label "Carrier of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P128_carries> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> <https://sk.acdh.oeaw.ac.at/D_000068> .
-
-
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> a <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> ;
-	rdfs:label "Creation of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P94_has_created> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> .
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1927-10-11"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1927-10-11" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1927-10-11" .
-
-<https://sk.acdh.oeaw.ac.at/types/title/prov> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/title/0> ;
-	rdfs:label "Type: Provisional Title"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/title> ;
-	rdfs:comment "Some comment here."@en .
+<https://sk.acdh.oeaw.ac.at/DWpers1058> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+	rdfs:label "Person: Levetzow, Magnus von"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl03160/creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers1058/appelation/1> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P143i_was_joined_by> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> .
 
 <https://sk.acdh.oeaw.ac.at/pmb11988> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
 	rdfs:label "Person: Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/C_000068> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/pmb11988/D_000068> ; ;
 	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> rdf:value "https://kraus1933.ace.oeaw.ac.at" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
-	rdfs:label "URL: \"https://kraus1933.ace.oeaw.ac.at\""@en .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/URL> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> , <https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> , <https://sk.acdh.oeaw.ac.at/DWresource00002/idno/url> ;
-	rdfs:label "Type: URL"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
-	rdfs:comment "Some comment here."@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/DW> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 57" ;
-	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00000> ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Chefredakteur der Arbeiter-Zeitung\"" .
-
-<https://sk.acdh.oeaw.ac.at/DWint00000> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
-	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" - \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R24_has_related_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	rdfs:label "Text Passage of \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00000> .
-
-<https://sk.acdh.oeaw.ac.at/DWresource00000> a <http://www.w3.org/ns/prov#Entity> ;
-	rdfs:label "Bibl. Resource: Karl Kraus: Dritte Walpurgisnacht. Digitale historisch-kritische Edition. 2021. URL: https://kraus1933.ace.oeaw.ac.at"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> ;
-	<http://purl.org/dc/terms/bibliographicCitation> "Karl Kraus: Dritte Walpurgisnacht. Digitale historisch-kritische Edition. 2021. URL: https://kraus1933.ace.oeaw.ac.at" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 63" ;
-	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00001> ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"beseitigen\"" .
-
-<https://sk.acdh.oeaw.ac.at/DWint00001> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
-	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" - \"Deutschland ist nicht Italien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R24_has_related_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	rdfs:label "Text Passage of \"Deutschland ist nicht Italien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00001> , <https://sk.acdh.oeaw.ac.at/DWint00002> .
-
-<https://sk.acdh.oeaw.ac.at/DWint00002> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
-	rdfs:label "Intertextual Relation: \"Deutschland ist nicht Italien\" - \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R24_has_related_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	rdfs:label "Text Passage of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> .
-
-<https://sk.acdh.oeaw.ac.at/DWint00003> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
-	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" – \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R24_has_related_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> ;
-	rdfs:label "Pollak, Oscar: \"Die andre Einstellung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> , <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/0> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> ;
-	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 56" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.130#DWquote1488" ;
-	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> .
-
-<https://sk.acdh.oeaw.ac.at/DWorg00007> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
-	rdfs:label "Political Party: SDAP"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWorg00007/app/1> , <https://sk.acdh.oeaw.ac.at/DWorg00007/app/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P144i_gained_member_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P146i_lost_member_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWorg00007/app/1> rdf:value "Sozialdemokratische Arbeiterpartei" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/full> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00007> ;
-	rdfs:label "Full Appellation: \"Sozialdemokratische Arbeiterpartei\""@en .
-
-<https://sk.acdh.oeaw.ac.at/types/app/short> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWorg00007/app/0> , <https://sk.acdh.oeaw.ac.at/DWorg00011/app/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWorg00007/app/0> rdf:value "SDAP" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/short> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00007> ;
-	rdfs:label "Short Appellation: \"SDAP\""@en .
-
-<https://sk.acdh.oeaw.ac.at/types/app/full> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWorg00007/app/1> , <https://sk.acdh.oeaw.ac.at/DWorg00011/app/1> .
-
-<https://sk.acdh.oeaw.ac.at/DWorg00011/app/1> rdf:value "Nationalsozialistische Deutsche Arbeiterpartei" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/full> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00011> ;
-	rdfs:label "Full Appellation: \"Nationalsozialistische Deutsche Arbeiterpartei\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWorg00011> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
-	rdfs:label "Political Party: NSDAP"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWorg00011/app/1> , <https://sk.acdh.oeaw.ac.at/DWorg00011/app/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P144i_gained_member_by> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWorg00011/app/0> rdf:value "NSDAP" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/short> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00011> ;
-	rdfs:label "Short Appellation: \"NSDAP\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> rdf:value "https://pmb.acdh.oeaw.ac.at/entity/50/" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/pmb> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50> ;
-	rdfs:label "Identifier https://pmb.acdh.oeaw.ac.at/entity/50/"@en .
-
-<https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> rdf:value "Wien" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
-	rdfs:label "Wien"@und .
-
-<https://sk.acdh.oeaw.ac.at/DWplace00085> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-	rdfs:label "Wien"@und ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> , <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> ;
-	owl:sameAs <https://sk.acdh.oeaw.ac.at/pmb50> .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/pmb> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> ;
-	rdfs:label "Type: ID-Number from \"Personen der Moderne – Basis\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> rdf:value "DWplace00085" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/xml-id> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50> ;
-	rdfs:label "Identifier DWplace00085"@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb50> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-	rdfs:label "Wien"@und ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> ;
-	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWplace00085> .
-
-<https://sk.acdh.oeaw.ac.at/types/xml-id> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> ;
-	rdfs:label "Type: XML-ID"@en ;
-	rdfs:comment "Some comment here."@en .
+	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/pmb11988/death> .
 
 <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> , <https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> ;
@@ -262,58 +60,78 @@
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/place/placename> ;
 	rdfs:comment "Some comment here."@en .
 
-<https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> rdf:value "Hinterstoder" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+<https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> ;
-	rdfs:label "Hinterstoder"@und .
+	rdf:value "Wien" ;
+	rdfs:label "Wien"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> .
 
-<https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> rdf:value "https://pmb.acdh.oeaw.ac.at/entity/39334/" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/pmb> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> ;
-	rdfs:label "Identifier https://pmb.acdh.oeaw.ac.at/entity/39334/"@en .
+<https://sk.acdh.oeaw.ac.at/DWplace00085> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> , <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> , <https://sk.acdh.oeaw.ac.at/DWpers0041/death> , <https://sk.acdh.oeaw.ac.at/DWpers0041/birth> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication> ;
+	rdfs:label "Wien"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> ;
+	owl:sameAs <https://sk.acdh.oeaw.ac.at/pmb50> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> .
+
+<https://sk.acdh.oeaw.ac.at/pmb50> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
+	rdfs:label "Wien"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> ;
+	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/pmb> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> ;
+	rdfs:label "Type: ID-Number from \"Personen der Moderne – Basis\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/xml-id> ;
+	rdf:value "DWplace00085" ;
+	rdfs:label "Identifier DWplace00085"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50> .
+
+<https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/xml-id> ;
+	rdf:value "DWplace00072" ;
+	rdfs:label "Identifier DWplace00072"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> .
+
+<https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
+	rdf:value "Hinterstoder" ;
+	rdfs:label "Hinterstoder"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> .
 
 <https://sk.acdh.oeaw.ac.at/DWplace00072> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> ;
 	rdfs:label "Hinterstoder"@und ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> .
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> , <https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> .
 
-<https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> rdf:value "DWplace00072" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/xml-id> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> ;
-	rdfs:label "Identifier DWplace00072"@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> rdf:value "Wien" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+<https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb50> ;
-	rdfs:label "Wien"@und .
+	rdf:value "Wien" ;
+	rdfs:label "Wien"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb50> .
 
 <https://sk.acdh.oeaw.ac.at/pmb677> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-	rdfs:label "Breslau"@und ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/1> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11910/birth> ;
+	rdfs:label "Breslau"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(17.03533 51.10773)"^^<geo:wktLiteral> .
 
-<https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> rdf:value "Breslau" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+<https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> ;
-	rdfs:label "Breslau"@und .
+	rdf:value "Breslau" ;
+	rdfs:label "Breslau"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> .
 
-<https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/0> rdf:value "https://www.wikidata.org/wiki/Q1799" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> ;
-	rdfs:label "Identifier https://www.wikidata.org/wiki/Q1799"@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/1> rdf:value "http://sws.geonames.org/7531292/" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+<https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> ;
-	rdfs:label "Identifier http://sws.geonames.org/7531292/"@en .
+	rdf:value "http://sws.geonames.org/7531292/" ;
+	rdfs:label "Identifier http://sws.geonames.org/7531292/"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> .
 
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/0> ;
@@ -327,29 +145,28 @@
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
 	rdfs:comment "Some comment here."@en .
 
-<https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> rdf:value "https://pmb.acdh.oeaw.ac.at/entity/41660" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+<https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> ;
-	rdfs:label "Identifier https://pmb.acdh.oeaw.ac.at/entity/41660"@en .
+	rdf:value "https://pmb.acdh.oeaw.ac.at/entity/41660" ;
+	rdfs:label "Identifier https://pmb.acdh.oeaw.ac.at/entity/41660"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> .
+
+<https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
+	rdf:value "Jičín" ;
+	rdfs:label "Jičín"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> .
 
 <https://sk.acdh.oeaw.ac.at/pmb41660> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-	rdfs:label "Jičín"@und ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
+	rdfs:label "Jičín"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(15.35162 50.43723)"^^<geo:wktLiteral> .
 
-<https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> rdf:value "http://sws.geonames.org/3074204/" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> ;
-	rdfs:label "Identifier http://sws.geonames.org/3074204/"@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> rdf:value "Jičín" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> ;
-	rdfs:label "Jičín"@und .
+<https://sk.acdh.oeaw.ac.at/types/xml-id> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> ;
+	rdfs:label "Type: XML-ID"@en ;
+	rdfs:comment "Some comment here."@en .
 
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> ;
@@ -357,672 +174,28 @@
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
 	rdfs:comment "Some comment here."@en .
 
-<https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> rdf:value "Pollak, Oscar" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	rdfs:label "Pollak, Oscar"@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> a <http://www.cidoc-crm.org/cidoc-crm/E85_Joining> ;
-	rdfs:label "Pollak, Oscar joining SDAP"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P144_joined_with> <https://sk.acdh.oeaw.ac.at/DWorg00007> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P143_joined> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/1> rdf:value "DWpers0188" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	rdfs:label "Identifier for \"Pollak, Oscar\""@en .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/DW> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/0> ;
-	rdfs:label "Type: ID-Number from Research Project \"Dritte Walpurgisnacht\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
-	rdfs:label "Death of Pollak, Oscar"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/death/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00072> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1923 - 1931"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1931" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1923" .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1963-08-28"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1963-08-28" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1963-08-28" .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/2> rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&letter=P#DWpers0188" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	rdfs:label "Identifier for \"Pollak, Oscar\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
-	rdfs:label "Person: Pollak, Oscar"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/01> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00001> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P145i_left_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P143i_was_joined_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> <https://sk.acdh.oeaw.ac.at/DWbibl0000/reference/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> a <http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> ;
-	rdfs:label "Pollak, Oscar leaving SDAP"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P146_separated_from> <https://sk.acdh.oeaw.ac.at/DWorg00007> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P145_separated> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1893-10-07"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1893-10-07" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1893-10-07" .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1934"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1934" .
-
-<https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> rdf:value "https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00001> ;
-	rdfs:label "URL: \"https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1918"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1918" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1918" .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/01> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Pollak, Oscar as \"Journalist, Schriftsteller\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Pollak, Oscar as \"Chefredakteur der Arbeiter-Zeitung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/DWper00001> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1931 - 1934"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1931" .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/1> .
-
-<https://sk.acdh.oeaw.ac.at/DWper00001> a <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
-	rdfs:label "Existence of \"Arbeiter-Zeitung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Pollak, Oscar as \"Londonkorrespondent, dann außenpolitischer Redakteur der Arbeiter-Zeitung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/DWper00001> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
-	rdfs:label "Birth of Pollak, Oscar"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/0> rdf:value "122391160" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	rdfs:label "Identifier for \"Pollak, Oscar\""@en .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/GND> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> ;
-	rdfs:label "Type: ID-Number from \"Gemeinsame Normdatei\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> ;
-	rdfs:label "Type: Person Name – preferred Name"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/person/persname> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWresource00001> a <http://www.w3.org/ns/prov#Entity> ;
-	rdfs:label "Bibl. Resource: Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992–1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)."@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> ;
-	<http://purl.org/dc/terms/bibliographicCitation> "Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992–1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)." .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> rdf:value "118566288" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
-	rdfs:label "Identifier for \"Kraus, Karl\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
-	rdfs:label "Identifier for \"Kraus, Karl\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
-	rdfs:label "Person: Kraus, Karl"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/DWpers0000/birth> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/event/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1936-02"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1936-02" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1936-02" .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1874-04-28"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/birth> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1874-04-28" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1874-04-28" .
-
-<https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
-	rdfs:label "Type: Event – Being Run Over by a Bike"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/event> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> a <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> ;
-	rdfs:label "Event: Run over by a Bike"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P11_had_participant> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
-	rdfs:label "Birth of Kraus, Karl"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0000/birth/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> rdf:value "Kraus, Karl" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
-	rdfs:label "Kraus, Karl"@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> rdf:value "DWpers0000" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
-	rdfs:label "Identifier for \"Kraus, Karl\""@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1867-12-25"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11910/birth> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1867-12-25" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1867-12-25" .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/0> ;
-	rdfs:label "Type: URL from Research Project \"Arthur Schnitzler Tagebuch\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/occupation/1> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Kerr, Alfred as \"Kritiker/Kritikerin\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
-	rdfs:label "Birth of Kerr, Alfred"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11910/birth/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb677> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/pmb11910> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/1> rdf:value "https://d-nb.info/gnd/11856157X" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11910> ;
-	rdfs:label "Identifier for \"Kerr, Alfred\""@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
-	rdfs:label "Death of Kerr, Alfred"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11910/death/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb506> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/pmb11910> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1948-10-12"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11910/death> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1948-10-12" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1948-10-12" .
-
-<https://sk.acdh.oeaw.ac.at/pmb506> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11910/death> .
-
-<https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/1> ;
-	rdfs:label "Type: URL from \"Gemeinsame Normdatei\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/occupation/0> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Kerr, Alfred as \"Schriftsteller/Schriftstellerin\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/0> rdf:value "https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16819" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11910> ;
-	rdfs:label "Identifier for \"Kerr, Alfred\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1931"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1931" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1931" .
-
-<https://sk.acdh.oeaw.ac.at/DWpers1058/appelation/1> rdf:value "Levetzow, Magnus von" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers1058> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> a <http://www.cidoc-crm.org/cidoc-crm/E85_Joining> ;
-	rdfs:label "Levetzow, Magnus von joining the NSDAP"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P144_joined_with> <https://sk.acdh.oeaw.ac.at/DWorg00011> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P143_joined> <https://sk.acdh.oeaw.ac.at/DWpers1058> .
-
-<https://sk.acdh.oeaw.ac.at/DWpers1058> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
-	rdfs:label "Person: Levetzow, Magnus von"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers1058/appelation/1> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl03160/creation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P143i_was_joined_by> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1874-04-28"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1874-04-28" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1874-04-28" .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> rdf:value "118566288" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
-	rdfs:label "Identifier for \"Kraus, Karl\""@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1936-06-12"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1936-06-12" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1936-06-12" .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/occupation/1> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Kraus, Karl as \"Publizist/Publizistin\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> rdf:value "pmb11988" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/LK> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
-	rdfs:label "Identifier for \"Kraus, Karl\""@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
-	rdfs:label "Death of Kraus, Karl"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11988/death/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb50> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/pmb11988> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
-	rdfs:label "Birth of Kraus, Karl"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11988/birth/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb41660> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/pmb11988> .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> rdf:value "Kraus, Karl" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
-	rdfs:label "Kraus, Karl"@en .
-
-<https://sk.acdh.oeaw.ac.at/pmb11988/occupation/0> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
-	rdfs:label "Kraus, Karl as \"Schriftsteller/Schriftstellerin\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> rdf:value "Arbeiter-Zeitung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/title1> ;
-	rdfs:label "Appellation-Part: \"Arbeiter-Zeitung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> .
-
-<https://sk.acdh.oeaw.ac.at/types/app/title1> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> ;
-	rdfs:label "Type: Appellation Part – Title 1"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/app> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/types/title/main> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04519/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl0000/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/title/0> ;
-	rdfs:label "Type: Main Title"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/title> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/title/0> rdf:value "Arbeiter-Zeitung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/title/0> rdf:value "Arbeiter-Zeitung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/title/0> ;
-	rdfs:label "Published Text (Issue, Volume): \"Arbeiter-Zeitung, 30. 5. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632> , <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> ;
-	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/seg/0> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
-	rdfs:label "Publication of \"Arbeiter-Zeitung, 30. 5. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04519/title/0> ;
-	rdfs:label "Abstract Text (Issue, Volume): \"Arbeiter-Zeitung, 30. 5. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1933-05-30"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-05-30" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-05-30" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> rdf:value "30. 5. 1933" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/date> ;
-	rdfs:label "Appellation-Part: \"30. 5. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> rdf:value "Die andre Einstellung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title \"Die andre Einstellung\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	rdfs:label "Segment containing \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
-	<https://schema.org/pagination> "S. 2–3" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/1> rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_intertexte.html&letter=P#DWbibl02632" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
-	rdfs:label "Identifier for \"Die andre Einstellung\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/0> rdf:value "DWbibl02632" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
-	rdfs:label "Identifier for \"Die andre Einstellung\""@en .
-
 <https://sk.acdh.oeaw.ac.at/types/app/date> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/1> ;
 	rdfs:label "Type: Appellation Part – Date"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/app> ;
 	rdfs:comment "Some comment here."@en .
 
+<https://sk.acdh.oeaw.ac.at/types/app> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	rdfs:label "Type: Appellation"@en ;
+	rdfs:comment "Some comment here."@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/app/date> , <https://sk.acdh.oeaw.ac.at/types/app/main> , <https://sk.acdh.oeaw.ac.at/types/app/title1> .
+
 <https://sk.acdh.oeaw.ac.at/types/app/main> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0> ;
 	rdfs:label "Type: Main Appellation"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/app> ;
 	rdfs:comment "Some comment here."@en .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> rdf:value "Arbeiterzeitung, 30. 5. 1933" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/main> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	rdfs:label "Appellation: \"Arbeiter-Zeitung, 30. 5. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04203> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/text/periodical> ;
-	rdfs:label "Published Text (Periodical, Series): Arbeiter-Zeitung"@en ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5_has_component> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> .
-
-<https://sk.acdh.oeaw.ac.at/types/text/periodical> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04203> ;
-	rdfs:label "Type: Text – Periodical"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/text> ;
+<https://sk.acdh.oeaw.ac.at/types/app/title1> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/0> ;
+	rdfs:label "Type: Appellation Part – Title 1"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/app> ;
 	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
-	rdfs:label "Creation of \"Die andre Einstellung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl0000/title/0> rdf:value "Dritte Walpurgisnacht" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title \"Dritte Walpurgisnacht\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
-	rdfs:label "Publication of \"Dritte Walpurgisnacht\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/1> rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	rdfs:label "Identifier for \"Dritte Walpurgisnacht\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
-	rdfs:label "Creation of Abstract Text \"Dritte Walpurgisnacht. Digitale historisch-kritische Edition\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/edBO> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl00001> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1933"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "2021"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2021" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2021" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00001/title/0> rdf:value "Dritte Walpurgisnacht" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title: \"Dritte Walpurgisnacht\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
-	rdfs:label "Creation of: \"Dritte Walpurgisnacht\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl00000> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl0000/title/0> ;
-	rdfs:label "Kraus, Karl: \"Dritte Walpurgisnacht\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl00001> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/0> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> ;
-	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00001> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/1> ;
-	rdfs:label "Abstract Text (Issue, Volume): \"Dritte Walpurgisnacht\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/1> rdf:value "Digitale historisch-kritische Edition" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/sub> ;
-	rdfs:label "Title: \"Digitale historisch-kritische Edition\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00001/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "2019–2021"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2021" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2019" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> rdf:value "Dritte Walpurgisnacht" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title: \"Dritte Walpurgisnacht\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00001/title/1> rdf:value "Digitale historisch-kritische Edition" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/sub> ;
-	rdfs:label "Title: \"Digitale historisch-kritische Edition\""@en .
-
-<https://sk.acdh.oeaw.ac.at/edBO> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/0> rdf:value "DWbibl00000" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	rdfs:label "Identifier for \"Dritte Walpurgisnacht\""@en .
-
-<https://sk.acdh.oeaw.ac.at/types/title/sub> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/1> ;
-	rdfs:label "Type: Subtitle"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/title> ;
-	rdfs:comment "Some comment here."@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> ;
-	rdfs:label "Published Text (Issue, Volume): \"Dritte Walpurgisnacht\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000> , <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
-	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/2> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
-	rdfs:label "Publication of \"Arbeiter-Zeitung, 28. 2. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/timestamp> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1933-02-28"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-02-28" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-02-28" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/title/0> rdf:value "Deutschland ist nicht Italien" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title \"Deutschland ist nicht Italien\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/0> rdf:value "DWbibl03354" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
-	rdfs:label "Identifier for \"Deutschland ist nicht Italien\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/title/0> ;
-	rdfs:label "Published Text (Issue, Volume): \"Arbeiter-Zeitung, 28. 2. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl04595> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> ;
-	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> rdf:value "Arbeiter-Zeitung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/title1> ;
-	rdfs:label "Appellation-Part: \"Arbeiter-Zeitung\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> rdf:value "Arbeiter-Zeitung, 28. 2. 1933" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/main> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	rdfs:label "Appellation: \"Arbeiter-Zeitung, 28. 2. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/1> rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_intertexte.html&letter=P#DWbibl03354" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
-	rdfs:label "Identifier for \"Deutschland ist nicht Italien\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/title/0> rdf:value "Arbeiter-Zeitung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> rdf:value "28. 2. 1933" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/date> ;
-	rdfs:label "Appellation-Part: \"28. 2. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl03354/title/0> ;
-	rdfs:label "Pollak, Oscar: \"Deutschland ist nicht Italien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04595> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/1> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> ;
-	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	rdfs:label "Segment containing \"Deutschland ist nicht Italien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
-	<https://schema.org/pagination> "S. 1–2" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
-	rdfs:label "Creation of: \"Deutschland ist nicht Italien\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04595/title/0> ;
-	rdfs:label "Abstract Text (Issue, Volume): \"Arbeiter-Zeitung, 28. 2. 1933\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl04595/title/0> rdf:value "Arbeiter-Zeitung" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
-	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
-	rdfs:label "Creation of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers1058> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl03160> .
 
 <https://sk.acdh.oeaw.ac.at/types/event/firstPerformance> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> ;
@@ -1030,144 +203,62 @@
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/event> ;
 	rdfs:comment "Some comment here."@en .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F31_Performance> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/event/firstPerformance> ;
-	rdfs:label "First Performance / Recitation of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance/timestamp> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66_included_performed_version_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/performance/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
-	rdfs:label "1933-02-23"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-02-23" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-02-23" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/0> rdf:value "DWbibl03160" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03160> ;
-	rdfs:label "Identifier for \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl03160/title/0> ;
-	rdfs:label "Levetzow, Magnus von: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/1> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl03160/creation> ;
-	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> ;
-	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66i_had_a_performed_version_through> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/title/0> rdf:value "[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
-	rdfs:label "Title \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/1> rdf:value "Dritte Walpurgisnacht (oeaw.ac.at)" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03160> ;
-	rdfs:label "Identifier for \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en .
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
-	rdfs:label "Reference on: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\" "@en ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
-	<https://w3id.org/lso/intro/beta202210#R17_feature_actualized_in> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/actualization/0> .
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 1" , "https://www.kraus.wienbibliothek.at/legalkraus-app/lesefassung/204879" ;
-	rdfs:label "Segment of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" ;
-	<http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/actualization/0> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
-	rdfs:label "Feature Actualized on \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> ;
-	<https://w3id.org/lso/intro/beta202210#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	rdfs:label "Text Passage of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 57" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.132#DWrsPers0791" ;
-	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Chefredakteur der Arbeiter-Zeitung\"" ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWresource00002/idno/url> rdf:value "https://kraus.wienbibliothek.at" ;
-	a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00002> ;
-	rdfs:label "URL: \"https://kraus1933.ace.oeaw.ac.at\""@en .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl0000/reference/0> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
-	rdfs:label "Reference on: \"Dritte Walpurgisnacht\""@en ;
-	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00002> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
-	<https://w3id.org/lso/intro/beta202210#R17_feature_actualized_in> <https://sk.acdh.oeaw.ac.at/DWbibl0000/actualization/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl0000/actualization/0> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
-	rdfs:label "Feature Actualized on \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/DWbibl0000/reference/0> ;
-	<https://w3id.org/lso/intro/beta202210#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWresource00002> a <http://www.w3.org/ns/prov#Entity> ;
-	rdfs:label "Bibl. Resource: Karl Kraus Rechtsakten. 2022. URL: https://kraus.wienbibliothek.at"@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00002/idno/url> ;
-	<http://purl.org/dc/terms/bibliographicCitation> "Karl Kraus Rechtsakten. 2022. URL: https://kraus.wienbibliothek.at" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 56" ;
-	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
-	<https://w3id.org/lso/intro/beta202210#R24_is_related_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/2> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.144#DWquote1714" , "Abs. 63" ;
-	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"beseitigen\"" ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 2" ;
-	rdfs:label "Segment of \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
-	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 2" ;
-	rdfs:label "Segment of \"Deutschland ist nicht Italien\""@en ;
-	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> ;
-	<https://w3id.org/lso/intro/beta202210#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> .
-
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
-	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl03354/seg/0> .
-
-<https://sk.acdh.oeaw.ac.at/types/app> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	rdfs:label "Type: Appellation"@en ;
-	rdfs:comment "Some comment here."@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/app/title1> , <https://sk.acdh.oeaw.ac.at/types/app/date> , <https://sk.acdh.oeaw.ac.at/types/app/main> .
-
 <https://sk.acdh.oeaw.ac.at/types/event> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	rdfs:label "Type: Event"@en ;
 	rdfs:comment "Some comment here."@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> , <https://sk.acdh.oeaw.ac.at/types/event/firstPerformance> .
+	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/event/firstPerformance> , <https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> .
 
 <https://sk.acdh.oeaw.ac.at/types/idno> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	rdfs:label "Type: ID-Number"@en ;
 	rdfs:comment "Some comment here."@en ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/idno/LK> , <https://sk.acdh.oeaw.ac.at/types/idno/URL> , <https://sk.acdh.oeaw.ac.at/types/idno/pmb> , <https://sk.acdh.oeaw.ac.at/types/idno/DW> , <https://sk.acdh.oeaw.ac.at/types/idno/GND> .
+	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/idno/pmb> , <https://sk.acdh.oeaw.ac.at/types/idno/DW> , <https://sk.acdh.oeaw.ac.at/types/idno/URL> , <https://sk.acdh.oeaw.ac.at/types/idno/GND> , <https://sk.acdh.oeaw.ac.at/types/idno/LK> .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/DW> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00736/identifier/idno/0> ;
+	rdfs:label "Type: ID-Number from Research Project \"Dritte Walpurgisnacht\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
+	rdfs:comment "Some comment here."@en .
 
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/DW> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	rdfs:label "Type: URL from Research Project \"Dritte Walpurgisnacht\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/URL> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> , <https://sk.acdh.oeaw.ac.at/DWresource00002/idno/url> , <https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> ;
+	rdfs:label "Type: URL"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
+	rdfs:comment "Some comment here."@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/DW> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> , <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/GND> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> ;
+	rdfs:label "Type: ID-Number from \"Gemeinsame Normdatei\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/LK> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> ;
+	rdfs:label "Type: ID-Number from Research Project \"Karl Kraus Rechtsakten\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/1> ;
+	rdfs:label "Type: URL from \"Gemeinsame Normdatei\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/0> ;
+	rdfs:label "Type: URL from Research Project \"Arthur Schnitzler Tagebuch\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> ;
+	rdfs:label "Type: Person Name – preferred Name"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/person/persname> ;
 	rdfs:comment "Some comment here."@en .
 
 <https://sk.acdh.oeaw.ac.at/types/person/persname> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
@@ -1180,8 +271,1094 @@
 	rdfs:comment "Some comment here."@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> .
 
+<https://sk.acdh.oeaw.ac.at/types/text/periodical> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04203> , <https://sk.acdh.oeaw.ac.at/DWbibl04225> ;
+	rdfs:label "Type: Text – Periodical"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/text> ;
+	rdfs:comment "Some comment here."@en .
+
 <https://sk.acdh.oeaw.ac.at/types/text> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/text/periodical> .
 
+<https://sk.acdh.oeaw.ac.at/types/title/main> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04519/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl0000/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00736/title/0> ;
+	rdfs:label "Type: Main Title"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/title> ;
+	rdfs:comment "Some comment here."@en .
+
 <https://sk.acdh.oeaw.ac.at/types/title> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
-	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/title/prov> , <https://sk.acdh.oeaw.ac.at/types/title/main> , <https://sk.acdh.oeaw.ac.at/types/title/sub> .
+	<http://www.cidoc-crm.org/cidoc-crm/P127i_has_narrower_term> <https://sk.acdh.oeaw.ac.at/types/title/main> , <https://sk.acdh.oeaw.ac.at/types/title/prov> , <https://sk.acdh.oeaw.ac.at/types/title/sub> .
+
+<https://sk.acdh.oeaw.ac.at/types/title/prov> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/title/0> ;
+	rdfs:label "Type: Provisional Title"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/title> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/title/sub> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/1> ;
+	rdfs:label "Type: Subtitle"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/title> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
+	rdfs:label "Type: Event – Being Run Over by a Bike"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/event> ;
+	rdfs:comment "Some comment here."@en .
+
+<https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/pmb> ;
+	rdf:value "https://pmb.acdh.oeaw.ac.at/entity/50/" ;
+	rdfs:label "Identifier https://pmb.acdh.oeaw.ac.at/entity/50/"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50> .
+
+<https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/pmb> ;
+	rdf:value "https://pmb.acdh.oeaw.ac.at/entity/39334/" ;
+	rdfs:label "Identifier https://pmb.acdh.oeaw.ac.at/entity/39334/"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> .
+
+<https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> ;
+	rdf:value "https://www.wikidata.org/wiki/Q1799" ;
+	rdfs:label "Identifier https://www.wikidata.org/wiki/Q1799"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> .
+
+<https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> ;
+	rdf:value "http://sws.geonames.org/3074204/" ;
+	rdfs:label "Identifier http://sws.geonames.org/3074204/"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> .
+
+<https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
+	rdf:value "https://kraus1933.ace.oeaw.ac.at" ;
+	rdfs:label "URL: \"https://kraus1933.ace.oeaw.ac.at\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 57" ;
+	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Chefredakteur der Arbeiter-Zeitung\"" ;
+	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00000> .
+
+<https://sk.acdh.oeaw.ac.at/DWint00000> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
+	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" - \"Die andre Einstellung\""@en ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
+	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> ;
+	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	rdfs:label "Text Passage of \"Die andre Einstellung\""@en ;
+	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00000> .
+
+<https://sk.acdh.oeaw.ac.at/DWresource00000> a <http://www.w3.org/ns/prov#Entity> ;
+	rdfs:label "Bibl. Resource: Karl Kraus: Dritte Walpurgisnacht. Digitale historisch-kritische Edition. 2021. URL: https://kraus1933.ace.oeaw.ac.at"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> ;
+	<http://purl.org/dc/terms/bibliographicCitation> "Karl Kraus: Dritte Walpurgisnacht. Digitale historisch-kritische Edition. 2021. URL: https://kraus1933.ace.oeaw.ac.at" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 63" ;
+	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"beseitigen\"" ;
+	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00001> .
+
+<https://sk.acdh.oeaw.ac.at/DWint00001> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
+	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" - \"Deutschland ist nicht Italien\""@en ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
+	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> ;
+	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	rdfs:label "Text Passage of \"Deutschland ist nicht Italien\""@en ;
+	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> ;
+	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00001> .
+
+<https://sk.acdh.oeaw.ac.at/DWint00002> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
+	rdfs:label "Intertextual Relation: \"Deutschland ist nicht Italien\" - \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
+	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> ;
+	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	rdfs:label "Text Passage of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> .
+
+<https://sk.acdh.oeaw.ac.at/DWint00003> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
+	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" – \"Die andre Einstellung\""@en ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
+	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> ;
+	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> ;
+	rdfs:label "Pollak, Oscar: \"Die andre Einstellung\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/0> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> ;
+	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 56" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.130#DWquote1488" ;
+	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
+	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/LK> ;
+	rdf:value "D_000068-053-000" ;
+	rdfs:label "Identifier for \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000> a <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> ;
+	rdfs:label "File: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> <https://sk.acdh.oeaw.ac.at/D_000068> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068> a <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	rdfs:label "Legal Case: \"Karl Kraus ca. Alfred Kerr\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <https://sk.acdh.oeaw.ac.at/pmb11988/C_000068> , <https://sk.acdh.oeaw.ac.at/pmb11910/C_000068> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
+	rdf:value "68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> ;
+	rdfs:label "Title: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> a <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation/timestamp> ;
+	rdfs:label "Creation of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P94_has_created> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F4_Manifestation_Singleton> ;
+	rdfs:label "Carrier of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P128_carries> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> <https://sk.acdh.oeaw.ac.at/D_000068> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1927-10-11" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1927-10-11" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> ;
+	rdfs:label "1927-10-11"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/title1> ;
+	rdf:value "Arbeiter-Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> ;
+	rdfs:label "Appellation-Part: \"Arbeiter-Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Arbeiter-Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
+	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Arbeiter-Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
+	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632> , <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/title/0> ;
+	rdfs:label "Published Text (Issue, Volume): \"Arbeiter-Zeitung, 30. 5. 1933\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> ;
+	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/timestamp> ;
+	rdfs:label "Publication of \"Arbeiter-Zeitung, 30. 5. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04519/title/0> ;
+	rdfs:label "Abstract Text (Issue, Volume): \"Arbeiter-Zeitung, 30. 5. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-05-30" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-05-30" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> ;
+	rdfs:label "1933-05-30"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/date> ;
+	rdf:value "30. 5. 1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> ;
+	rdfs:label "Appellation-Part: \"30. 5. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	rdfs:label "Segment containing \"Die andre Einstellung\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
+	<https://schema.org/pagination> "S. 2–3" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Die andre Einstellung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl02632> ;
+	rdfs:label "Title \"Die andre Einstellung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_intertexte.html&letter=P#DWbibl02632" ;
+	rdfs:label "Identifier for \"Die andre Einstellung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWbibl02632" ;
+	rdfs:label "Identifier for \"Die andre Einstellung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/main> ;
+	rdf:value "Arbeiterzeitung, 30. 5. 1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> ;
+	rdfs:label "Appellation: \"Arbeiter-Zeitung, 30. 5. 1933\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04203> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/text/periodical> ;
+	rdfs:label "Published Text (Periodical, Series): Arbeiter-Zeitung"@en ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5_has_component> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWbibl02632/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00736/identifier/idno/1> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
+	rdfs:label "Creation of \"Die andre Einstellung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl0000/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Dritte Walpurgisnacht" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
+	rdfs:label "Title \"Dritte Walpurgisnacht\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/timestamp> ;
+	rdfs:label "Publication of \"Dritte Walpurgisnacht\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml" ;
+	rdfs:label "Identifier for \"Dritte Walpurgisnacht\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl00000> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation/timestamp> ;
+	rdfs:label "Creation of Abstract Text \"Dritte Walpurgisnacht. Digitale historisch-kritische Edition\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/edBO> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl00001> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> ;
+	rdfs:label "1933"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2021" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2021" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> ;
+	rdfs:label "2021"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00001/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Dritte Walpurgisnacht" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
+	rdfs:label "Title: \"Dritte Walpurgisnacht\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation/timestamp> ;
+	rdfs:label "Creation of: \"Dritte Walpurgisnacht\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl00000> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl0000/title/0> ;
+	rdfs:label "Kraus, Karl: \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/0> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00001> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00001/title/1> ;
+	rdfs:label "Abstract Text (Issue, Volume): \"Dritte Walpurgisnacht\""@en ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/1> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/sub> ;
+	rdf:value "Digitale historisch-kritische Edition" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
+	rdfs:label "Title: \"Digitale historisch-kritische Edition\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00001/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2021" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2019" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> ;
+	rdfs:label "2019–2021"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Dritte Walpurgisnacht" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
+	rdfs:label "Title: \"Dritte Walpurgisnacht\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00001/title/1> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/sub> ;
+	rdf:value "Digitale historisch-kritische Edition" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
+	rdfs:label "Title: \"Digitale historisch-kritische Edition\""@en .
+
+<https://sk.acdh.oeaw.ac.at/edBO> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWbibl00000" ;
+	rdfs:label "Identifier for \"Dritte Walpurgisnacht\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl00000> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000> , <https://sk.acdh.oeaw.ac.at/DWbibl00001> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> ;
+	rdfs:label "Published Text (Issue, Volume): \"Dritte Walpurgisnacht\""@en ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/timestamp> ;
+	rdfs:label "Publication of \"Arbeiter-Zeitung, 28. 2. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-02-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-02-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> ;
+	rdfs:label "1933-02-28"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Deutschland ist nicht Italien" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
+	rdfs:label "Title \"Deutschland ist nicht Italien\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWbibl03354" ;
+	rdfs:label "Identifier for \"Deutschland ist nicht Italien\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl04595> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/title/0> ;
+	rdfs:label "Published Text (Issue, Volume): \"Arbeiter-Zeitung, 28. 2. 1933\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> ;
+	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/title1> ;
+	rdf:value "Arbeiter-Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> ;
+	rdfs:label "Appellation-Part: \"Arbeiter-Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/main> ;
+	rdf:value "Arbeiter-Zeitung, 28. 2. 1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> ;
+	rdfs:label "Appellation: \"Arbeiter-Zeitung, 28. 2. 1933\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdf:value "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_intertexte.html&letter=P#DWbibl03354" ;
+	rdfs:label "Identifier for \"Deutschland ist nicht Italien\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Arbeiter-Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
+	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/date> ;
+	rdf:value "28. 2. 1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0> ;
+	rdfs:label "Appellation-Part: \"28. 2. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04595> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl03354/title/0> ;
+	rdfs:label "Pollak, Oscar: \"Deutschland ist nicht Italien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03354/identifier/idno/1> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	rdfs:label "Segment containing \"Deutschland ist nicht Italien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
+	<https://schema.org/pagination> "S. 1–2" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
+	rdfs:label "Creation of: \"Deutschland ist nicht Italien\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04595/title/0> ;
+	rdfs:label "Abstract Text (Issue, Volume): \"Arbeiter-Zeitung, 28. 2. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04595/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Arbeiter-Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595> ;
+	rdfs:label "Title: \"Arbeiter-Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
+	rdfs:label "Creation of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers1058> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl03160> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F31_Performance> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/event/firstPerformance> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance/timestamp> ;
+	rdfs:label "First Performance / Recitation of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66_included_performed_version_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/performance/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-02-23" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-02-23" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> ;
+	rdfs:label "1933-02-23"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWbibl03160" ;
+	rdfs:label "Identifier for \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03160> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl03160/title/0> ;
+	rdfs:label "Levetzow, Magnus von: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/1> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl03160/creation> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66i_had_a_performed_version_through> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
+	rdf:value "[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160> ;
+	rdfs:label "Title \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdf:value "Dritte Walpurgisnacht (oeaw.ac.at)" ;
+	rdfs:label "Identifier for \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl03160> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
+	rdfs:label "Reference on: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\" "@en ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 1" , "https://www.kraus.wienbibliothek.at/legalkraus-app/lesefassung/204879" ;
+	rdfs:label "Segment of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/actualization/0> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
+	rdfs:label "Feature Actualized on \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> ;
+	<https://w3id.org/lso/intro/beta202304#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> .
+
+<https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
+	rdfs:label "Text Passage of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 57" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.132#DWrsPers0791" ;
+	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Chefredakteur der Arbeiter-Zeitung\"" ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl0000/reference/0> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
+	rdfs:label "Reference on: \"Dritte Walpurgisnacht\""@en ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00002> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl0000/actualization/0> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
+	rdfs:label "Feature Actualized on \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/DWbibl0000/reference/0> ;
+	<https://w3id.org/lso/intro/beta202304#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWresource00002/idno/url> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	rdf:value "https://kraus.wienbibliothek.at" ;
+	rdfs:label "URL: \"https://kraus1933.ace.oeaw.ac.at\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00002> .
+
+<https://sk.acdh.oeaw.ac.at/DWresource00002> a <http://www.w3.org/ns/prov#Entity> ;
+	rdfs:label "Bibl. Resource: Karl Kraus Rechtsakten. 2022. URL: https://kraus.wienbibliothek.at"@en ;
+	<http://purl.org/dc/terms/bibliographicCitation> "Karl Kraus Rechtsakten. 2022. URL: https://kraus.wienbibliothek.at" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "Abs. 56" ;
+	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/2> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.144#DWquote1714" , "Abs. 63" ;
+	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"beseitigen\"" ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 2" ;
+	rdfs:label "Segment of \"Die andre Einstellung\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 2" ;
+	rdfs:label "Segment of \"Deutschland ist nicht Italien\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
+	rdf:value "Pollak, Oscar" ;
+	rdfs:label "Pollak, Oscar"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWorg00007> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+	rdfs:label "Political Party: SDAP"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWorg00007/app/1> , <https://sk.acdh.oeaw.ac.at/DWorg00007/app/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P144i_gained_member_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P146i_lost_member_by> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> a <http://www.cidoc-crm.org/cidoc-crm/E85_Joining> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0/timestamp> ;
+	rdfs:label "Pollak, Oscar joining SDAP"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P144_joined_with> <https://sk.acdh.oeaw.ac.at/DWorg00007> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P143_joined> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWpers0188" ;
+	rdfs:label "Identifier for \"Pollak, Oscar\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00072> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/death/timestamp> ;
+	rdfs:label "Death of Pollak, Oscar"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1931" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1923" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> ;
+	rdfs:label "1923 - 1931"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1963-08-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1963-08-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> ;
+	rdfs:label "1963-08-28"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> a <http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0/timestamp> ;
+	rdfs:label "Pollak, Oscar leaving SDAP"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P146_separated_from> <https://sk.acdh.oeaw.ac.at/DWorg00007> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P145_separated> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1893-10-07" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1893-10-07" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> ;
+	rdfs:label "1893-10-07"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1934" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/leaving/DWorg00007/0> ;
+	rdfs:label "1934"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
+	rdf:value "https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764" ;
+	rdfs:label "URL: \"https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00001> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1918" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1918" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/joining/DWorg00007/0> ;
+	rdfs:label "1918"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/01> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Pollak, Oscar as \"Journalist, Schriftsteller\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03/timestamp> ;
+	rdfs:label "Pollak, Oscar as \"Chefredakteur der Arbeiter-Zeitung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/DWper00001> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1931" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> ;
+	rdfs:label "1931 - 1934"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWper00001> a <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+	rdfs:label "Existence of \"Arbeiter-Zeitung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/03> , <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02/timestamp> ;
+	rdfs:label "Pollak, Oscar as \"Londonkorrespondent, dann außenpolitischer Redakteur der Arbeiter-Zeitung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/DWper00001> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/birth/timestamp> ;
+	rdfs:label "Birth of Pollak, Oscar"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0188/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
+	rdf:value "122391160" ;
+	rdfs:label "Identifier for \"Pollak, Oscar\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWresource00001> a <http://www.w3.org/ns/prov#Entity> ;
+	rdfs:label "Bibl. Resource: Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992–1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)."@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> ;
+	<http://purl.org/dc/terms/bibliographicCitation> "Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992–1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)." .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
+	rdf:value "118566288" ;
+	rdfs:label "Identifier for \"Kraus, Karl\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/event/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1936-02" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1936-02" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
+	rdfs:label "1936-02"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1874-04-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1874-04-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/birth> ;
+	rdfs:label "1874-04-28"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> a <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0/timestamp> ;
+	rdfs:label "Event: Run over by a Bike"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P11_had_participant> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0000/birth/timestamp> ;
+	rdfs:label "Birth of Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWpers0000" ;
+	rdfs:label "Identifier for \"Kraus, Karl\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1867-12-25" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1867-12-25" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11910/birth> ;
+	rdfs:label "1867-12-25"@en .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/occupation/1> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Kerr, Alfred as \"Kritiker/Kritikerin\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb677> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11910/birth/timestamp> ;
+	rdfs:label "Birth of Kerr, Alfred"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> ;
+	rdf:value "https://d-nb.info/gnd/11856157X" ;
+	rdfs:label "Identifier for \"Kerr, Alfred\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb506> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11910/death/timestamp> ;
+	rdfs:label "Death of Kerr, Alfred"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1948-10-12" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1948-10-12" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11910/death> ;
+	rdfs:label "1948-10-12"@en .
+
+<https://sk.acdh.oeaw.ac.at/pmb506> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11910/death> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/occupation/0> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Kerr, Alfred as \"Schriftsteller/Schriftstellerin\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> ;
+	rdf:value "https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16819" ;
+	rdfs:label "Identifier for \"Kerr, Alfred\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11910> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1931" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1931" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> ;
+	rdfs:label "1931"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers1058/appelation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	rdf:value "Levetzow, Magnus von" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers1058> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> a <http://www.cidoc-crm.org/cidoc-crm/E85_Joining> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0/timestamp> ;
+	rdfs:label "Levetzow, Magnus von joining the NSDAP"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P144_joined_with> <https://sk.acdh.oeaw.ac.at/DWorg00011> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P143_joined> <https://sk.acdh.oeaw.ac.at/DWpers1058> .
+
+<https://sk.acdh.oeaw.ac.at/DWorg00011> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+	rdfs:label "Political Party: NSDAP"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWorg00011/app/1> , <https://sk.acdh.oeaw.ac.at/DWorg00011/app/0> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P144i_gained_member_by> <https://sk.acdh.oeaw.ac.at/DWpers1058/joining/DWorg00011/0> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1874-04-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1874-04-28" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
+	rdfs:label "1874-04-28"@en .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
+	rdf:value "118566288" ;
+	rdfs:label "Identifier for \"Kraus, Karl\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1936-06-12" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1936-06-12" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
+	rdfs:label "1936-06-12"@en .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/occupation/1> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Kraus, Karl as \"Publizist/Publizistin\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/LK> ;
+	rdf:value "pmb11988" ;
+	rdfs:label "Identifier for \"Kraus, Karl\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb50> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11988/death/timestamp> ;
+	rdfs:label "Death of Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/pmb41660> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/pmb11988/birth/timestamp> ;
+	rdfs:label "Birth of Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
+	rdf:value "Kraus, Karl" ;
+	rdfs:label "Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/occupation/0> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Kraus, Karl as \"Schriftsteller/Schriftstellerin\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/DWorg00007/app/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/full> ;
+	rdf:value "Sozialdemokratische Arbeiterpartei" ;
+	rdfs:label "Full Appellation: \"Sozialdemokratische Arbeiterpartei\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00007> .
+
+<https://sk.acdh.oeaw.ac.at/types/app/short> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWorg00007/app/0> , <https://sk.acdh.oeaw.ac.at/DWorg00011/app/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWorg00007/app/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/short> ;
+	rdf:value "SDAP" ;
+	rdfs:label "Short Appellation: \"SDAP\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00007> .
+
+<https://sk.acdh.oeaw.ac.at/types/app/full> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWorg00007/app/1> , <https://sk.acdh.oeaw.ac.at/DWorg00011/app/1> .
+
+<https://sk.acdh.oeaw.ac.at/DWorg00011/app/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/full> ;
+	rdf:value "Nationalsozialistische Deutsche Arbeiterpartei" ;
+	rdfs:label "Full Appellation: \"Nationalsozialistische Deutsche Arbeiterpartei\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00011> .
+
+<https://sk.acdh.oeaw.ac.at/DWorg00011/app/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/short> ;
+	rdf:value "NSDAP" ;
+	rdfs:label "Short Appellation: \"NSDAP\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWorg00011> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
+	rdf:value "Kraus, Karl" ;
+	rdfs:label "Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0000> .
+
+<https://sk.acdh.oeaw.ac.at/types/idno/xml-id> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0041/identifier/idno/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+	rdfs:label "Person: Deutsch, Paul"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2> , <https://sk.acdh.oeaw.ac.at/DWbibl00736/creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers0041/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> ;
+	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00001> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/DWpers0041/birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/DWpers0041/death> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/xml-id> ;
+	rdf:value "DWpers0041" ;
+	rdfs:label "Identifier for \"Deutsch, Paul\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0041> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/death> a <http://www.cidoc-crm.org/cidoc-crm/E69_Death> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0041/death/timestamp> ;
+	rdfs:label "Death od Deutsch, Paul"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> <https://sk.acdh.oeaw.ac.at/DWpers0041> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0041/birth/timestamp> ;
+	rdfs:label "Birth of Deutsch, Paul"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/DWpers0041> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/1> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Deutsch, Paul, as \"Journalist\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0041> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1927" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2> ;
+	rdfs:label "1927–1934"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
+	rdf:value "Deutsch, Paul" ;
+	rdfs:label "Deutsch, Paul"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0041> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1873-05-16" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1873-05-16" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0041/birth> ;
+	rdfs:label "1873-05-16"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/death/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1958-07-04" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1958-07-04" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0041/death> ;
+	rdfs:label "1958-07-04"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWper00002> a <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+	rdfs:label "Existence of \"Wiener Allgemeine Zeitung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10i_contains> <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2> .
+
+<https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2/timestamp> ;
+	rdfs:label "Deutsch, Paul, as \"Chefredakteur der Wiener Allgemeinen Zeitung\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0041> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/DWper00002> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/1> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/date> ;
+	rdf:value "21. 4. 1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0> ;
+	rdfs:label "Appellation-Part: \"21. 4. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW_URL> ;
+	rdf:value "Dritte Walpurgisnacht (oeaw.ac.at)" ;
+	rdfs:label "Identifier for \"Kleines Geburtstagsgeschenk\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl00736> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Wiener Allgemeine Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> , <https://sk.acdh.oeaw.ac.at/DWbibl04705> ;
+	rdfs:label "Title: \"Wiener Allgemeine Zeitung\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/DW> ;
+	rdf:value "DWbibl00736" ;
+	rdfs:label "Identifier for \"Kleines Geburtstagsgeschenk\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl00736> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/main> ;
+	rdf:value "Wiener Allgemeine Zeitung, 21. 4. 1933" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/1> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/0> ;
+	rdfs:label "Appellation: \"Wiener Allgemeine Zeitung, 21. 4. 1933\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00736> , <https://sk.acdh.oeaw.ac.at/DWbibl04705> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04705/title/0> ;
+	rdfs:label "Published Text (Issue, Volume): \"Wiener Allgemeine Zeitung, 21. 4. 1933\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0> ;
+	<https://w3id.org/lso/intro/beta202210#R25_has_segment> <https://sk.acdh.oeaw.ac.at/DWbibl00736/segment> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04705> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl00736/title/0> ;
+	rdfs:label "Deutsch, Paul: Kleines Geburtstagsgeschenk"@en ;
+	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/0> , <https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/1> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWbibl00736/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWbibl00736/identifier/idno/0> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl00736/creation> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+	rdf:value "Kleines Geburtstagsgeschenk" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/DWbibl00736> ;
+	rdfs:label "Title \"Kleines Geburtstagsgeschenk\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1933-04-21" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1933-04-21" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication> ;
+	rdfs:label "1933-04-21"@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/0> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/app/title1> ;
+	rdf:value "Wiener Allgemeine Zeitung" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0> ;
+	rdfs:label "Appellatino-Part: \"Wiener Allgemeine Zeitunbg\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl00736/creation/timestamp> ;
+	rdfs:label "Creation of: \"Kleines Geburtstagsgeschenk\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0041> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created> <https://sk.acdh.oeaw.ac.at/DWbibl00736> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/creation/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00736/creation> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event> ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication/timestamp> ;
+	rdfs:label "Publication of: \"Wiener Allgemeine Zeitung, 21. 4. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04225> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/text/periodical> ;
+	rdfs:label "Published Text (Periodical, Series): Wiener Allgemeine Zeitung"@en ;
+	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5_has_component> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	rdfs:label "Segment containing \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> ;
+	<https://schema.org/pagination> "S. 1" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl04705> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00736> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl04705/title/0> ;
+	rdfs:label "Abstract Text (Issue, Volume): \"Wiener Allgemeine Zeitung, 21. 4. 1933\""@en .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/actualization/0> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
+	rdfs:label "Feature Actualized on \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/DWbibl00736/reference/0> ;
+	<https://w3id.org/lso/intro/beta202304#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/0> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/reference/0> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
+	rdfs:label "Reference on \"Kleines Geburtstagsgeschenk\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/pmb11988> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
+	rdfs:label "Text Passage of \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 1" ;
+	rdfs:label "Segment of \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/seg/1> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
+	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 1" ;
+	rdfs:label "Segment of \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Pollak\"" ;
+	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/reference/1> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
+	rdfs:label "Reference on \"Kleines Geburtstagsgeschenk\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/actualization/1> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
+	rdfs:label "Feature Actualized on \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/DWbibl00736/reference/1> ;
+	<https://w3id.org/lso/intro/beta202304#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/1> .
+
+<https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/1> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
+	rdfs:label "Text Passage of \"Kleines Geburtstagsgeschenk\""@en ;
+	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Pollak\"" .
+
+<https://sk.acdh.oeaw.ac.at/pmb11988/C_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/D_000068> .
+
+<https://sk.acdh.oeaw.ac.at/pmb11910/C_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/D_000068> .
