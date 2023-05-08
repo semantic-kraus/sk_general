@@ -1,5 +1,9 @@
 # SPARQL for ResearchSpace
 
+## TOC
+1. [Field Definitions](#field-definitions)
+1. [Person Mentions](#person-mentions)
+
 ## Field Definitions 
 
 ### Person
