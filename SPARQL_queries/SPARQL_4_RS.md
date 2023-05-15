@@ -6,7 +6,7 @@
     - [Birth Place](#birth-place)
     - [Death Date](#death-date)
     - [Death Place](#death-place)
-    - tbd: Occupations
+    - [Occupation](#occupation)
     - tbd: Party Affiliations
     - tbd: Data Provenance
     - tbd: Events
@@ -23,6 +23,7 @@
 
 #### Birth Date
 Selects label of birth's time-span.
+
 https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/birth_date
 ```
 SELECT ?value WHERE { 
@@ -44,6 +45,7 @@ $subject crm:P98i_was_born ?birth_event.
 ```
 #### Death Date
 Selects death's time span label.
+
 https://sk.acdh-dev.oeaw.ac.at/death_date
 ```
 SELECT ?value WHERE { 
@@ -63,6 +65,50 @@ SELECT ?value ?label WHERE {
   ?value rdfs:label ?label. 
 } 
 ```
+#### Occupation
+Selects pursuit label as well as, if available, time-span label and employer label (the employer being modeled as the period of its existence).
+
+https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/occupation
+
+```
+SELECT ?value ?timespanLabel ?instLabel WHERE { 
+$subject crm:P14i_performed ?pursuit.
+?pursuit a frbroo:F51_Pursuit.
+?pursuit rdfs:label ?value.
+      OPTIONAL {
+?pursuit crm:P4_has_time-span ?timespan.
+  ?timespan rdfs:label ?timespanLabel.
+}
+      OPTIONAL {
+?pursuit crm:P10_falls_within ?inst.
+  ?inst rdfs:label ?instLabel.
+}
+ } 
+ ```
+ 
+#### Party Affiliation
+Selects party label as well as joining and leaving date labels
+
+```
+SELECT ?value ?fromLabel ?toLabel WHERE { 
+$subject crm:P143i_was_joined_by ?joining.
+?joining crm:P144_joined_with ?group.
+  ?group rdfs:label ?value.
+  OPTIONAL {
+?joining crm:P4_has_time-span ?timespan.
+  ?timespan rdfs:label ?fromLabel.
+  }
+  OPTIONAL {
+$subject crm:P145i_left_by ?leaving.
+    ?leaving crm:P146_separated_from ?group.
+    ?leaving crm:P4_has_time-span ?timespan.
+  ?timespan rdfs:label ?toLabel.
+  }
+ } 
+ ```
+ 
+
+
 ### Person Textual
 #### Person Mentions
 ##### (passage, passage label, text label:)
