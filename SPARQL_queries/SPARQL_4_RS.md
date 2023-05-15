@@ -5,10 +5,17 @@
     - tbd: [Birth Date](#birth-date---tbc)
     - [Birth Place](#birth-place)
     - tbd: [Death Date](#death-date---tbc)
-    - [Death Place](#death-place)  
+    - [Death Place](#death-place)
+    - tbd: Occupations
+    - tbd: Party Affiliations
+    - tbd: Data Provenance
+    - tbd: Events
+    - tbd: Activities
 - [Person Textual](#person-textual)
     - tbd: [Person Mentions](#person-mentions)
     - tbd: [Person Authorship](#person-authorship)
+- Person References
+
 
 ## Person
 
