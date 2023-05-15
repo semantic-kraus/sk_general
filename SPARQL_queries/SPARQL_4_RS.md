@@ -6,11 +6,11 @@
     - [Birth Place](#birth-place)
     - [Death Date](#death-date)
     - [Death Place](#death-place)
-    - [Occupation](#occupation)
-    - tbd: Party Affiliations
-    - tbd: Data Provenance
     - tbd: Events
-    - tbd: Activities
+    - [Occupation](#occupation)
+    - [Party Affiliations](#party-affiliation)
+    - tbd: Legal Activities
+    - tbd: Data Provenance
 - [Person Textual](#person-textual)
     - tbd: [Person Mentions](#person-mentions)
     - tbd: [Person Authorship](#person-authorship)
@@ -89,6 +89,7 @@ $subject crm:P14i_performed ?pursuit.
 #### Party Affiliation
 Selects party label as well as joining and leaving date labels
 
+https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/affiliation
 ```
 SELECT ?value ?fromLabel ?toLabel WHERE { 
 $subject crm:P143i_was_joined_by ?joining.
