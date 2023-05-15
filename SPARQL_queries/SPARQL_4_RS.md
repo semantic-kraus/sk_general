@@ -139,7 +139,7 @@ $subject crm:P145i_left_by ?leaving.
  
 
 
-### tbd: Person Authorship
+### Person Authorship
 #### Authored Texts
 [No field URI yet!]
 
