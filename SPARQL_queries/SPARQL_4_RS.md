@@ -1,20 +1,26 @@
 # SPARQL for ResearchSpace
 
 ## TOC
+### Person Page: Biographical etc.
 - [Person Biographical](#person-biographical)
     - [Birth Date](#birth-date)
     - [Birth Place](#birth-place)
     - [Death Date](#death-date)
     - [Death Place](#death-place)
-    - tbd: Events
+    - [Life Events](#life-events)
     - [Occupation](#occupation)
     - [Party Affiliations](#party-affiliation)
     - tbd: Legal Activities
-    - tbd: Data Provenance
-- [Person Textual](#person-textual)
-    - tbd: [Person Mentions](#person-mentions)
-    - tbd: [Person Authorship](#person-authorship)
-- Person References
+- tbd: Data Provenance
+- tbd: Person References
+### Person Page: Authorship and Mentions
+- [Person Authorship](#person-authorship)
+    - [Authored Texts](#authored-texts)
+    - tbd: ...
+- tbd: [Person Mentions](#person-mentions)
+
+
+
 
 
 ## Person
@@ -65,6 +71,29 @@ SELECT ?value ?label WHERE {
   ?value rdfs:label ?label. 
 } 
 ```
+
+
+#### Life Events
+Selects life event labels and timespan labels.
+
+(Life events cover events like deportation, burial, gone missing, etc.)
+
+https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/life_event
+```
+SELECT ?value ?typeLabel ?timespanLabel  WHERE { 
+?event crm:P11_had_participant $subject.
+?event rdfs:label ?value.
+  OPTIONAL {
+?event crm:P4_has_time-span ?timespan.
+  ?timespan rdfs:label ?timespanLabel.
+  }
+  OPTIONAL {
+?event crm:P2_has_type ?type.
+    ?type rdfs:label ?typeLabel.
+  }
+ } 
+ ```
+
 #### Occupation
 Selects pursuit label as well as, if available, time-span label and employer label (the employer being modeled as the period of its existence).
 
@@ -110,9 +139,48 @@ $subject crm:P145i_left_by ?leaving.
  
 
 
-### Person Textual
-#### Person Mentions
-##### (passage, passage label, text label:)
+### tbd: Person Authorship
+#### Authored Texts
+[No field URI yet!]
+
+Selects text and legal document labels as well as labels of bibliographically relevant time spans (creation, publication, performance).
+
+```
+
+SELECT ?value ?timespanCreation ?timespanPublication ?timespanPerformance WHERE { 
+  {?textCreation crm:P14_carried_out_by ?person.}
+  UNION
+  {?textCreation crm:P14_carried_out_by ?sameperson.
+  ?sameperson owl:sameAs ?person.}
+  
+  {
+    ?textCreation crm:P94_has_created ?text .
+  }
+  UNION
+  {
+    ?textCreation frbroo:R17_created ?text .
+  }
+  ?text rdfs:label ?value .
+  OPTIONAL {
+  ?textCreation crm:P4_has_time-span ?time .
+    ?time rdfs:label ?timespanCreation .
+  }
+  OPTIONAL {
+    ?text crm:P165i_is_incorporated_in ?publtext .
+    ?publ frbroo:R24_created ?publtext .
+    ?publ crm:P4_has_time-span ?time .
+    ?time rdfs:label ?timespanPublication .
+  }
+  
+  OPTIONAL {
+    ?text frbroo:R66i_had_a_performed_version_through ?performance .
+  ?performance crm:P4_has_time-span ?time .
+    ?time rdfs:label ?timespanPerformance .
+  }
+ } 
+```
+
+### Person Mentions (passage, passage label, text label:)
 
 https://sk.acdh.oeaw.ac.at/fieldDefinition/pers_mentions
 
@@ -125,4 +193,4 @@ $subject crm:P67i_is_referred_to_by ?reference .
 ?value <https://w3id.org/lso/intro/beta202210#R10_is_Text_Passage_of> ?text .
 ?text rdfs:label ?textlabel .}
 ```
-#### Person Authorship
+
