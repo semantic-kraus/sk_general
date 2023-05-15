@@ -2,9 +2,9 @@
 
 ## TOC
 - [Person Biographical](#person-biographical)
-    - tbd: [Birth Date](#birth-date---tbc)
+    - [Birth Date](#birth-date)
     - [Birth Place](#birth-place)
-    - tbd: [Death Date](#death-date---tbc)
+    - [Death Date](#death-date)
     - [Death Place](#death-place)
     - tbd: Occupations
     - tbd: Party Affiliations
@@ -21,7 +21,18 @@
 
 ### Person Biographical
 
-#### Birth Date - tbd
+#### Birth Date
+Selects label of birth's time-span.
+https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/birth_date
+```
+SELECT ?value WHERE { 
+?person crm:P98i_was_born ?birth_event. 
+?birth_event crm:P4_has_time-span ?timespan. 
+?timespan rdfs:label ?value.
+ } 
+```
+
+
 #### Birth Place 
 
 https://www.researchspace.org/fieldDefinition/birth_place
@@ -31,7 +42,16 @@ $subject crm:P98i_was_born ?birth_event.
 ?birth_event crm:P7_took_place_at ?value. 
 ?value rdfs:label ?label. } 
 ```
-#### Death Date - tbd
+#### Death Date
+Selects death's time span label.
+https://sk.acdh-dev.oeaw.ac.at/death_date
+```
+SELECT ?value WHERE { 
+$subject crm:P100i_died_in ?death_event.
+?death_event crm:P4_has_time-span ?timespan. 
+?timespan rdfs:label ?value.
+ } 
+ ```
 #### Death Place 
 
 https://sk-app.acdh.oeaw.ac.at/fieldDefinition/death_place 
