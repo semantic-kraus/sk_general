@@ -1,39 +1,56 @@
 # SPARQL for ResearchSpace
 
 ## TOC
-### Person Page: Biographical etc.
-- [Person Biographical](#person-biographical)
-    - [tbd: Birth Date](#birth-date)
-    - [tbd: Birth Place](#birth-place)
-    - [tbd: Death Date](#death-date)
-    - [tbd: Death Place](#death-place)
-    - [tbd: Life Events](#life-events)
-    - [tbd: Occupation](#occupation)
-    - [tbd: Party Affiliations](#party-affiliation)
-    - tbd: Legal Activities
-- tbd: Data Provenance
-- tbd: Person References
-### Person Page: Authorship and Mentions
-- [Person Authorship](#person-authorship)
-    - [tbd: Authored Texts](#authored-texts)
-    - tbd: ...
-- tbd: [Person Mentions](#person-mentions)
+### Entry/Search - tbd
+### Results - tbd
+### [Person Page](#person)
+#### [Person Data Box](#person-data-box)
+
+- [tbd: Birth Date](#birth-date)
+- [tbd: Birth Place](#birth-place)
+- [tbd: Death Date](#death-date)
+- [tbd: Death Place](#death-place)
+- [tbd: Life Events](#life-events)
+- [tbd: Occupation](#occupation)
+- [tbd: Party Affiliations](#party-affiliation)
+
+#### [Person Text Box](#person-text-box)
+- [tbd: Authored Texts](#authored-texts)
+
+#### [Person Mentions Box](#person-mentions-box)
+- [tbd: Person Mentions](#person-mentions)
 
 
 ## Preface
 All queries must be (re-)designed to meet the following criteria: 
 - For all the central entities (F22, F24, E21), equivalents might exist in other named graphs. Every query has to give all the results relating to instances of this entity in all named graphs (e.g.: a person's date of birth, but also the date of birth of the equivalent person in another named graph).
-- All of these query results must come with a link to their named graph's metadata. 
+- All of these query results must come with their named graph's metadata. 
 
+This document is structured according to the SK_First_MockUp PDF file.
 
+## Entry/Search - tbd
+## Results - tbd
 ## Person
 
-### Person Biographical
+### Person Data Box 
 
 #### Birth Date
-Selects label of birth's time-span.
+Select time-span of birth of context-person as well as of persons linked to context-person via owl:sameAs.
 
-https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/birth_date
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+(tbd)
+```
+
+(outdated:)
+
+~~https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/birth_date~~
 ```
 SELECT ?value WHERE { 
 ?person crm:P98i_was_born ?birth_event. 
@@ -45,17 +62,49 @@ SELECT ?value WHERE {
 
 #### Birth Place 
 
-https://www.researchspace.org/fieldDefinition/birth_place
+Select place of birth of context-person as well as of persons linked to context-person via owl:sameAs.
+
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+(tbd)
+```
+
+
+(outdated:)
+
+~~https://www.researchspace.org/fieldDefinition/birth_place~~
 ```
 SELECT ?value ?label WHERE { 
 $subject crm:P98i_was_born ?birth_event. 
 ?birth_event crm:P7_took_place_at ?value. 
 ?value rdfs:label ?label. } 
 ```
-#### Death Date
-Selects death's time span label.
 
-https://sk.acdh-dev.oeaw.ac.at/death_date
+#### Death Date
+
+Select date of death of context-person as well as of persons linked to context-person via owl:sameAs.
+
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+(tbd)
+```
+
+
+(outdated:)
+
+~~https://sk.acdh-dev.oeaw.ac.at/death_date~~
 ```
 SELECT ?value WHERE { 
 $subject crm:P100i_died_in ?death_event.
@@ -64,8 +113,23 @@ $subject crm:P100i_died_in ?death_event.
  } 
  ```
 #### Death Place 
+Select place of death of context-person as well as of persons linked to context-person via owl:sameAs.
 
-https://sk-app.acdh.oeaw.ac.at/fieldDefinition/death_place 
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+(tbd)
+```
+
+
+(outdated:)
+
+~~https://sk-app.acdh.oeaw.ac.at/fieldDefinition/death_place~~ 
 
 ```
 SELECT ?value ?label WHERE { 
@@ -142,9 +206,9 @@ $subject crm:P145i_left_by ?leaving.
  
 
 
-### Person Authorship
+### Person Texts Box
 #### Authored Texts
-[No field URI yet!]
+ – No field URI yet –
 
 Selects text and legal document labels as well as labels of bibliographically relevant time spans (creation, publication, performance).
 
@@ -183,7 +247,8 @@ SELECT ?value ?timespanCreation ?timespanPublication ?timespanPerformance WHERE 
  } 
 ```
 
-### Person Mentions (passage, passage label, text label:)
+### Person Mentions Box
+#### Person Mentions (passage, passage label, text label)
 
 https://sk.acdh.oeaw.ac.at/fieldDefinition/pers_mentions
 
