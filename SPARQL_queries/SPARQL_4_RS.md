@@ -3,24 +3,27 @@
 ## TOC
 ### Person Page: Biographical etc.
 - [Person Biographical](#person-biographical)
-    - [Birth Date](#birth-date)
-    - [Birth Place](#birth-place)
-    - [Death Date](#death-date)
-    - [Death Place](#death-place)
-    - [Life Events](#life-events)
-    - [Occupation](#occupation)
-    - [Party Affiliations](#party-affiliation)
+    - [tbd: Birth Date](#birth-date)
+    - [tbd: Birth Place](#birth-place)
+    - [tbd: Death Date](#death-date)
+    - [tbd: Death Place](#death-place)
+    - [tbd: Life Events](#life-events)
+    - [tbd: Occupation](#occupation)
+    - [tbd: Party Affiliations](#party-affiliation)
     - tbd: Legal Activities
 - tbd: Data Provenance
 - tbd: Person References
 ### Person Page: Authorship and Mentions
 - [Person Authorship](#person-authorship)
-    - [Authored Texts](#authored-texts)
+    - [tbd: Authored Texts](#authored-texts)
     - tbd: ...
 - tbd: [Person Mentions](#person-mentions)
 
 
-
+## Preface
+All queries must be (re-)designed to meet the following criteria: 
+- For all the central entities (F22, F24, E21), equivalents might exist in other named graphs. Every query has to give all the results relating to instances of this entity in all named graphs (e.g.: a person's date of birth, but also the date of birth of the equivalent person in another named graph).
+- All of these query results must come with a link to their named graph's metadata. 
 
 
 ## Person
