@@ -11,13 +11,13 @@
 
 <https://sk.acdh.oeaw.ac.at/provenance> 
 {
-    dw: dcterms:bibliographicCitation " – – – some bibliographicCitation – – –"@en ;
-        dcterms:contributor " – – - some contributor – – -  "@en ;
+    dw: dcterms:bibliographicCitation " --- some bibliographicCitation ---"@en ;
+        dcterms:contributor " --- some contributor ---  "@en ;
         rdfs:label "DW data" ;
         dcterms:title "DW data"@en .
         
-    lk: dcterms:bibliographicCitation " – – – some bibliographicCitation – – –"@en ;
-        dcterms:contributor " – – - some contributor – – -  "@en ;
+    lk: dcterms:bibliographicCitation " --- some bibliographicCitation ---"@en ;
+        dcterms:contributor " --- some contributor ---  "@en ;
         rdfs:label "LK data" ;
         dcterms:title "LK data"@en .
         
@@ -173,7 +173,7 @@ dw: {
 	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> .
 
 <https://sk.acdh.oeaw.ac.at/DWint00003> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
-	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" – \"Die andre Einstellung\""@en ;
+	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" ï¿½ï¿½\"Die andre Einstellung\""@en ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
 	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> ;
 	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
@@ -248,7 +248,7 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
 	rdfs:label "Segment containing \"Die andre Einstellung\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<https://schema.org/pagination> "S. 2–3" .
+	<https://schema.org/pagination> "S. 2ï¿½3" .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
@@ -358,7 +358,7 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2021" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2019" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> ;
-	rdfs:label "2019–2021"@en .
+	rdfs:label "2019ï¿½2021"@en .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
@@ -458,7 +458,7 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
 	rdfs:label "Segment containing \"Deutschland ist nicht Italien\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	<https://schema.org/pagination> "S. 1–2" .
+	<https://schema.org/pagination> "S. 1ï¿½2" .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
 	rdfs:label "Creation of: \"Deutschland ist nicht Italien\""@en ;
@@ -680,9 +680,9 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
 
 <https://sk.acdh.oeaw.ac.at/DWresource00001> a <http://www.w3.org/ns/prov#Entity> ;
-	rdfs:label "Bibl. Resource: Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992–1997 (online unter:Â https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)."@en ;
+	rdfs:label "Bibl. Resource: Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992ï¿½1997 (online unter:Â https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)."@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> ;
-	<http://purl.org/dc/terms/bibliographicCitation> "Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992–1997 (online unter:Â https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)." .
+	<http://purl.org/dc/terms/bibliographicCitation> "Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992ï¿½1997 (online unter:Â https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)." .
 
 <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
@@ -809,7 +809,7 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1927" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2> ;
-	rdfs:label "1927–1934"@en .
+	rdfs:label "1927ï¿½1934"@en .
 
 <https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
@@ -1030,13 +1030,13 @@ lk:
 
 <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	rdf:value "JiÄÃ­n" ;
-	rdfs:label "JiÄÃ­n"@und ;
+	rdf:value "Jiï¿½Ã­n" ;
+	rdfs:label "Jiï¿½Ã­n"@und ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> .
 
 <https://sk.acdh.oeaw.ac.at/pmb41660> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
-	rdfs:label "JiÄÃ­n"@und ;
+	rdfs:label "Jiï¿½Ã­n"@und ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(15.35162 50.43723)"^^<geo:wktLiteral> .
 
@@ -1228,13 +1228,13 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> , <https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> ;
-	rdfs:label "Type: Preferred Place Name in Source ProjectÂ "@en ;
+	rdfs:label "Type: Preferred Place Name in Source Project"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/place/placename> ;
 	rdfs:comment "Some comment here."@en .
 	
 <https://sk.acdh.oeaw.ac.at/types/idno/pmb> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> ;
-	rdfs:label "Type: ID-Number from \"Personen der Moderne – Basis\""@en ;
+	rdfs:label "Type: ID-Number from \"Personen der Moderne - Basis\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno> ;
 	rdfs:comment "Some comment here."@en .
 	
@@ -1252,13 +1252,13 @@ general:
 	
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> ;
-	rdfs:label "Type: URL from \"Personen der Moderne – Basis\""@en ;
+	rdfs:label "Type: URL from \"Personen der Moderne - Basis\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
 	rdfs:comment "Some comment here."@en .
 
 <https://sk.acdh.oeaw.ac.at/types/app/date> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/1> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/1> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/1> ;
-	rdfs:label "Type: Appellation Part – Date"@en ;
+	rdfs:label "Type: Appellation Part - Date"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/app> ;
 	rdfs:comment "Some comment here."@en .
 
@@ -1275,13 +1275,13 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/app/title1> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/app/0/0> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/app/0/0> ;
-	rdfs:label "Type: Appellation Part – Title 1"@en ;
+	rdfs:label "Type: Appellation Part - Title 1"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/app> ;
 	rdfs:comment "Some comment here."@en .
 
 <https://sk.acdh.oeaw.ac.at/types/event/firstPerformance> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl03160/performance> ;
-	rdfs:label "Type: Event – first Performance / Recitation"@en ;
+	rdfs:label "Type: Event - first Performance / Recitation"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/event> ;
 	rdfs:comment "Some comment here."@en .
 
@@ -1339,7 +1339,7 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> ;
-	rdfs:label "Type: Person Name – preferred Name"@en ;
+	rdfs:label "Type: Person Name ï¿½ï¿½preferred Name"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/person/persname> ;
 	rdfs:comment "Some comment here."@en .
 
@@ -1355,7 +1355,7 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/text/periodical> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04203> , <https://sk.acdh.oeaw.ac.at/DWbibl04225> ;
-	rdfs:label "Type: Text – Periodical"@en ;
+	rdfs:label "Type: Text ï¿½ï¿½Periodical"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/text> ;
 	rdfs:comment "Some comment here."@en .
 
@@ -1385,7 +1385,7 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
-	rdfs:label "Type: Event – Being Run Over by a Bike"@en ;
+	rdfs:label "Type: Event ï¿½ï¿½Being Run Over by a Bike"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/event> ;
 	rdfs:comment "Some comment here."@en .
 	
