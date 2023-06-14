@@ -173,7 +173,7 @@ dw: {
 	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> .
 
 <https://sk.acdh.oeaw.ac.at/DWint00003> a <https://w3id.org/lso/intro/beta202210#INT3_IntertextualRelationship> ;
-	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" ��\"Die andre Einstellung\""@en ;
+	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" -- \"Die andre Einstellung\""@en ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
 	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> ;
 	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
@@ -248,7 +248,7 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
 	rdfs:label "Segment containing \"Die andre Einstellung\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<https://schema.org/pagination> "S. 2�3" .
+	<https://schema.org/pagination> "S. 2-3" .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
@@ -358,7 +358,7 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "2021" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2019" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWbibl00001/creation> ;
-	rdfs:label "2019�2021"@en .
+	rdfs:label "2019-2021"@en .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
@@ -458,7 +458,7 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
 	rdfs:label "Segment containing \"Deutschland ist nicht Italien\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	<https://schema.org/pagination> "S. 1�2" .
+	<https://schema.org/pagination> "S. 1-2" .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
 	rdfs:label "Creation of: \"Deutschland ist nicht Italien\""@en ;
@@ -663,7 +663,7 @@ dw: {
 
 <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/DWpers0188/occupation/02/timestamp> ;
-	rdfs:label "Pollak, Oscar as \"Londonkorrespondent, dann außenpolitischer Redakteur der Arbeiter-Zeitung\""@en ;
+	rdfs:label "Pollak, Oscar as \"Londonkorrespondent, dann aussenpolitischer Redakteur der Arbeiter-Zeitung\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/DWpers0188> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/DWper00001> .
 
@@ -680,9 +680,9 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWpers0188> .
 
 <https://sk.acdh.oeaw.ac.at/DWresource00001> a <http://www.w3.org/ns/prov#Entity> ;
-	rdfs:label "Bibl. Resource: Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992�1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)."@en ;
+	rdfs:label "Bibl. Resource: Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992-1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)."@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00001/idno/url> ;
-	<http://purl.org/dc/terms/bibliographicCitation> "Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992�1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)." .
+	<http://purl.org/dc/terms/bibliographicCitation> "Felix Czeike: Historisches Lexikon Wien. 6 Bde. Wien 1992-1997 (online unter: https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1112764)." .
 
 <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/GND> ;
@@ -809,7 +809,7 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1934" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1927" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/DWpers0041/occupation/2> ;
-	rdfs:label "1927�1934"@en .
+	rdfs:label "1927-1934"@en .
 
 <https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
@@ -1030,13 +1030,13 @@ lk:
 
 <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
-	rdf:value "Ji�ín" ;
-	rdfs:label "Ji�ín"@und ;
+	rdf:value "Jicin" ;
+	rdfs:label "Jicin"@und ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> .
 
 <https://sk.acdh.oeaw.ac.at/pmb41660> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
-	rdfs:label "Ji�ín"@und ;
+	rdfs:label "Jicin"@und ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(15.35162 50.43723)"^^<geo:wktLiteral> .
 
@@ -1055,12 +1055,12 @@ lk:
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/LK> ;
 	rdf:value "D_000068-053-000" ;
-	rdfs:label "Identifier for \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "Identifier for \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000> a <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> ;
-	rdfs:label "File: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "File: \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R10_has_Text_Passage> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> ;
@@ -1074,18 +1074,18 @@ lk:
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
-	rdf:value "68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien" ;
+	rdf:value "68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien" ;
 	<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> ;
-	rdfs:label "Title: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en .
+	rdfs:label "Title: \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> a <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation/timestamp> ;
-	rdfs:label "Creation of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "Creation of \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P94_has_created> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/carrier> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F4_Manifestation_Singleton> ;
-	rdfs:label "Carrier of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "Carrier of \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P128_carries> <https://sk.acdh.oeaw.ac.at/D_000068-053-000> , <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> <https://sk.acdh.oeaw.ac.at/D_000068> .
 
@@ -1096,22 +1096,22 @@ lk:
 	rdfs:label "1927-10-11"@en .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> a <https://w3id.org/lso/intro/beta202210#INT18_Reference> ;
-	rdfs:label "Reference on: \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\" "@en ;
+	rdfs:label "Reference on: \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\" "@en ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> <https://sk.acdh.oeaw.ac.at/pmb11988> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> a <https://w3id.org/lso/intro/beta202210#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202210#R41_has_location> "S. 1" , "https://www.kraus.wienbibliothek.at/legalkraus-app/lesefassung/204879" ;
-	rdfs:label "Segment of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "Segment of \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/actualization/0> a <https://w3id.org/lso/intro/beta202210#INT2_ActualizationOfFeature> ;
-	rdfs:label "Feature Actualized on \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "Feature Actualized on \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/reference/0> ;
 	<https://w3id.org/lso/intro/beta202304#R18_actualization_found_on> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> a <https://w3id.org/lso/intro/beta202210#INT1_TextPassage> ;
-	rdfs:label "Text Passage of \"68.53 Brief Kraus an das Landesgericht für Strafsachen I Wien\""@en ;
+	rdfs:label "Text Passage of \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
 	<https://w3id.org/lso/intro/beta202210#R44_has_wording> "\"Karl Kraus\"" .
 	
 <https://sk.acdh.oeaw.ac.at/pmb11910/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
@@ -1339,7 +1339,7 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0188/appelation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> , <https://sk.acdh.oeaw.ac.at/DWpers0041appellation/1> ;
-	rdfs:label "Type: Person Name ��preferred Name"@en ;
+	rdfs:label "Type: Person Name - preferred Name"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/person/persname> ;
 	rdfs:comment "Some comment here."@en .
 
@@ -1355,7 +1355,7 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/text/periodical> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWbibl04203> , <https://sk.acdh.oeaw.ac.at/DWbibl04225> ;
-	rdfs:label "Type: Text ��Periodical"@en ;
+	rdfs:label "Type: Text - Periodical"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/text> ;
 	rdfs:comment "Some comment here."@en .
 
@@ -1385,7 +1385,7 @@ general:
 
 <https://sk.acdh.oeaw.ac.at/types/event/runOverByABike> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
-	rdfs:label "Type: Event ��Being Run Over by a Bike"@en ;
+	rdfs:label "Type: Event Being Run Over by a Bike"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P127_has_broader_term> <https://sk.acdh.oeaw.ac.at/types/event> ;
 	rdfs:comment "Some comment here."@en .
 	
