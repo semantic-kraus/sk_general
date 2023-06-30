@@ -45,7 +45,13 @@ Add named graph URI to every result.
 
 Query:
 ```
-(tbd)
+select ?person ?personLabel ?birthDate ?graph
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	        rdfs:label ?personLabel;
+            crm:P98i_was_born/crm:P4_has_time-span/rdfs:label ?birthDate .
+   }
 ```
 
 (outdated:)
@@ -72,7 +78,14 @@ Add named graph URI to every result.
 
 Query:
 ```
-(tbd)
+select ?person ?personLabel ?birthPlace ?graph
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	        rdfs:label ?personLabel;
+            crm:P98i_was_born/crm:P7_took_place_at/rdfs:label ?birthPlace .
+  }
+}
 ```
 
 
@@ -98,7 +111,14 @@ Add named graph URI to every result.
 
 Query:
 ```
-(tbd)
+select ?person ?personLabel ?deathDate ?graph
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	    rdfs:label ?personLabel;
+            crm:P100i_died_in/crm:P4_has_time-span/rdfs:label ?deathDate .
+  }
+}
 ```
 
 
@@ -123,7 +143,14 @@ Add named graph URI to every result.
 
 Query:
 ```
-(tbd)
+select ?person ?personLabel ?deathPlace ?graph
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	        rdfs:label ?personLabel;
+            crm:P100i_died_in/crm:P7_took_place_at/rdfs:label ?deathPlace .
+  }
+}
 ```
 
 
@@ -142,6 +169,29 @@ SELECT ?value ?label WHERE {
 
 #### Life Events
 Selects life event labels and timespan labels.
+
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+select ?person ?personLabel ?lifeEventLabel ?timeSpanLabel ?graph
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	        rdfs:label ?personLabel;
+            (crm:P11i_participated_in | ^crm:P11_had_participant)
+    [
+      rdfs:label ?lifeEventLabel ;
+      crm:P4_has_time-span [rdfs:label ?timeSpanLabel]
+    ] .
+  }
+}
+```
+
 
 (Life events cover events like deportation, burial, gone missing, etc.)
 
@@ -164,6 +214,38 @@ SELECT ?value ?typeLabel ?timespanLabel  WHERE {
 #### Occupation
 Selects pursuit label as well as, if available, time-span label and employer label (the employer being modeled as the period of its existence).
 
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+select ?personLabel ?pursuitStr ?timespanLabel ?periodStr # ?graph
+where {
+  graph ?graph {
+    ?pursuit a frbroo:F51_Pursuit;
+	         rdfs:label ?pursuitLabel ;
+             crm:P14_carried_out_by ?person .
+    ?person rdfs:label ?personLabel
+    bind (strbefore(strafter(?pursuitLabel, '"'), '"') as ?pursuitStr)
+    # bind (replace(?pursuitLabel, '.*"(.*)"', "$1") as ?pursuitStr)
+  
+    optional {
+      ?pursuit crm:P4_has_time-span ?timespan.
+      ?timespan rdfs:label ?timespanLabel.
+    }
+    optional {
+      ?pursuit crm:P10_falls_within ?period.
+      ?period rdfs:label ?periodLabel.
+      bind (strbefore(strafter(?periodLabel, '"'), '"') as ?periodStr)
+    }
+  } 
+}
+```
+
+
 https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/occupation
 
 ```
@@ -184,6 +266,32 @@ $subject crm:P14i_performed ?pursuit.
  
 #### Party Affiliation
 Selects party label as well as joining and leaving date labels
+
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+```
+select ?personLabel ?group ?joined ?left
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	    rdfs:label ?personLabel;
+        crm:P143i_was_joined_by ?joining .
+    ?joining crm:P144_joined_with [rdfs:label ?group]
+    
+    optional {
+      ?joining crm:P4_has_time-span [rdfs:label ?joined] .
+    }
+    optional {
+      ?person crm:P145i_left_by [crm:P4_has_time-span [rdfs:label ?left]] .
+    }
+  }
+}
+```
 
 https://sk.acdh-dev.oeaw.ac.at/fieldDefinition/affiliation
 ```
@@ -213,7 +321,6 @@ $subject crm:P145i_left_by ?leaving.
 Selects text and legal document labels as well as labels of bibliographically relevant time spans (creation, publication, performance).
 
 ```
-
 SELECT ?value ?timespanCreation ?timespanPublication ?timespanPerformance WHERE { 
   {?textCreation crm:P14_carried_out_by ?person.}
   UNION
