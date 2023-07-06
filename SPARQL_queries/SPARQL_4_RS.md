@@ -44,7 +44,7 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
+```sparql
 select ?person ?personLabel ?birthDate ?graph
 where {
   graph ?graph {
@@ -53,6 +53,32 @@ where {
             crm:P98i_was_born/crm:P4_has_time-span/rdfs:label ?birthDate .
    }
 ```
+
+Maybe the following could be a good general basis for knowledge patterns.
+In any case this is more concise and elegant than just repeating the query in a UNION clause.
+
+```sparql
+select ?person ?personLabel ?birthDate ?graph
+where {
+  graph ?graph {
+    # $subject
+    <https://sk.acdh.oeaw.ac.at/DWpers0000> (owl:sameAs | ^owl:sameAs) ?person
+    {
+      select ?person ?personLabel ?birthDate ?graph
+      where {
+	?person rdfs:label ?personLabel;
+            crm:P98i_was_born/crm:P4_has_time-span/rdfs:label ?birthDate .
+      }
+    }
+  }
+}
+```
+Explanation: The query searches for owl:sameAs relations of a given entity in both directions and in all graphs
+and iterates over the results in a subquery.
+
+Note: This needs to be tested with several owl:sameAs relations across multiple named graphs.
+
+
 
 (outdated:)
 
@@ -77,7 +103,7 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
+```sparql
 select ?person ?personLabel ?birthPlace ?graph
 where {
   graph ?graph {
@@ -110,7 +136,7 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
+```sparql
 select ?person ?personLabel ?deathDate ?graph
 where {
   graph ?graph {
@@ -142,7 +168,7 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
+```sparql
 select ?person ?personLabel ?deathPlace ?graph
 where {
   graph ?graph {
@@ -177,8 +203,8 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
-select ?person ?personLabel ?lifeEventLabel ?timeSpanLabel ?graph
+```sparql
+select distinct ?person ?personLabel ?lifeEventLabel ?timeSpanLabel ?graph
 where {
   graph ?graph {
     ?person a crm:E21_Person;
@@ -221,7 +247,7 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
+```sparql
 select ?personLabel ?pursuitStr ?timespanLabel ?periodStr # ?graph
 where {
   graph ?graph {
@@ -274,7 +300,7 @@ Add named graph URI to every result.
 - [ ] Implemented
 
 Query:
-```
+```sparql
 select ?personLabel ?group ?joined ?left
 where {
   graph ?graph {
@@ -317,6 +343,45 @@ $subject crm:P145i_left_by ?leaving.
 ### Person Texts Box
 #### Authored Texts
  – No field URI yet –
+ 
+Add named graph URI to every result.
+
+- [ ] Query
+- [ ] Knowledge Pattern
+- [ ] Implemented
+
+Query:
+
+```sparql
+select ?personLabel ?textLabel ?creationTimespan ?publicationTimespan ?performanceTimespan # ?graph
+where {
+  graph ?graph {
+    ?person a crm:E21_Person;
+	    rdfs:label ?personLabel;
+            ^crm:P14_carried_out_by ?textCreation .
+    ?textCreation (crm:P94_has_created | frbroo:R17_created) ?text .
+    ?text rdfs:label ?textLabel .
+    
+    # creation
+    optional {
+      ?textCreation crm:P4_has_time-span
+      [rdfs:label ?creationTimespan] .
+    }
+    # publication; now result in the data set, right?
+    optional {
+      ?text crm:P165i_is_incorporated_in/^frbroo:R24_created
+      [crm:P4_has_time-span ?publicationTimespan] .
+    }
+    # performance
+    optional {
+      ?text frbroo:R66i_had_a_performed_version_through/crm:P4_has_time-span
+      [rdfs:label ?performanceTimespan] .
+    }
+  }
+}
+```
+
+
 
 Selects text and legal document labels as well as labels of bibliographically relevant time spans (creation, publication, performance).
 
