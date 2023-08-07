@@ -24,7 +24,7 @@
 			FRBRoo 2.4
 			CIDOC crm 7.1.2 (URIs always resolve to the current version)
 			INTRO [Version pending]
-			Data modeling itself very much influenced by PRESSoo
+			Modeling of periodicals very much influenced by PRESSoo
 		</rdfs:comment>
 		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bernhard Oberreither</dc:creator>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BETA 202304</owl:versionInfo>
