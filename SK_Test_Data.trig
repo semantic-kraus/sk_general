@@ -20,9 +20,58 @@
         dcterms:contributor " --- some contributor ---  "@en ;
         rdfs:label "LK data" ;
         dcterms:title "LK data"@en .
+
+	fa: dcterms:bibliographicCitation " --- some bibliographicCitation ---"@en ;
+        dcterms:contributor " --- some contributor ---  "@en ;
+        rdfs:label "FA data" ;
+        dcterms:title "FA data"@en .
         
     general: rdfs:label "SK general data"@en .
         
+}
+
+fa: {
+
+	<https://sk.acdh.oeaw.ac.at/FApers0000> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+	rdfs:label "Person: Kraus, Karl"@en ;
+	owl:sameAs <https://sk.acdh.oeaw.ac.at/pmb11988>, <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/FApers0000/occupation/01> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/FApers0000/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/FApers0000/appelation/1> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/FApers0000/birth> .
+
+	<https://sk.acdh.oeaw.ac.at/FApers0000/occupation/01> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F51_Pursuit> ;
+	rdfs:label "Kraus, Karl as \"Rettungsschwimmer\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/FApers0000> .
+
+	<https://sk.acdh.oeaw.ac.at/FApers0000/identifier/idno/2> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/idno/FA_URL> ;
+	rdf:value "https://fackel.oeaw.ac.at/?p=fackelp47565" ;
+	rdfs:label "Identifier for \"Kraus, Karl\""@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/FApers0000> .
+
+	<https://sk.acdh.oeaw.ac.at/FApers0000/appelation/1> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> ;
+	rdf:value "Kraus, Karl" ;
+	rdfs:label "Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/FApers0000> .
+	
+	<https://sk.acdh.oeaw.ac.at/FApers0000/birth> a <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sk.acdh.oeaw.ac.at/FAplace00085> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://sk.acdh.oeaw.ac.at/FApers0000/birth/timestamp> ;
+	rdfs:label "Birth of Kraus, Karl"@en ;
+	<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <https://sk.acdh.oeaw.ac.at/FApers0000> .
+
+	<https://sk.acdh.oeaw.ac.at/FAplace00085> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/FApers0000/birth> ;
+	rdfs:label "Wien"@und ;
+	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> .
+	
+	<https://sk.acdh.oeaw.ac.at/FApers0000/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1874" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1874" ;
+	<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <https://sk.acdh.oeaw.ac.at/FApers0000/birth> ;
+	rdfs:label "1874"@en .
+
 }
 
 dw: {
@@ -49,7 +98,7 @@ dw: {
 
 <https://sk.acdh.oeaw.ac.at/DWpers0000> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
 	rdfs:label "Person: Kraus, Karl"@en ;
-	owl:sameAs <https://sk.acdh.oeaw.ac.at/pmb11988> ;
+	owl:sameAs <https://sk.acdh.oeaw.ac.at/pmb11988>, <https://sk.acdh.oeaw.ac.at/FApers0000> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/DWbibl00000/creation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/2> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/DWpers0000/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/DWpers0000/appelation/1> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in> <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> ;
@@ -994,7 +1043,7 @@ lk:
 	rdfs:label "Person: Kraus, Karl"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/creation> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/occupation/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/C_000068> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/0> , <https://sk.acdh.oeaw.ac.at/pmb11988/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb11988/appellation/1> ;
-	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWpers0000> ;
+	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWpers0000>, <https://sk.acdh.oeaw.ac.at/FApers0000> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://sk.acdh.oeaw.ac.at/pmb11988/death> .
 	
