@@ -424,7 +424,34 @@ SELECT ?value ?timespanCreation ?timespanPublication ?timespanPerformance WHERE 
 
 https://sk.acdh.oeaw.ac.at/fieldDefinition/pers_mentions
 
+Query
+```sparql
+# <person> is referred to in <passage> [at <location>] as <wording>
+select ?personLabel ?passageLabel ?location ?wording
+where {
+  graph ?g {
+    
+    ?person ^crm:P67_refers_to ?textualReference .
+    
+    ?person rdfs:label ?personLabel .
+    ?textualReference rdfs:label ?textualReferenceLabel .
+    
+    ?textualReference ^<https://w3id.org/lso/intro/beta202210#R17_actualizes_feature> / 
+    <https://w3id.org/lso/intro/beta202304#R18_actualization_found_on> ?passage .
+
+    ?passage rdfs:label ?passageLabel ;
+             <https://w3id.org/lso/intro/beta202210#R44_has_wording> ?wording .
+
+    optional {
+      ?passage <https://w3id.org/lso/intro/beta202210#R41_has_location> ?location .
+    }
+  }
+}
 ``` 
+
+
+
+
 SELECT ?value ?label ?textlabel WHERE {  
 $subject crm:P67i_is_referred_to_by ?reference . 
 ?reference <https://w3id.org/lso/intro/beta202210#R17_feature_actualized_in> ?actualization .
