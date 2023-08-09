@@ -1212,10 +1212,12 @@ lk:
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
 
 <https://sk.acdh.oeaw.ac.at/pmb11988/C_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    rdfs:label "Kerr, Alfred takes part in legal case C_000068"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/D_000068> .
 
 <https://sk.acdh.oeaw.ac.at/pmb11910/C_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    rdfs:label "Kraus, Karl takes part in legal case C_000068"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/D_000068> .
 }
