@@ -6,6 +6,7 @@
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix dw: <https://sk.acdh.oeaw.ac.at/project/dw> .
 @prefix lk: <https://sk.acdh.oeaw.ac.at/project/lk> .
+@prefix fa: <https://sk.acdh.oeaw.ac.at/project/fa> .
 @prefix general: <https://sk.acdh.oeaw.ac.at/project/general> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
