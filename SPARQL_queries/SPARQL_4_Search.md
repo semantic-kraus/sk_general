@@ -2,7 +2,7 @@
 # Values the search should be applied to and what to do with them
 Inverse relations are not included here, also: should not be necessary as soon as data contains all inverse triples.
 
-Paths to result values are SPARQL-ish (meaning: need some translation to SPARQL, but should be understandable).
+Paths to result values are Proto-SPARQL (meaning: need some translation to SPARQL, but should be understandable).
 
 ## crm:E35_Title rdf:value [value]
 A text title. 
