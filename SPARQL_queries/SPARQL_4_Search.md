@@ -25,9 +25,31 @@ UNION
 ```
 
 ## crm:E90_Symbolic_Object rdf:value [value]
-A part of a text appellation (kind of title). Desired result line:
+A part of a text appellation (kind of title for F24 Publication Expressions). 
+### Desired result line:
+An F24 represented as `APPELLATION PART 1 - (Optional:) PART 2 - (Optional:) PART 3 ... `
+### Proto-SPARQL:
+```
+[value] ^rdf:value/crm:P106i_forms_part_of/crm:P1i_identifies [F24] .    
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 1] .
+[PART 1] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/title/main>.
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 2] .
+[PART 2] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/title/sub>.
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 3] .
+[PART 3] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/num/issue>.
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 4] .
+[PART 4] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/num/volume>.
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 5] .
+[PART 5] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/num/date>.
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 6] .
+[PART 6] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/num/place>.
+[Text] crm:P1_is_identified_by/crm:P106_is_composed_of [PART 7] .
+[PART 7] crm:P2_has_type <https://sk.acdh.oeaw.ac.at/types/appellation/num/ed>.
 
-`Author Name - Text Title - (Optional:) Text Subtitle - Date`
+
+
+
+
 
 ## crm:E33_E41_Linguistic_Appellation rdf:value [value]
 A person name, a place name. Desired result lines:
@@ -41,11 +63,11 @@ An entity's identifier. Desired result line:
 `Entity Label - Identifier value - Identifier Type`
 
 ## crm:E52_Time-Span [any data property] [value]
-An event's time-span. Desired result lines:
-
+An event's time-span. 
+### Desired result line 1:
 `Author Name - Text Title - (Optional:) Text Subtitle - Date`
-
+### Desired result line 2:
 `Person Name - Birth Date - Death Date`
-
+### Desired result line 3:
 `Legal Case Label - Legal Case Date`
 
