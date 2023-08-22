@@ -64,7 +64,7 @@ fa: {
 
 	<https://sk.acdh.oeaw.ac.at/FAplace00085> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/FApers0000/birth> ;
-	rdfs:label "Wien"@und ;
+	rdfs:label "Wien"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> .
 	
 	<https://sk.acdh.oeaw.ac.at/FApers0000/birth/timestamp> a <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
@@ -115,12 +115,12 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
 	rdf:value "Wien" ;
-	rdfs:label "Wien"@und ;
+	rdfs:label "Wien"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00085> .
 
 <https://sk.acdh.oeaw.ac.at/DWplace00085> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ/publication> , <https://sk.acdh.oeaw.ac.at/DWpers0188/birth> , <https://sk.acdh.oeaw.ac.at/DWpers0000/event/0> , <https://sk.acdh.oeaw.ac.at/DWpers0041/death> , <https://sk.acdh.oeaw.ac.at/DWpers0041/birth> , <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ/publication> ;
-	rdfs:label "Wien"@und ;
+	rdfs:label "Wien"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00085/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> ;
 	owl:sameAs <https://sk.acdh.oeaw.ac.at/pmb50> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> .
@@ -141,12 +141,12 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
 	rdf:value "Hinterstoder" ;
-	rdfs:label "Hinterstoder"@und ;
+	rdfs:label "Hinterstoder"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWplace00072> .
 
 <https://sk.acdh.oeaw.ac.at/DWplace00072> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/DWpers0188/death> ;
-	rdfs:label "Hinterstoder"@und ;
+	rdfs:label "Hinterstoder"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/DWplace00072> , <https://sk.acdh.oeaw.ac.at/DWplace00072/appelation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00072/identifier/idno/0> .
 
 <https://sk.acdh.oeaw.ac.at/types/xml-id> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
@@ -1028,7 +1028,7 @@ lk:
 {
 <https://sk.acdh.oeaw.ac.at/pmb50> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/death> ;
-	rdfs:label "Wien"@und ;
+	rdfs:label "Wien"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/DWplace00085> , <https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> , <https://sk.acdh.oeaw.ac.at/DWplace00085/identifier/idno/0> ;
 	owl:sameAs <https://sk.acdh.oeaw.ac.at/DWplace00085> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(48.208333 16.373056)"^^<geo:wktLiteral> .
@@ -1051,19 +1051,19 @@ lk:
 <https://sk.acdh.oeaw.ac.at/pmb50/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
 	rdf:value "Wien" ;
-	rdfs:label "Wien"@und ;
+	rdfs:label "Wien"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb50> .
 
 <https://sk.acdh.oeaw.ac.at/pmb677> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11910/birth> ;
-	rdfs:label "Breslau"@und ;
+	rdfs:label "Breslau"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(17.03533 51.10773)"^^<geo:wktLiteral> .
 
 <https://sk.acdh.oeaw.ac.at/pmb677/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
 	rdf:value "Breslau" ;
-	rdfs:label "Breslau"@und ;
+	rdfs:label "Breslau"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb677> .
 
 <https://sk.acdh.oeaw.ac.at/pmb677/identifier/idno/1> a <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
@@ -1081,12 +1081,12 @@ lk:
 <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> a <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> ;
 	rdf:value "Jicin" ;
-	rdfs:label "Jicin"@und ;
+	rdfs:label "Jicin"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/pmb41660> .
 
 <https://sk.acdh.oeaw.ac.at/pmb41660> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> <https://sk.acdh.oeaw.ac.at/pmb11988/birth> ;
-	rdfs:label "Jicin"@und ;
+	rdfs:label "Jicin"@de ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/1> , <https://sk.acdh.oeaw.ac.at/pmb41660/appellation/0> , <https://sk.acdh.oeaw.ac.at/pmb41660/identifier/idno/0> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "Point(15.35162 50.43723)"^^<geo:wktLiteral> .
 
@@ -1262,12 +1262,12 @@ lk:
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> .
 
 <https://sk.acdh.oeaw.ac.at/pmb11988/C_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
-    rdfs:label "Kerr, Alfred takes part in legal case C_000068"@en ;
+    rdfs:label "Kraus, Karl takes part in legal case C_000068"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11988> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/D_000068> .
 
 <https://sk.acdh.oeaw.ac.at/pmb11910/C_000068> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
-    rdfs:label "Kraus, Karl takes part in legal case C_000068"@en ;
+    rdfs:label "Kerr, Alfred takes part in legal case C_000068"@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://sk.acdh.oeaw.ac.at/pmb11910> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P10_falls_within> <https://sk.acdh.oeaw.ac.at/D_000068> .
 }
