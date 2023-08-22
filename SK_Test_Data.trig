@@ -174,7 +174,7 @@ dw: {
 	rdfs:label "URL: \"https://kraus1933.ace.oeaw.ac.at\""@en ;
 	<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> <https://sk.acdh.oeaw.ac.at/DWresource00000> .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "Abs. 57" ;
 	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Chefredakteur der Arbeiter-Zeitung\"" ;
@@ -186,7 +186,7 @@ dw: {
 	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> ;
 	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> ;
 	rdfs:label "Text Passage of \"Die andre Einstellung\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00000> .
 
@@ -195,7 +195,7 @@ dw: {
 	<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://sk.acdh.oeaw.ac.at/DWresource00000/idno/url> ;
 	<http://purl.org/dc/terms/bibliographicCitation> "Karl Kraus: Dritte Walpurgisnacht. Digitale historisch-kritische Edition. 2021. URL: https://kraus1933.ace.oeaw.ac.at" .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "Abs. 63" ;
 	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"beseitigen\"" ;
@@ -207,7 +207,7 @@ dw: {
 	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> ;
 	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> ;
 	rdfs:label "Text Passage of \"Deutschland ist nicht Italien\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> ;
 	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00001> .
@@ -218,17 +218,17 @@ dw: {
 	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0> ;
 	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl03160/passage/0> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> ;
 	rdfs:label "Text Passage of: \"[Ansprache vor den Vertretern des Offizierskorps und der Beamtenschaft der Schutzpolizei]\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00002> .
 
 <https://sk.acdh.oeaw.ac.at/DWint00003> a <https://w3id.org/lso/intro/beta202304#INT3_IntertextualRelationship> ;
 	rdfs:label "Intertextual Relation: \"Dritte Walpurgisnacht\" -- \"Die andre Einstellung\""@en ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <https://sk.acdh.oeaw.ac.at/DWresource00000> ;
-	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> ;
+	<https://w3id.org/lso/intro/beta202304#R13_has_referring_entity> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> ;
 	<https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWbibl02632> .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl02632> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl02632> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P165i_is_incorporated_in> <https://sk.acdh.oeaw.ac.at/DWbibl04519> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> ;
 	rdfs:label "Pollak, Oscar: \"Die andre Einstellung\""@en ;
@@ -237,12 +237,13 @@ dw: {
 	<https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by> <https://sk.acdh.oeaw.ac.at/DWbibl02632/creation> ;
 	<https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> .
 
-<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> , <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+<https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/1> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "Abs. 56" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.130#DWquote1488" ;
+	<https://schema.org/pagination> "Abs. 56" ;
 	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> ;
-	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00003> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ>  ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> .
 
 
 <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ/app/0/0> a <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> ;
@@ -298,7 +299,8 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/segment> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	rdfs:label "Segment containing \"Die andre Einstellung\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
-	<https://schema.org/pagination> "S. 2-3" .
+	<https://schema.org/pagination> "S. 2-3" ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632>.
 
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/title/0> a <http://www.cidoc-crm.org/cidoc-crm/E35_Title> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://sk.acdh.oeaw.ac.at/types/title/main> ;
@@ -508,7 +510,8 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/segment> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	rdfs:label "Segment containing \"Deutschland ist nicht Italien\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04595/publ> ;
-	<https://schema.org/pagination> "S. 1-2" .
+	<https://schema.org/pagination> "S. 1-2" ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354>.
 
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/creation> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation> ;
 	rdfs:label "Creation of: \"Deutschland ist nicht Italien\""@en ;
@@ -572,9 +575,11 @@ dw: {
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/0> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "Abs. 57" , "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.132#DWrsPers0791" ;
+	<https://schema.org/pagination> "Abs. 57" ;
 	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Chefredakteur der Arbeiter-Zeitung\"" ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ>;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/0> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl0000/reference/0> a <https://w3id.org/lso/intro/beta202304#INT18_Reference> ;
 	rdfs:label "Reference on: \"Dritte Walpurgisnacht\""@en ;
@@ -598,23 +603,30 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/1> a <https://w3id.org/lso/intro/beta202304#INT1_TextPassage> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "Abs. 56" ;
 	rdfs:label "Text Passage of \"Dritte Walpurgisnacht\""@en ;
-	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" .
+	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Wir wollten hin zur deutschen Republik. Wir wollen nicht ins deutsche Konzentrationslager.\"" ;
+	<https://w3id.org/lso/intro/beta202304#R13_is_referring_entity> <https://sk.acdh.oeaw.ac.at/DWint00003>.
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00000/seg/2> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?root=3.6.2.144#DWquote1714" , "Abs. 63" ;
+	<https://schema.org/pagination> "Abs. 63" ;
 	rdfs:label "Segment of \"Dritte Walpurgisnacht\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"beseitigen\"" ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl00000/publ>;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00000/passage/2> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl02632/seg/0> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "S. 2" ;
+	<https://schema.org/pagination> "S. 2" ;
 	rdfs:label "Segment of \"Die andre Einstellung\""@en ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04519/publ> ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl02632/passage/0> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/seg/0> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "S. 2" ;
+	<https://schema.org/pagination> "S. 2" ;
 	rdfs:label "Segment of \"Deutschland ist nicht Italien\""@en ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354/passage/0>  .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl03354/publ> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl03354> .
@@ -977,7 +989,8 @@ dw: {
 <https://sk.acdh.oeaw.ac.at/DWbibl00736/segment> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	rdfs:label "Segment containing \"Kleines Geburtstagsgeschenk\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> ;
-	<https://schema.org/pagination> "S. 1" .
+	<https://schema.org/pagination> "S. 1"  ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00736> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl04705> a <https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression> ;
 	<http://www.cidoc-crm.org/cidoc-crm/P165_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00736> ;
@@ -1000,15 +1013,19 @@ dw: {
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00736/seg/0> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "S. 1" ;
+	<https://schema.org/pagination> "S. 1" ;
 	rdfs:label "Segment of \"Kleines Geburtstagsgeschenk\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Karl Kraus\"" ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ>  ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/0> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00736/seg/1> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "S. 1" ;
+	<https://schema.org/pagination> "S. 1" ;
 	rdfs:label "Segment of \"Kleines Geburtstagsgeschenk\""@en ;
 	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Pollak\"" ;
-	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ> .
+	<https://w3id.org/lso/intro/beta202304#R25_is_segment_of> <https://sk.acdh.oeaw.ac.at/DWbibl04705/publ>  ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/DWbibl00736/passage/1> .
 
 <https://sk.acdh.oeaw.ac.at/DWbibl00736/reference/1> a <https://w3id.org/lso/intro/beta202304#INT18_Reference> ;
 	rdfs:label "Reference on \"Kleines Geburtstagsgeschenk\""@en ;
@@ -1152,8 +1169,10 @@ lk:
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/seg/0> a <https://w3id.org/lso/intro/beta202304#INT16_Segment> ;
 	<https://w3id.org/lso/intro/beta202304#R41_has_location> "S. 1" , "https://www.kraus.wienbibliothek.at/legalkraus-app/lesefassung/204879" ;
+	<https://schema.org/pagination> "S. 1" ;
 	rdfs:label "Segment of \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
-	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Karl Kraus\"" .
+	<https://w3id.org/lso/intro/beta202304#R44_has_wording> "\"Karl Kraus\""  ;
+	<https://w3id.org/lso/intro/beta202304#R16_incorporates> <https://sk.acdh.oeaw.ac.at/D_000068-053-000/passage/0> .
 
 <https://sk.acdh.oeaw.ac.at/D_000068-053-000/actualization/0> a <https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature> ;
 	rdfs:label "Feature Actualized on \"68.53 Brief Kraus an das Landesgericht fuer Strafsachen I Wien\""@en ;
