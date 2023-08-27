@@ -639,6 +639,7 @@
 	</owl:ObjectProperty>
 	
 	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202304#R16_is_incorporated_in">
+		<owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202304#R16_incorporates"/>
 		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
 		<rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202304#INT16_Segment"/>
 		<rdfs:comment>This property states that an E73 Information Object is incorporated in an INT16 Segment like e.g. a F22 Self-contained Expression or an INT1 Text Passage in an INT16 Segment of an F24 Publication Expression.</rdfs:comment>
@@ -1002,6 +1003,7 @@
 	</owl:ObjectProperty>
 	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202304#R12_is_referred_to_entity">
 		<rdfs:subPropertyOf rdf:resource="https://w3id.org/lso/intro/beta202304#R24_is_related_entity"/>
+		<owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202304#R12_has_referred_to_entity"/>
 		<rdfs:domain>
 			<owl:Class>
 				<owl:unionOf rdf:parseType="Collection">
@@ -1035,6 +1037,7 @@
 	</owl:ObjectProperty>
 	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202304#R13_is_referring_entity">
 		<rdfs:subPropertyOf rdf:resource="https://w3id.org/lso/intro/beta202304#R24_is_related_entity"/>
+		<owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202304#R13_has_referring_entity"/>
 		<rdfs:domain>
 			<owl:Class>
 				<owl:unionOf rdf:parseType="Collection">
@@ -1070,6 +1073,7 @@
 			as the actualization of the feature &quot;Character Type&quot;.)</rdfs:comment>
 	</owl:ObjectProperty>
 	<owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202304#R18_shows_actualization">
+		<owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202304#R18_actualization_found_on"/>
 		<rdfs:domain>
 			<owl:Class>
 				<owl:unionOf rdf:parseType="Collection">
