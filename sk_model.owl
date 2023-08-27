@@ -46,6 +46,7 @@
 	
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created">
 		<rdfs:label xml:lang="en">created</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by"/>
 		<rdfs:comment>This property associates the expression that was first externalised during a particular creation event with that particular creation event.
 		</rdfs:comment>
 		<rdfs:domain rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F28_Expression_Creation"/>
@@ -53,6 +54,7 @@
 	</rdf:Property>
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17i_was_created_by">
 		<rdfs:label xml:lang="en">was created by</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R17_created"/>
 		<rdfs:comment>
 		</rdfs:comment>
 		<rdfs:domain rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F2_Expression"/>
@@ -143,6 +145,7 @@
 	
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created">
 		<rdfs:label xml:lang="en">created</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through"/>
 		<rdfs:comment>This property associates the instance of F24 Publication Expression that was created during a particular F30 Publication Event with that F30 Publication Event.
 		</rdfs:comment>
 		<rdfs:domain rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F30_Publication_Event"/>
@@ -151,6 +154,7 @@
 	
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24i_was_created_through">
 		<rdfs:label xml:lang="en">was created through</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R24_created"/>
 		<rdfs:comment>
 		</rdfs:comment>
 		<rdfs:domain rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F24_Publication_Expression"/>
@@ -275,6 +279,7 @@
 	
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66_included_performed_version_of">
 		<rdfs:label xml:lang="en">included performed version of</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66i_had_a_performed_version_through"/>
 		<rdfs:comment>This property associates an instance of F31 Performance with a product of the mind that was performed in the course of that instance of F31 Performance.
 			According to the level of knowledge available about the performance, the range of this property can actually be specialised as either an instance of F1 Work (if nothing is known as to which specific expression of the work was performed), or of F2 Expression (if there is a reasonable amount of certainty as to which specific expression—e.g., a well identified translation of a play—of the work was performed).
 			In addition to being a subproperty of P16 used specific object (was used for), this property also is a shortcut of the fully developed path that goes from F31 Performance to F1 Work through: R25 performed F25 Performance Plan P165 incorporates F22 Self-Contained Expression R3i realises. In this fully developed path, the specific instance of F22 Self-Contained Expression can be precisely identified and described for its own sake, or it can just be known to have necessarily existed.
@@ -284,6 +289,7 @@
 	</rdf:Property>
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66i_had_a_performed_version_through">
 		<rdfs:label xml:lang="en">had a performed version through</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R66_included_performed_version_of"/>
 		<rdfs:comment>
 		</rdfs:comment>
 		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
@@ -602,6 +608,7 @@
 	<!-- F24 Publ Expr. R5 has component F24 Publ. Expr. - a periodical contains its issues-->
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5_has_component">
 		<rdfs:label xml:lang="en">has component</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5i_is_component_of"/>
 		<rdfs:comment>This property associates an F2 Expression X with a structural component Y that conveys in itself the complete concept of a work that is member of (R10) the overall work realized by X.
 			It does not cover the relationship that exists between pre-existing expressions that are re-used in a new, larger expression and that new, larger expression. Such a relationship is modelled by P165 incorporates.
 		</rdfs:comment>
@@ -610,6 +617,7 @@
 	</rdf:Property>
 	<rdf:Property rdf:about="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5i_is_component_of">
 		<rdfs:label xml:lang="en">is component of</rdfs:label>
+		<owl:inverseOf rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#R5_has_component"/>
 		<rdfs:comment>
 		</rdfs:comment>
 		<rdfs:domain rdf:resource="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F22_Self-Contained_Expression"/>
