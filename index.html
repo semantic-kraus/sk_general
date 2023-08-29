@@ -294,7 +294,7 @@ td {
     ],
     "https://schema.org/description": [
       {
-        "@value": "\n\t\t\tThis is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. \n\t\t\tIt consists entirely of re-used classes and properties from other ontologies.\n\t\t\tMost notably: \n\t\t\tFRBRoo 2.4\n\t\t\tCIDOC crm 7.1.2 (URIs always resolve to the current version)\n\t\t\tINTRO [Version pending]\n\t\t\tModeling of periodicals very much influenced by PRESSoo\n\t\t"
+        "@value": "\n\t\t\tThis is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. \n\t\t\tIt consists entirely of re-used classes and properties from other ontologies.\n\t\t\tMost notably: \n\t\t\tFRBRoo 2.4\n\t\t\tCIDOC crm 7.1.2 (URIs always resolve to the current version)\n\t\t\tINTRO beta202304\n\t\t\tModeling of periodicals very much influenced by PRESSoo\n\t\t"
       }
     ],
     "https://schema.org/name": [
@@ -356,7 +356,7 @@ td {
         Most notably: 
         FRBRoo 2.4
         CIDOC crm 7.1.2 (URIs always resolve to the current version)
-        INTRO [Version pending]
+        INTRO beta202304
         Modeling of periodicals very much influenced by PRESSoo
 </code></pre></dd>
           </div>
@@ -1895,7 +1895,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://sk.acdh.oeaw.ac.at/E7_Activity">ns1:E7_Activity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">Activity</a>
               </td>
             </tr>
             <tr>
@@ -1903,7 +1903,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://sk.acdh.oeaw.ac.at/E70_Thing">ns1:E70_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">Thing</a>
               </td>
             </tr>
           </table>
@@ -1942,7 +1942,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
-                <a href="https://sk.acdh.oeaw.ac.at/E70_Thing">ns1:E70_Thing</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">Thing</a>
               </td>
             </tr>
             <tr>
@@ -1950,7 +1950,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="https://sk.acdh.oeaw.ac.at/E7_Activity">ns1:E7_Activity</a>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">Activity</a>
               </td>
             </tr>
           </table>
@@ -3527,6 +3527,71 @@ td {
             </tr>
           </table>
         </div>
+        <div class="property entity" id="assignedattributeto">
+          <h3>assigned attribute towies Merkmal zuαπέδωσε ιδιότητα σεa affecté un attribut àatribuiu atributo paraприсвоил атрибут для分配属性于
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>This property associates an instance of E13 Attribute Assignment with the instance of E1 CRM Entity about which it made an attribution. The instance of E1 CRM Entity plays the role of the domain of the attribution.
+            The kind of attribution made should be documented using P177 assigned property of type (is type of property assigned).</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment">Attribute Assignment</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="wasattributedby">
+          <h3>was attributed bybekam Merkmal zugewiesen durchχαρακτηρίστηκε απόa reçu un attribut parfoi atribuído porполучил атрибут посредством接受属性
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment">Attribute Assignment</a>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="property entity" id="BibliographicCitation">
           <h3>Bibliographic Citation
             <sup class="sup-p" title="RDF Property">p</sup>
@@ -4389,13 +4454,13 @@ td {
   <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4450,10 +4515,10 @@ td {
   <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4514,16 +4579,16 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4565,13 +4630,13 @@ td {
   <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4680,10 +4745,10 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
@@ -4740,16 +4805,16 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4778,16 +4843,16 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="https://cidoc-crm.org/frbroo/sites/default/files/FRBR2.4-draft.rdfs#F1_Work">frbroo:F1_Work</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
+  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="https://w3id.org/lso/intro/beta202304#INT6_ArchitextualEntity">intro:INT6_ArchitextualEntity</a>
+  <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">Information Object</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="https://w3id.org/lso/intro/beta202304#INT2_ActualizationOfFeature">INT2 Actualization of Feature</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5554,6 +5619,12 @@ td {
             </li>
             <li>
               <a href="#lostmemberby">lost member byverlor Mitglied durch失去成员</a>
+            </li>
+            <li>
+              <a href="#assignedattributeto">assigned attribute towies Merkmal zuαπέδωσε ιδιότητα σεa affecté un attribut àatribuiu atributo paraприсвоил атрибут для分配属性于</a>
+            </li>
+            <li>
+              <a href="#wasattributedby">was attributed bybekam Merkmal zugewiesen durchχαρακτηρίστηκε απόa reçu un attribut parfoi atribuído porполучил атрибут посредством接受属性</a>
             </li>
             <li>
               <a href="#BibliographicCitation">Bibliographic Citation</a>
