@@ -23,7 +23,7 @@
 			Most notably: 
 			FRBRoo 2.4
 			CIDOC crm 7.1.2 (URIs always resolve to the current version)
-			INTRO [Version pending]
+			INTRO beta202304
 			Modeling of periodicals very much influenced by PRESSoo
 		</rdfs:comment>
 		<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bernhard Oberreither</dc:creator>
@@ -579,8 +579,8 @@
 		<rdfs:comment>This property describes the use of material or immaterial things in a way essential to the performance or the outcome of an instance of E7 Activity.
 			This property typically applies to tools, instruments, moulds, raw materials and items embedded in a product. It implies that the presence of the object in question was a necessary condition for the action. For example, the activity of writing this text required the use of a computer. An immaterial thing can be used if at least one of its carriers is present. For example, the software tools on a computer.
 			Another example is the use of a particular name by a particular group of people over some span to identify a thing, such as a settlement. In this case, the physical carriers of this name are at least the people understanding its use.</rdfs:comment>
-		<rdfs:domain rdf:resource="E7_Activity" />
-		<rdfs:range rdf:resource="E70_Thing" />
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity" />
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing" />
 		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of" />
 		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by" />
 		<owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for" />
@@ -593,8 +593,8 @@
 		<rdfs:label xml:lang="pt">foi usado por</rdfs:label>
 		<rdfs:label xml:lang="ru">был использован для</rdfs:label>
 		<rdfs:label xml:lang="zh">用于</rdfs:label>
-		<rdfs:domain rdf:resource="E70_Thing" />
-		<rdfs:range rdf:resource="E7_Activity" />
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing" />
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity" />
 		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at" />
 		<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P15i_influenced" />
 		<owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object" />
@@ -1541,6 +1541,55 @@
 	<!-- crm:E33_E41_Linguistic_Appellation rdf:value "[Parteiname]" - see above -->
 	<!-- crm:E33_E41_Linguistic_Appellation P2 has type E55 Type - see above -->
 	<!-- E74 Group crm:P1_is_identified_by crm:E_42_Identifier [URL] - see above -->
+	
+	<!-- Non-Deaths: Being declared Missing / Dead -->
+	<!-- E13_Attribute_Assignment cidoc:P140_assigned_attribute_to [E21_Person] -->
+	
+	<rdfs:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment">
+		<rdfs:label xml:lang="en">Attribute Assignment</rdfs:label>
+		<rdfs:label xml:lang="de">Merkmalszuweisung</rdfs:label>
+		<rdfs:label xml:lang="el">Απόδοση Ιδιοτήτων</rdfs:label>
+		<rdfs:label xml:lang="fr">Affectation d'attribut</rdfs:label>
+		<rdfs:label xml:lang="pt">Atribuição de Característica</rdfs:label>
+		<rdfs:label xml:lang="ru">Присвоение Атрибута</rdfs:label>
+		<rdfs:label xml:lang="zh">属性赋值</rdfs:label>
+		<rdfs:comment>This class comprises the actions of making assertions about one property of an object or any single relation between two items or concepts. The type of the property asserted to hold between two items or concepts can be described by the property P177 assigned property of type (is type of property assigned): E55 Type.
+			For example, the class describes the actions of people making propositions and statements during certain scientific/scholarly procedures, e.g., the person and date when a condition statement was made, an identifier was assigned, the museum object was measured, etc. Which kinds of such assignments and statements need to be documented explicitly in structures of a schema rather than free text, depends on whether this information should be accessible by structured queries.
+			This class allows for the documentation of how the respective assignment came about, and whose opinion it was. Note that all instances of properties described in a knowledge base are the opinion of someone. Per default, they are the opinion of the team maintaining the knowledge base. This fact must not individually be registered for all instances of properties provided by the maintaining team, because it would result in an endless recursion of whose opinion was the description of an opinion. Therefore, the use of instances of E13 Attribute Assignment marks the fact, that the maintaining team is in general neutral to the validity of the respective assertion, but registers someone else’s opinion and how it came about.
+			All properties assigned in such an action can also be seen as directly relating the respective pair of items or concepts. Multiple use of instances of E13 Attribute Assignment may possibly lead to a collection of contradictory values.
+			All cases of properties in this model that are also described indirectly through a subclass of E13 Attribute Assignment are characterised as "short cuts" of a path via this subclass. This redundant modelling of two alternative views is preferred because many implementations may have good reasons to model either the action of assertion or the short cut, and the relation between both alternatives can be captured by simple rules.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity" />
+	</rdfs:Class>
+	
+	<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to">
+		<rdfs:label xml:lang="en">assigned attribute to</rdfs:label>
+		<rdfs:label xml:lang="de">wies Merkmal zu</rdfs:label>
+		<rdfs:label xml:lang="el">απέδωσε ιδιότητα σε</rdfs:label>
+		<rdfs:label xml:lang="fr">a affecté un attribut à</rdfs:label>
+		<rdfs:label xml:lang="pt">atribuiu atributo para</rdfs:label>
+		<rdfs:label xml:lang="ru">присвоил атрибут для</rdfs:label>
+		<rdfs:label xml:lang="zh">分配属性于</rdfs:label>
+		<rdfs:comment>This property associates an instance of E13 Attribute Assignment with the instance of E1 CRM Entity about which it made an attribution. The instance of E1 CRM Entity plays the role of the domain of the attribution.
+			The kind of attribution made should be documented using P177 assigned property of type (is type of property assigned).</rdfs:comment>
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment" />
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" />
+		<owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by">
+		<rdfs:label xml:lang="en">was attributed by</rdfs:label>
+		<rdfs:label xml:lang="de">bekam Merkmal zugewiesen durch</rdfs:label>
+		<rdfs:label xml:lang="el">χαρακτηρίστηκε από</rdfs:label>
+		<rdfs:label xml:lang="fr">a reçu un attribut par</rdfs:label>
+		<rdfs:label xml:lang="pt">foi atribuído por</rdfs:label>
+		<rdfs:label xml:lang="ru">получил атрибут посредством</rdfs:label>
+		<rdfs:label xml:lang="zh">接受属性</rdfs:label>
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" />
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment" />
+		<owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to" />
+	</rdf:Property>
+	
+	<!-- Non-Deaths: Being buried -->
+	<!-- E5_Event P12_occurred_in_the_presence_of E21_Person -->
 	
 	<!-- PARTICIPATION IN LEGAL CASE -->
 	<!-- long version: E7 Activity P10 falls within: E5 Event -->
