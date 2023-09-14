@@ -27,6 +27,9 @@ https://sk.acdh.oeaw.ac.at/types/org/orgname/orig-name
 https://sk.acdh.oeaw.ac.at/types/org/orgname/short
 https://sk.acdh.oeaw.ac.at/types/person/persname
 https://sk.acdh.oeaw.ac.at/types/person/persname/alternative-name
+https://sk.acdh.oeaw.ac.at/types/person/persname/female
+https://sk.acdh.oeaw.ac.at/types/person/persname/male
+https://sk.acdh.oeaw.ac.at/types/person/persname/pref
 https://sk.acdh.oeaw.ac.at/types/person/persname/pseud
 https://sk.acdh.oeaw.ac.at/types/person/persname/sk
 https://sk.acdh.oeaw.ac.at/types/place/placename
