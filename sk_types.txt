@@ -7,6 +7,10 @@ https://sk.acdh.oeaw.ac.at/types/appellation/num/volume
 https://sk.acdh.oeaw.ac.at/types/appellation/place
 https://sk.acdh.oeaw.ac.at/types/appellation/title/main
 https://sk.acdh.oeaw.ac.at/types/appellation/title/sub
+https://sk.acdh.oeaw.ac.at/types/event/burial
+https://sk.acdh.oeaw.ac.at/types/event/legal-case
+https://sk.acdh.oeaw.ac.at/types/event/decl-dead
+https://sk.acdh.oeaw.ac.at/types/event/missing
 https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE
 https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht
 https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel
