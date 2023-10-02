@@ -12,7 +12,7 @@ LK case files: [https://semantic-kraus.github.io/lk-data/texts.trig](https://sem
 ### Dritte Walpurgisnacht:
 DW data (persons etc.): [https://semantic-kraus.github.io/dw-data/data.trig](https://semantic-kraus.github.io/dw-data/data.trig)
 
-DW texts: [tba]
+DW texts: [https://semantic-kraus.github.io/dw-data/texts.trig](https://semantic-kraus.github.io/dw-data/texts.trig)
 
 DW person mentions: [tba]
 
