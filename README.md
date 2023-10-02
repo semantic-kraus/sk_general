@@ -3,7 +3,7 @@ Data concerning the entirety of the project.
 
 ## Also: Here's a little where's what in SK:
 ### Legal Kraus:
-LK data (persons etc.): [https://semantic-kraus.github.io/lk-data/](https://semantic-kraus.github.io/lk-data/data.trig)
+LK data (persons etc.): [https://semantic-kraus.github.io/lk-data/data.trig](https://semantic-kraus.github.io/lk-data/data.trig)
 
 LK bibliography: [https://semantic-kraus.github.io/lk-data/work.trig](https://semantic-kraus.github.io/lk-data/work.trig)
 
