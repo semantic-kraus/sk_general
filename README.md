@@ -14,9 +14,9 @@ DW data (persons etc.): [https://semantic-kraus.github.io/dw-data/data.trig](htt
 
 DW texts: [https://semantic-kraus.github.io/dw-data/texts.trig](https://semantic-kraus.github.io/dw-data/texts.trig)
 
-DW person mentions: [tba]
+DW person mentions: [https://github.com/semantic-kraus/dw-data/blob/gh-pages/persons.trig](https://github.com/semantic-kraus/dw-data/blob/gh-pages/persons.trig)
 
-DW quotes: [tba]
+DW quotes: [https://github.com/semantic-kraus/dw-data/blob/gh-pages/quotes.trig](https://github.com/semantic-kraus/dw-data/blob/gh-pages/quotes.trig)
 
 ### Fackel:
 FA data (persons): [https://semantic-kraus.github.io/fa-data/data.trig](https://semantic-kraus.github.io/fa-data/data.trig)
