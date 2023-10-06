@@ -1,0 +1,222 @@
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sk: <https://sk.acdh.oeaw.ac.at/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sk:general {
+<https://sk.acdh.oeaw.ac.at/types/appellation/date> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Date"@en .
+<https://sk.acdh.oeaw.ac.at/types/appellation/ed> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Edition"@en .
+<https://sk.acdh.oeaw.ac.at/types/appellation/num/issue> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Issue Number"@en .
+<https://sk.acdh.oeaw.ac.at/types/appellation/num/volume> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Volume Number"@en .
+<https://sk.acdh.oeaw.ac.at/types/appellation/place> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Place of Publication"@en .
+<https://sk.acdh.oeaw.ac.at/types/appellation/title/main> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Main Title"@en .
+<https://sk.acdh.oeaw.ac.at/types/appellation/title/sub> a crm:E55_Type ;
+    rdfs:label "Type: Appellation – Subtitle"@en .
+<https://sk.acdh.oeaw.ac.at/types/date/approx> a crm:E55_Type ;
+    rdfs:label "Type: Date – Approxate"@en .
+<https://sk.acdh.oeaw.ac.at/types/event/burial> a crm:E55_Type ;
+    rdfs:label "Type: Event – Burial"@en .
+<https://sk.acdh.oeaw.ac.at/types/event/decl-dead> a crm:E55_Type ;
+    rdfs:label "Type: Event – Declared Dead"@en .
+<https://sk.acdh.oeaw.ac.at/types/event/first> a crm:E55_Type ;
+    rdfs:label "Type: Event – Initial Event (Premiere, First Oration)"@en .
+<https://sk.acdh.oeaw.ac.at/types/event/legal-case> a crm:E55_Type ;
+    rdfs:label "Type: Event – Legal Case"@en .
+<https://sk.acdh.oeaw.ac.at/types/event/mentioned> a crm:E55_Type ;
+    rdfs:label "Type: Event – Mentioned"@en .
+<https://sk.acdh.oeaw.ac.at/types/event/missing> a crm:E55_Type ;
+    rdfs:label "Type: Event – Missing"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/geonames> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number – geonames"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/gnd> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number – gnd"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/pmb> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number – pmb"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – ARCHE"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/doiorg101553> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – doiorg101553"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – dritte-walpurgisnacht"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – fackel"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – geonames"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – gnd"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/legalkraus> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – legalkraus"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – pmb"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-bahr> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – schnitzler-bahr"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-briefe> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – schnitzler-briefe"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-lektueren> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – schnitzler-lektueren"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – schnitzler-tagebuch"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number/URL – wikidata"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/VIAF> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number – VIAF"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/wikidata> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number – wikidata"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/xml-id> a crm:E55_Type ;
+    rdfs:label "Type: Identification Number – xml-id"@en .
+<https://sk.acdh.oeaw.ac.at/types/org/orgname> a crm:E55_Type ;
+    rdfs:label "Type: Organization Name"@en .
+<https://sk.acdh.oeaw.ac.at/types/org/orgname/alternative-name> a crm:E55_Type ;
+    rdfs:label "Type: Organization Name – alternative-name"@en .
+<https://sk.acdh.oeaw.ac.at/types/org/orgname/full> a crm:E55_Type ;
+    rdfs:label "Type: Organization Name – full"@en .
+<https://sk.acdh.oeaw.ac.at/types/org/orgname/orig-name> a crm:E55_Type ;
+    rdfs:label "Type: Organization Name – orig-name"@en .
+<https://sk.acdh.oeaw.ac.at/types/org/orgname/pref> a crm:E55_Type ;
+    rdfs:label "Type: Organization Name – pref"@en .
+<https://sk.acdh.oeaw.ac.at/types/org/orgname/short> a crm:E55_Type ;
+    rdfs:label "Type: Organization Name – short"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname> a crm:E55_Type ;
+    rdfs:label "Type: Person Name"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/alt> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – alt"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/alternative-name> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – alternative-name"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/born> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – born"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/divorced> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – divorced"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/female> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – female"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/full> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – full"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/male> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – male"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/married> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – married"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/pref> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – pref"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/pseud> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – pseud"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – sk"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/taken> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – taken"@en .
+<https://sk.acdh.oeaw.ac.at/types/person/persname/widowed> a crm:E55_Type ;
+    rdfs:label "Type: Person Name – widowed"@en .
+<https://sk.acdh.oeaw.ac.at/types/place/placename> a crm:E55_Type ;
+    rdfs:label "Type: Place Name"@en .
+<https://sk.acdh.oeaw.ac.at/types/place/placename/alternative-name> a crm:E55_Type ;
+    rdfs:label "Type: Place Name – alternative-name"@en .
+<https://sk.acdh.oeaw.ac.at/types/place/placename/alt-label> a crm:E55_Type ;
+    rdfs:label "Type: Place Name – alt-label"@en .
+<https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> a crm:E55_Type ;
+    rdfs:label "Type: Place Name – orig-name"@en .
+<https://sk.acdh.oeaw.ac.at/types/place/placename/pref> a crm:E55_Type ;
+    rdfs:label "Type: Place Name – pref"@en .
+<https://sk.acdh.oeaw.ac.at/types/place/placename/simple-name> a crm:E55_Type ;
+    rdfs:label "Type: Place Name – simple-name"@en .
+<https://sk.acdh.oeaw.ac.at/types/role/AGV> a crm:E55_Type ;
+    rdfs:label "Type: Role – AGV"@en .
+<https://sk.acdh.oeaw.ac.at/types/role/AKV> a crm:E55_Type ;
+    rdfs:label "Type: Role – AKV"@en .
+<https://sk.acdh.oeaw.ac.at/types/role/ANG> a crm:E55_Type ;
+    rdfs:label "Type: Role – ANG"@en .
+<https://sk.acdh.oeaw.ac.at/types/role/ANK> a crm:E55_Type ;
+    rdfs:label "Type: Role – ANK"@en .
+<https://sk.acdh.oeaw.ac.at/types/role/RIC> a crm:E55_Type ;
+    rdfs:label "Type: Role – RIC"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/And> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – And"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/Aus> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – Aus"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/Bat> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – Bat"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/DQu> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – DQu"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/Fra> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – Fra"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/GDr> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – GDr"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/GeK> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – GeK"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/GLK> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – GLK"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/GSt> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – GSt"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/GuP> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – GuP"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/HoO> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – HoO"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/LaK> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – LaK"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/LeK> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – LeK"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/leQ> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – leQ"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/LiH> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – LiH"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/Par> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – Par"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/reH> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – reH"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/RLK> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – RLK"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre/ZAn> a crm:E55_Type ;
+    rdfs:label "Type: Text signed with Chiffre – ZAn"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Abf> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Abf"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/AdG> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – AdG"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/AdH> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – AdH"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Bri> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Bri"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/DlN> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – DlN"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Glo> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Glo"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNot> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – GloNot"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotAph> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – GloNotAph"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotBri> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – GloNotBri"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Ins> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Ins"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Lap> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Lap"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/LiF> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – LiF"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/MdV> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – MdV"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Nac> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Nac"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Not> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Not"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Pro> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Pro"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Spl> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Spl"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Spr> a crm:E55_Type ;
+    rdfs:label "Type: Text Rubric – Spr"@en .
+<https://sk.acdh.oeaw.ac.at/types/title/main> a crm:E55_Type ;
+    rdfs:label "Type: Title – main"@en .
+<https://sk.acdh.oeaw.ac.at/types/title/prov> a crm:E55_Type ;
+    rdfs:label "Type: Title – prov"@en .
+<https://sk.acdh.oeaw.ac.at/types/title/sub> a crm:E55_Type ;
+    rdfs:label "Type: Title – sub"@en .
+<https://sk.acdh.oeaw.ac.at/types/translation> a crm:E55_Type ;
+    rdfs:label "Type: Translation"@en .
+
+}
