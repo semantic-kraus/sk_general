@@ -2,6 +2,12 @@
 Data concerning the entirety of the project.
 
 ## Also: Here's a little where's what in SK:
+
+### SK General:
+SK Model: [https://github.com/semantic-kraus/sk_general/blob/main/sk_model.trig](https://github.com/semantic-kraus/sk_general/blob/main/sk_model.trig)
+
+SK General (containing E55 Types etc.): [https://github.com/semantic-kraus/sk_general/blob/main/general.trig](https://github.com/semantic-kraus/sk_general/blob/main/general.trig)
+
 ### Legal Kraus:
 LK data (persons etc.): [https://semantic-kraus.github.io/lk-data/data.trig](https://semantic-kraus.github.io/lk-data/data.trig)
 
