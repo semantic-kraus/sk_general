@@ -9,319 +9,319 @@
 
 sk:general {
 <https://sk.acdh.oeaw.ac.at/types/appellation/date> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Date"@en ;
-    rdfs:comment "A type of Appellation - Date"@en .
+    rdfs:label "Date"@en ;
+    rdfs:comment "A Type of Appellation: Date"@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/ed> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Edition"@en ;
-    rdfs:comment "A type of Appellation - Edition"@en .
+    rdfs:label "Edition"@en ;
+    rdfs:comment "A Type of Appellation: Edition"@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/num/issue> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Issue Number"@en ;
-    rdfs:comment "A type of Appellation - Issue Number"@en .
+    rdfs:label "Issue Number"@en ;
+    rdfs:comment "A Type of Appellation: Issue Number"@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/num/volume> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Volume Number"@en ;
-    rdfs:comment "A type of Appellation - Volume Number"@en .
+    rdfs:label "Volume Number"@en ;
+    rdfs:comment "A Type of Appellation: Volume Number"@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/place> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Place of Publication"@en ;
-    rdfs:comment "A type of Appellation - Place of Publication"@en .
+    rdfs:label "Place of Publication"@en ;
+    rdfs:comment "A Type of Appellation: Place of Publication"@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/title/main> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Main Title"@en ;
-    rdfs:comment "A type of Appellation - Main Title"@en .
+    rdfs:label "Main Title"@en ;
+    rdfs:comment "A Type of Appellation: Main Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/title/sub> a cidoc:E55_Type ;
-    rdfs:label "Type: Appellation - Subtitle"@en ;
-    rdfs:comment "A type of Appellation - Subtitle"@en .
+    rdfs:label "Subtitle"@en ;
+    rdfs:comment "A Type of Appellation: Subtitle"@en .
 <https://sk.acdh.oeaw.ac.at/types/date/approx> a cidoc:E55_Type ;
-    rdfs:label "Type: Date - Approxate"@en ;
-    rdfs:comment "A type of Date - Approxate"@en .
+    rdfs:label "Approximate"@en ;
+    rdfs:comment "A Type of Date: Approximate"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/burial> a cidoc:E55_Type ;
-    rdfs:label "Type: Event - Burial"@en ;
-    rdfs:comment "A type of Event - Burial"@en .
+    rdfs:label "Burial"@en ;
+    rdfs:comment "A Type of Event: Burial"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/decl-dead> a cidoc:E55_Type ;
-    rdfs:label "Type: Event - Declared Dead"@en ;
-    rdfs:comment "A type of Event - Declared Dead"@en .
+    rdfs:label "Declared Dead"@en ;
+    rdfs:comment "A Type of Event: Declared Dead"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/first> a cidoc:E55_Type ;
-    rdfs:label "Type: Event - Initial Event (Premiere, First Oration)"@en ;
-    rdfs:comment "A type of Event - Initial Event (Premiere, First Oration)"@en .
+    rdfs:label "Initial Event (Premiere, First Oration)"@en ;
+    rdfs:comment "A Type of Event: Initial Event (Premiere, First Oration)"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/legal-case> a cidoc:E55_Type ;
-    rdfs:label "Type: Event - Legal Case"@en ;
-    rdfs:comment "A type of Event - Legal Case"@en .
+    rdfs:label "Legal Case"@en ;
+    rdfs:comment "A Type of Event: Legal Case"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/mentioned> a cidoc:E55_Type ;
-    rdfs:label "Type: Event - Mentioned"@en ;
-    rdfs:comment "A type of Event - Mentioned"@en .
+    rdfs:label "Mentioned"@en ;
+    rdfs:comment "A Type of Event: Mentioned"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/missing> a cidoc:E55_Type ;
-    rdfs:label "Type: Event - Missing"@en ;
-    rdfs:comment "A type of Event - Missing"@en .
+    rdfs:label "Missing"@en ;
+    rdfs:comment "A Type of Event: Missing"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/geonames> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number - geonames"@en ;
-    rdfs:comment "A type of Identification Number - geonames"@en .
+    rdfs:label "geonames"@en ;
+    rdfs:comment "A Type of Identification Number: geonames"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/gnd> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number - gnd"@en ;
-    rdfs:comment "A type of Identification Number - gnd"@en .
+    rdfs:label "gnd"@en ;
+    rdfs:comment "A Type of Identification Number: gnd"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/pmb> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number - pmb"@en ;
-    rdfs:comment "A type of Identification Number - pmb"@en .
+    rdfs:label "pmb"@en ;
+    rdfs:comment "A Type of Identification Number: pmb"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - ARCHE"@en ;
-    rdfs:comment "A type of Identification Number/URL - ARCHE"@en .
+    rdfs:label "ARCHE"@en ;
+    rdfs:comment "A Type of Identification Number/URL: ARCHE"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/doiorg101553> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - doiorg101553"@en ;
-    rdfs:comment "A type of Identification Number/URL - doiorg101553"@en .
+    rdfs:label "doiorg101553"@en ;
+    rdfs:comment "A Type of Identification Number/URL: doiorg101553"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - dritte-walpurgisnacht"@en ;
-    rdfs:comment "A type of Identification Number/URL - dritte-walpurgisnacht"@en .
+    rdfs:label "Dritte Walpurgisnacht URL"@en ;
+    rdfs:comment "A Type of Identification Number/URL: dritte-walpurgisnacht"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - fackel"@en ;
-    rdfs:comment "A type of Identification Number/URL - fackel"@en .
+    rdfs:label "Fackel URL"@en ;
+    rdfs:comment "A Type of Identification Number/URL: fackel"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - geonames"@en ;
-    rdfs:comment "A type of Identification Number/URL - geonames"@en .
+    rdfs:label "geonames"@en ;
+    rdfs:comment "A Type of Identification Number/URL: geonames"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - gnd"@en ;
-    rdfs:comment "A type of Identification Number/URL - gnd"@en .
+    rdfs:label "gnd"@en ;
+    rdfs:comment "A Type of Identification Number/URL: gnd"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/legalkraus> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - legalkraus"@en ;
-    rdfs:comment "A type of Identification Number/URL - legalkraus"@en .
+    rdfs:label "legalkraus"@en ;
+    rdfs:comment "A Type of Identification Number/URL: legalkraus"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - pmb"@en ;
-    rdfs:comment "A type of Identification Number/URL - pmb"@en .
+    rdfs:label "pmb"@en ;
+    rdfs:comment "A Type of Identification Number/URL: pmb"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-bahr> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - schnitzler-bahr"@en ;
-    rdfs:comment "A type of Identification Number/URL - schnitzler-bahr"@en .
+    rdfs:label "schnitzler-bahr"@en ;
+    rdfs:comment "A Type of Identification Number/URL: schnitzler-bahr"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-briefe> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - schnitzler-briefe"@en ;
-    rdfs:comment "A type of Identification Number/URL - schnitzler-briefe"@en .
+    rdfs:label "schnitzler-briefe"@en ;
+    rdfs:comment "A Type of Identification Number/URL: schnitzler-briefe"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-lektueren> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - schnitzler-lektueren"@en ;
-    rdfs:comment "A type of Identification Number/URL - schnitzler-lektueren"@en .
+    rdfs:label "schnitzler-lektueren"@en ;
+    rdfs:comment "A Type of Identification Number/URL: schnitzler-lektueren"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - schnitzler-tagebuch"@en ;
-    rdfs:comment "A type of Identification Number/URL - schnitzler-tagebuch"@en .
+    rdfs:label "schnitzler-tagebuch"@en ;
+    rdfs:comment "A Type of Identification Number/URL: schnitzler-tagebuch"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number/URL - wikidata"@en ;
-    rdfs:comment "A type of Identification Number/URL - wikidata"@en .
+    rdfs:label "wikidata"@en ;
+    rdfs:comment "A Type of Identification Number/URL: wikidata"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/VIAF> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number - VIAF"@en ;
-    rdfs:comment "A type of Identification Number - VIAF"@en .
+    rdfs:label "VIAF"@en ;
+    rdfs:comment "A Type of Identification Number: VIAF"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/wikidata> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number - wikidata"@en ;
-    rdfs:comment "A type of Identification Number - wikidata"@en .
+    rdfs:label "wikidata"@en ;
+    rdfs:comment "A Type of Identification Number: wikidata"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/xml-id> a cidoc:E55_Type ;
-    rdfs:label "Type: Identification Number - xml-id"@en ;
-    rdfs:comment "A type of Identification Number - xml-id"@en .
+    rdfs:label "xml-id"@en ;
+    rdfs:comment "A Type of Identification Number: xml-id"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname> a cidoc:E55_Type ;
-    rdfs:label "Type: Organization Name"@en ;
-    rdfs:comment "A type of Organization Name"@en .
+    rdfs:label "Organization Name"@en ;
+    rdfs:comment "A Type of Organization Name"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/alternative-name> a cidoc:E55_Type ;
-    rdfs:label "Type: Organization Name - alternative-name"@en ;
-    rdfs:comment "A type of Organization Name - alternative-name"@en .
+    rdfs:label "Alternative Organization Name"@en ;
+    rdfs:comment "A Type of Organization Name: alternative-name"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/full> a cidoc:E55_Type ;
-    rdfs:label "Type: Organization Name - full"@en ;
-    rdfs:comment "A type of Organization Name - full"@en .
+    rdfs:label "Full Organization Name"@en ;
+    rdfs:comment "A Type of Organization Name: full"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/orig-name> a cidoc:E55_Type ;
-    rdfs:label "Type: Organization Name - orig-name"@en ;
-    rdfs:comment "A type of Organization Name - orig-name"@en .
+    rdfs:label "Original Organization Name"@en ;
+    rdfs:comment "A Type of Organization Name: orig-name"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/pref> a cidoc:E55_Type ;
-    rdfs:label "Type: Organization Name - pref"@en ;
-    rdfs:comment "A type of Organization Name - pref"@en .
+    rdfs:label "Preferred Organization Name"@en ;
+    rdfs:comment "A Type of Organization Name: pref"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/short> a cidoc:E55_Type ;
-    rdfs:label "Type: Organization Name - short"@en ;
-    rdfs:comment "A type of Organization Name - short"@en .
+    rdfs:label "Short Organization Name"@en ;
+    rdfs:comment "A Type of Organization Name: short"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name"@en ;
-    rdfs:comment "A type of Person Name"@en .
+    rdfs:label "Person Name"@en ;
+    rdfs:comment "A Type of Person Name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/alt> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - alt"@en ;
-    rdfs:comment "A type of Person Name - alt"@en .
+    rdfs:label "Alternative Person Name"@en ;
+    rdfs:comment "A Type of Person Name: alt"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/alternative-name> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - alternative-name"@en ;
-    rdfs:comment "A type of Person Name - alternative-name"@en .
+    rdfs:label "Alternative Person Name"@en ;
+    rdfs:comment "A Type of Person Name: alternative-name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/born> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - born"@en ;
-    rdfs:comment "A type of Person Name - born"@en .
+    rdfs:label "Birth Name"@en ;
+    rdfs:comment "A Type of Person Name: born"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/divorced> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - divorced"@en ;
-    rdfs:comment "A type of Person Name - divorced"@en .
+    rdfs:label "Name after Divorce"@en ;
+    rdfs:comment "A Type of Person Name: divorced"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/female> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - female"@en ;
-    rdfs:comment "A type of Person Name - female"@en .
+    rdfs:label "Female Name"@en ;
+    rdfs:comment "A Type of Person Name: female"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/full> a cidoc:E55_Type ;
     rdfs:label "Type: Person Name - full"@en ;
-    rdfs:comment "A type of Person Name - full"@en .
+    rdfs:comment "A Type of Person Name: full"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/male> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - male"@en ;
-    rdfs:comment "A type of Person Name - male"@en .
+    rdfs:label "Male Name"@en ;
+    rdfs:comment "A Type of Person Name: male"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/married> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - married"@en ;
-    rdfs:comment "A type of Person Name - married"@en .
+    rdfs:label "Married Name"@en ;
+    rdfs:comment "A Type of Person Name: married name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/pref> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - pref"@en ;
-    rdfs:comment "A type of Person Name - pref"@en .
+    rdfs:label "Preferred Name"@en ;
+    rdfs:comment "A Type of Person Name: preferred name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/pseud> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - pseud"@en ;
-    rdfs:comment "A type of Person Name - pseud"@en .
+    rdfs:label "Pseudonym"@en ;
+    rdfs:comment "A Type of Person Name: Pseudonym"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - sk"@en ;
-    rdfs:comment "A type of Person Name - sk"@en .
+    rdfs:label "Person Name (SemanticKraus)"@en ;
+    rdfs:comment "A Type of Person Name: Name assigned in SemanticKraus Project"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/taken> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - taken"@en ;
-    rdfs:comment "A type of Person Name - taken"@en .
+    rdfs:label "Taken Name"@en ;
+    rdfs:comment "A Type of Person Name: taken"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/widowed> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - widowed"@en ;
-    rdfs:comment "A type of Person Name - widowed"@en .
+    rdfs:label "Name (widowed)"@en ;
+    rdfs:comment "A Type of Person Name: widowed"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename> a cidoc:E55_Type ;
-    rdfs:label "Type: Place Name"@en ;
-    rdfs:comment "A type of Place Name"@en .
+    rdfs:label "Place Name"@en ;
+    rdfs:comment "A Type of Place Name"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/alternative-name> a cidoc:E55_Type ;
-    rdfs:label "Type: Place Name - alternative-name"@en ;
-    rdfs:comment "A type of Place Name - alternative-name"@en .
+    rdfs:label "Alternative Place Name"@en ;
+    rdfs:comment "A Type of Place Name: alternative"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/alt-label> a cidoc:E55_Type ;
-    rdfs:label "Type: Place Name - alt-label"@en ;
-    rdfs:comment "A type of Place Name - alt-label"@en .
+    rdfs:label "Alternative Place Name"@en ;
+    rdfs:comment "A Type of Place Name: alternative"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> a cidoc:E55_Type ;
-    rdfs:label "Type: Place Name - orig-name"@en ;
-    rdfs:comment "A type of Place Name - orig-name"@en .
+    rdfs:label "Original Place Name"@en ;
+    rdfs:comment "A Type of Place Name: Original Name"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/pref> a cidoc:E55_Type ;
-    rdfs:label "Type: Place Name - pref"@en ;
-    rdfs:comment "A type of Place Name - pref"@en .
+    rdfs:label "Preferred Place Name"@en ;
+    rdfs:comment "A Type of Place Name: Preferred"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/simple-name> a cidoc:E55_Type ;
-    rdfs:label "Type: Place Name - simple-name"@en ;
-    rdfs:comment "A type of Place Name - simple-name"@en .
+    rdfs:label "Simple Place Name"@en ;
+    rdfs:comment "A Type of Place Name: simple-name"@en .
 <https://sk.acdh.oeaw.ac.at/types/role/AGV> a cidoc:E55_Type ;
-    rdfs:label "Type: Role - AGV"@en ;
-    rdfs:comment "A type of Role - AGV"@en .
+    rdfs:label "Legal Representation of the Defendant"@en ;
+    rdfs:comment "A Type of Role: Legal Representation of the Defendant"@en .
 <https://sk.acdh.oeaw.ac.at/types/role/AKV> a cidoc:E55_Type ;
-    rdfs:label "Type: Role - AKV"@en ;
-    rdfs:comment "A type of Role - AKV"@en .
+    rdfs:label "Legal Representation of the Plaintiff"@en ;
+    rdfs:comment "A Type of Role: Legal Representation of the Plaintiff"@en .
 <https://sk.acdh.oeaw.ac.at/types/role/ANG> a cidoc:E55_Type ;
-    rdfs:label "Type: Role - ANG"@en ;
-    rdfs:comment "A type of Role - ANG"@en .
+    rdfs:label "Defendant"@en ;
+    rdfs:comment "A Type of Role: Defendant"@en .
 <https://sk.acdh.oeaw.ac.at/types/role/ANK> a cidoc:E55_Type ;
-    rdfs:label "Type: Role - ANK"@en ;
-    rdfs:comment "A type of Role - ANK"@en .
+    rdfs:label "Plaintiff"@en ;
+    rdfs:comment "A Type of Role: Plaintiff"@en .
 <https://sk.acdh.oeaw.ac.at/types/role/RIC> a cidoc:E55_Type ;
-    rdfs:label "Type: Role - RIC"@en ;
-    rdfs:comment "A type of Role - RIC"@en .
+    rdfs:label "Judge"@en ;
+    rdfs:comment "A Type of Role: Judge"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/And> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - And"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - And"@en .
+    rdfs:label "Signed with St. Andrew's Cross"@en ;
+    rdfs:comment "A Type of Text: Signed with St. Andrew's Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Aus> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - Aus"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - Aus"@en .
+    rdfs:label "Signed with Exclamation Mark"@en ;
+    rdfs:comment "A Type of Text: Signed with Exclamation Mark"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Bat> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - Bat"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - Bat"@en .
+    rdfs:label "Signed with Baton"@en ;
+    rdfs:comment "A Type of Text: Signed with Baton"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/DQu> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - DQu"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - DQu"@en .
+    rdfs:label "Signed with Crossed Square"@en ;
+    rdfs:comment "A Type of Text: Signed with Crossed Square"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Fra> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - Fra"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - Fra"@en .
+    rdfs:label "Signed with Question Mark"@en ;
+    rdfs:comment "A Type of Text: Signed with Question Mark"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GDr> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - GDr"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - GDr"@en .
+    rdfs:label "Signed with Equilateral Triangle"@en ;
+    rdfs:comment "A Type of Text: Signed with Equilateral Triangle"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GeK> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - GeK"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - GeK"@en .
+    rdfs:label "Signed with Common Cross"@en ;
+    rdfs:comment "A Type of Text: Signed with Common Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GLK> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - GLK"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - GLK"@en .
+    rdfs:label "Signed with Large Empty Circle"@en ;
+    rdfs:comment "A Type of Text: Signed with Large Empty Circle"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GSt> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - GSt"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - GSt"@en .
+    rdfs:label "Signed with Large Asterisk"@en ;
+    rdfs:comment "A Type of Text: Signed with Large Asterisk"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GuP> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - GuP"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - GuP"@en .
+    rdfs:label "Signed with "Equal and Parallel To"-Character"@en ;
+    rdfs:comment "A Type of Text: Signed with "Equal and Parallel To"-Character"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/HoO> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - HoO"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - HoO"@en .
+    rdfs:label "Signed with Horizontal Oval"@en ;
+    rdfs:comment "A Type of Text: Signed with Horizontal Oval"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/LaK> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - LaK"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - LaK"@en .
+    rdfs:label "Signed with Latin Cross"@en ;
+    rdfs:comment "A Type of Text: Signed with Latin Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/LeK> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - LeK"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - LeK"@en .
+    rdfs:label "Signed with Empty Circle"@en ;
+    rdfs:comment "A Type of Text: Signed with Empty Circle"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/leQ> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - leQ"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - leQ"@en .
+    rdfs:label "Signed with Empty Square"@en ;
+    rdfs:comment "A Type of Text: Signed with Empty Square"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/LiH> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - LiH"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - LiH"@en .
+    rdfs:label "Signed with Left Wound Crosier"@en ;
+    rdfs:comment "A Type of Text: Signed with Left Wound Crosier"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Par> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - Par"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - Par"@en .
+    rdfs:label "Signed with Paragraph Sign"@en ;
+    rdfs:comment "A Type of Text: Signed with Paragraph Sign"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/reH> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - reH"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - reH"@en .
+    rdfs:label "Signed with Right Wound Crosier"@en ;
+    rdfs:comment "A Type of Text: Signed with Right Wound Crosier"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/RLK> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - RLK"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - RLK"@en .
+    rdfs:label "Signed with Right Leaning Latin Cross"@en ;
+    rdfs:comment "A Type of Text: Signed with Right Leaning Latin Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/ZAn> a cidoc:E55_Type ;
-    rdfs:label "Type: Text signed with Chiffre - ZAn"@en ;
-    rdfs:comment "A type of Text signed with Chiffre - ZAn"@en .
+    rdfs:label "Signed with Two St. Andrew's Crosses"@en ;
+    rdfs:comment "A Type of Text: Signed with Two St. Andrew's Crosses"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Abf> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Abf"@en ;
-    rdfs:comment "A type of Text Rubric - Abf"@en .
+    rdfs:label "Rubric 'Abfälle'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Abfälle'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/AdG> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - AdG"@en ;
-    rdfs:comment "A type of Text Rubric - AdG"@en .
+    rdfs:label "Rubric 'Antworten der Geschäftsstelle'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Antworten der Geschäftsstelle'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/AdH> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - AdH"@en ;
-    rdfs:comment "A type of Text Rubric - AdH"@en .
+    rdfs:label "Rubric 'Antworten des Herausgebers'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Antworten des Herausgebers'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Bri> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Bri"@en ;
-    rdfs:comment "A type of Text Rubric - Bri"@en .
+    rdfs:label "Rubric 'Briefkasten'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Briefkasten'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/DlN> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - DlN"@en ;
-    rdfs:comment "A type of Text Rubric - DlN"@en .
+    rdfs:label "Rubric 'Die letzte Nacht'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Die letzte Nacht'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Glo> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Glo"@en ;
-    rdfs:comment "A type of Text Rubric - Glo"@en .
+    rdfs:label "Rubric 'Glossen'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNot> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - GloNot"@en ;
-    rdfs:comment "A type of Text Rubric - GloNot"@en .
+    rdfs:label "Rubric 'Glossen, Notizen'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen, Notizen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotAph> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - GloNotAph"@en ;
-    rdfs:comment "A type of Text Rubric - GloNotAph"@en .
+    rdfs:label "Rubric 'Glossen, Notizen, Aphorismen'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen, Notizen, Aphorismen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotBri> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - GloNotBri"@en ;
-    rdfs:comment "A type of Text Rubric - GloNotBri"@en .
+    rdfs:label "Rubric 'Glossen, Notizen, Briefe'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen, Notizen, Briefe'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Ins> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Ins"@en ;
-    rdfs:comment "A type of Text Rubric - Ins"@en .
+    rdfs:label "Rubric 'Inschriften'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Inschriften'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Lap> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Lap"@en ;
-    rdfs:comment "A type of Text Rubric - Lap"@en .
+    rdfs:label "Rubric 'Lapidares aus der Neuen Freien Presse'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Lapidares aus der Neuen Freien Presse'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/LiF> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - LiF"@en ;
-    rdfs:comment "A type of Text Rubric - LiF"@en .
+    rdfs:label "Rubric 'Liebe Fackel!'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Liebe Fackel!'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/MdV> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - MdV"@en ;
-    rdfs:comment "A type of Text Rubric - MdV"@en .
+    rdfs:label "Rubric 'Mitteilungen des Verlages'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Mitteilungen des Verlages'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Nac> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Nac"@en ;
-    rdfs:comment "A type of Text Rubric - Nac"@en .
+    rdfs:label "Rubric 'Nachts'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Nachts'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Not> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Not"@en ;
-    rdfs:comment "A type of Text Rubric - Not"@en .
+    rdfs:label "Rubric 'Notizen'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Notizen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Pro> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Pro"@en ;
-    rdfs:comment "A type of Text Rubric - Pro"@en .
+    rdfs:label "Rubric 'Pro domo et mundo'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Pro domo et mundo'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Spl> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Spl"@en ;
-    rdfs:comment "A type of Text Rubric - Spl"@en .
+    rdfs:label "Rubric 'Zur Sprachlehre'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Zur Sprachlehre'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Spr> a cidoc:E55_Type ;
-    rdfs:label "Type: Text Rubric - Spr"@en ;
-    rdfs:comment "A type of Text Rubric - Spr"@en .
+    rdfs:label "Rubric 'Vom Springinsgeld / Der junge Springinsgeld'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Vom Springinsgeld / Der junge Springinsgeld'"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/main> a cidoc:E55_Type ;
-    rdfs:label "Type: Title - main"@en ;
-    rdfs:comment "A type of Title - main"@en .
+    rdfs:label "Main Title"@en ;
+    rdfs:comment "A Type of Title: Main Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/prov> a cidoc:E55_Type ;
-    rdfs:label "Type: Title - prov"@en ;
-    rdfs:comment "A type of Title - prov"@en .
+    rdfs:label "Provisional Title"@en ;
+    rdfs:comment "A Type of Title: Provisional Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/sub> a cidoc:E55_Type ;
-    rdfs:label "Type: Title - sub"@en ;
-    rdfs:comment "A type of Title - sub"@en .
+    rdfs:label "Subtitle"@en ;
+    rdfs:comment "A Type of Title: Subtitle"@en .
 <https://sk.acdh.oeaw.ac.at/types/translation> a cidoc:E55_Type ;
-    rdfs:label "Type: Translation"@en ;
-    rdfs:comment "A type of Translation"@en .
+    rdfs:label "Translation"@en ;
+    rdfs:comment "A Type of Activity: Translation"@en .
 
 }
