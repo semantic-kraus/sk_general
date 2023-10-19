@@ -59,43 +59,72 @@ sk:general {
 <https://sk.acdh.oeaw.ac.at/types/idno/pmb> a cidoc:E55_Type ;
     rdfs:label "pmb"@en ;
     rdfs:comment "A Type of Identification Number: pmb"@en .
+<https://sk.acdh.oeaw.ac.at/types/idno/URL>a cidoc:E55_Type ;
+    rdfs:label "URL" ;
+    cidoc:P127i_has_narrower_term <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/doiorg101553> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-lektueren> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-briefe> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-bahr> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/legalkraus> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> ,
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> .
+    rdfs:comment "A Type of Identifier: URL" .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "ARCHE"@en ;
     rdfs:comment "A Type of Identification Number/URL: ARCHE"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/doiorg101553> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "doiorg101553"@en ;
     rdfs:comment "A Type of Identification Number/URL: doiorg101553"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/dritte-walpurgisnacht> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "Dritte Walpurgisnacht URL"@en ;
     rdfs:comment "A Type of Identification Number/URL: dritte-walpurgisnacht"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "Fackel URL"@en ;
     rdfs:comment "A Type of Identification Number/URL: fackel"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "geonames"@en ;
     rdfs:comment "A Type of Identification Number/URL: geonames"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "gnd"@en ;
     rdfs:comment "A Type of Identification Number/URL: gnd"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/legalkraus> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "legalkraus"@en ;
     rdfs:comment "A Type of Identification Number/URL: legalkraus"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/pmb> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "pmb"@en ;
     rdfs:comment "A Type of Identification Number/URL: pmb"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-bahr> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "schnitzler-bahr"@en ;
     rdfs:comment "A Type of Identification Number/URL: schnitzler-bahr"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-briefe> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "schnitzler-briefe"@en ;
     rdfs:comment "A Type of Identification Number/URL: schnitzler-briefe"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-lektueren> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "schnitzler-lektueren"@en ;
     rdfs:comment "A Type of Identification Number/URL: schnitzler-lektueren"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "schnitzler-tagebuch"@en ;
     rdfs:comment "A Type of Identification Number/URL: schnitzler-tagebuch"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
     rdfs:label "wikidata"@en ;
     rdfs:comment "A Type of Identification Number/URL: wikidata"@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/VIAF> a cidoc:E55_Type ;
@@ -258,68 +287,116 @@ sk:general {
     rdfs:label "Signed with Two St. Andrew's Crosses"@en ;
     rdfs:comment "A Type of Text: Signed with Two St. Andrew's Crosses"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Abf> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Abfälle'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Abfälle'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/AdG> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Antworten der Geschäftsstelle'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Antworten der Geschäftsstelle'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/AdH> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Antworten des Herausgebers'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Antworten des Herausgebers'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Bri> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Briefkasten'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Briefkasten'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/DlN> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Die letzte Nacht'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Die letzte Nacht'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Glo> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Glossen'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNot> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Glossen, Notizen'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen, Notizen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotAph> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Glossen, Notizen, Aphorismen'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen, Notizen, Aphorismen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotBri> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Glossen, Notizen, Briefe'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Glossen, Notizen, Briefe'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Ins> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Inschriften'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Inschriften'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Lap> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Lapidares aus der Neuen Freien Presse'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Lapidares aus der Neuen Freien Presse'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/LiF> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Liebe Fackel!'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Liebe Fackel!'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/MdV> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Mitteilungen des Verlages'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Mitteilungen des Verlages'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Nac> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Nachts'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Nachts'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Not> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Notizen'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Notizen'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Pro> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Pro domo et mundo'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Pro domo et mundo'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Spl> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Zur Sprachlehre'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Zur Sprachlehre'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Spr> a cidoc:E55_Type ;
+   cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Vom Springinsgeld / Der junge Springinsgeld'"@en ;
     rdfs:comment "A Type of Text: Rubric / Recurring Title 'Vom Springinsgeld / Der junge Springinsgeld'"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/rubric> a cidoc:E55_Type ;
+   rdfs:label "Rubric"@en ;
+   cidoc:P127i_has_narrower_term <https://sk.acdh.oeaw.ac.at/types/text/rubric/Abf> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/AdG> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/AdH> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Bri> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/DlN> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Glo> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNot> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotAph> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/GloNotBri> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Ins> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Lap> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/LiF> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/MdV> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Nac> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Not> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Pro> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Spl> ,
+<https://sk.acdh.oeaw.ac.at/types/text/rubric/Spr> ;
+   rdfs:comment "A Type of Text: Rubric"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/main> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types> ;
     rdfs:label "Main Title"@en ;
     rdfs:comment "A Type of Title: Main Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/prov> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types> ;
     rdfs:label "Provisional Title"@en ;
     rdfs:comment "A Type of Title: Provisional Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/sub> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types> ;
     rdfs:label "Subtitle"@en ;
     rdfs:comment "A Type of Title: Subtitle"@en .
+<https://sk.acdh.oeaw.ac.at/types/title> a cidoc:E55_Type ;
+    rdfs:label "Title"@en ;
+    cidoc:P127i_has_narrower_term <https://sk.acdh.oeaw.ac.at/types/title/sub> ,
+    <https://sk.acdh.oeaw.ac.at/types/title/prov> ,
+    <https://sk.acdh.oeaw.ac.at/types/title/main> ;
+    rdfs:comment "A Type of Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/translation> a cidoc:E55_Type ;
     rdfs:label "Translation"@en ;
     rdfs:comment "A Type of Activity: Translation"@en .
