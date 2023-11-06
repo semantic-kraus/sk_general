@@ -59,7 +59,7 @@ sk:general {
 <https://sk.acdh.oeaw.ac.at/types/idno/pmb> a cidoc:E55_Type ;
     rdfs:label "pmb"@en ;
     rdfs:comment "A Type of Identification Number: pmb"@en .
-<https://sk.acdh.oeaw.ac.at/types/idno/URL>a cidoc:E55_Type ;
+<https://sk.acdh.oeaw.ac.at/types/idno/URL> a cidoc:E55_Type ;
     rdfs:label "URL" ;
     cidoc:P127i_has_narrower_term <https://sk.acdh.oeaw.ac.at/types/idno/URL/geonames> ,
     <https://sk.acdh.oeaw.ac.at/types/idno/URL/fackel> ,
@@ -288,12 +288,12 @@ sk:general {
     rdfs:comment "A Type of Text: Signed with Two St. Andrew's Crosses"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Abf> a cidoc:E55_Type ;
    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
-    rdfs:label "Rubric 'Abf‰lle'"@en ;
-    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Abf‰lle'"@en .
+    rdfs:label "Rubric 'Abf√§lle'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Abf√§lle'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/AdG> a cidoc:E55_Type ;
    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
-    rdfs:label "Rubric 'Antworten der Gesch‰ftsstelle'"@en ;
-    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Antworten der Gesch‰ftsstelle'"@en .
+    rdfs:label "Rubric 'Antworten der Gesch√§ftsstelle'"@en ;
+    rdfs:comment "A Type of Text: Rubric / Recurring Title 'Antworten der Gesch√§ftsstelle'"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/AdH> a cidoc:E55_Type ;
    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/rubric> ;
     rdfs:label "Rubric 'Antworten des Herausgebers'"@en ;
