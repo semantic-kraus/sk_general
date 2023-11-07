@@ -73,7 +73,7 @@ sk:general {
     <https://sk.acdh.oeaw.ac.at/types/idno/URL/legalkraus> ,
     <https://sk.acdh.oeaw.ac.at/types/idno/URL/schnitzler-tagebuch> ,
     <https://sk.acdh.oeaw.ac.at/types/idno/URL/wikidata> ,
-    <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> .
+    <https://sk.acdh.oeaw.ac.at/types/idno/URL/gnd> ;
     rdfs:comment "A Type of Identifier: URL" .
 <https://sk.acdh.oeaw.ac.at/types/idno/URL/ARCHE> a cidoc:E55_Type ;
     cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/idno/URL> ;
@@ -257,8 +257,8 @@ sk:general {
     rdfs:label "Signed with Large Asterisk"@en ;
     rdfs:comment "A Type of Text: Signed with Large Asterisk"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GuP> a cidoc:E55_Type ;
-    rdfs:label "Signed with "Equal and Parallel To"-Character"@en ;
-    rdfs:comment "A Type of Text: Signed with "Equal and Parallel To"-Character"@en .
+    rdfs:label "Signed with 'Equal and Parallel To'-Character"@en ;
+    rdfs:comment "A Type of Text: Signed with 'Equal and Parallel To'-Character"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/HoO> a cidoc:E55_Type ;
     rdfs:label "Signed with Horizontal Oval"@en ;
     rdfs:comment "A Type of Text: Signed with Horizontal Oval"@en .
