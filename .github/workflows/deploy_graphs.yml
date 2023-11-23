@@ -1,0 +1,16 @@
+name: Deploy graphs
+
+on: 
+  schedule:
+    - cron: "30 22/24 * * *"
+  workflow_dispatch:
+
+jobs:
+  upload_graphs:
+    name: Upload graphs
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Update Graphs
+      run: |
+        ./update_graphs.sh
