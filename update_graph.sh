@@ -18,3 +18,9 @@ curl $R_ENDPOINT_V \
     -H 'Accept: text/boolean' \
     -d @rdf/general.trig
 sleep 600
+
+echo "add namedgraph provenance.trig"
+curl $R_ENDPOINT_V \
+    -H 'Content-Type: application/x-trig; charset=UTF-8' \
+    -H 'Accept: text/boolean' \
+    -d @rdf/provenance.trig
