@@ -10,37 +10,37 @@
 sk:general {
 <https://sk.acdh.oeaw.ac.at/types/appellation/date> a cidoc:E55_Type ;
     rdfs:label "Date"@en ;
-    rdfs:comment "A Type of Appellation: Date"@en .
+    rdfs:comment "A type of an appellation part: The date as part of an appellation for, e.g., a periodical."@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/ed> a cidoc:E55_Type ;
     rdfs:label "Edition"@en ;
-    rdfs:comment "A Type of Appellation: Edition"@en .
+    rdfs:comment "A type of an appellation part: The edition as part of an appellation for, e.g., a newspaper, distinguishing different (e.g., local) editions."@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/num/issue> a cidoc:E55_Type ;
     rdfs:label "Issue Number"@en ;
-    rdfs:comment "A Type of Appellation: Issue Number"@en .
+    rdfs:comment "A type of an appellation part: The issue number as part of an appellation for, e.g., a periodical."@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/num/volume> a cidoc:E55_Type ;
     rdfs:label "Volume Number"@en ;
-    rdfs:comment "A Type of Appellation: Volume Number"@en .
+    rdfs:comment "A type of an appellation part: The volume number as part of an appellation for, e.g., a periodical."@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/place> a cidoc:E55_Type ;
     rdfs:label "Place of Publication"@en ;
-    rdfs:comment "A Type of Appellation: Place of Publication"@en .
+    rdfs:comment "A type of an appellation part: The place of publication as part of an appellation for, e.g., a newspaper."@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/title/main> a cidoc:E55_Type ;
     rdfs:label "Main Title"@en ;
-    rdfs:comment "A Type of Appellation: Main Title"@en .
+    rdfs:comment "A type of appellation: The main title of a text."@en .
 <https://sk.acdh.oeaw.ac.at/types/appellation/title/sub> a cidoc:E55_Type ;
     rdfs:label "Subtitle"@en ;
-    rdfs:comment "A Type of Appellation: Subtitle"@en .
+    rdfs:comment "A type of appellation: The subtitle of a text."@en .
 <https://sk.acdh.oeaw.ac.at/types/date/approx> a cidoc:E55_Type ;
     rdfs:label "Approximate"@en ;
-    rdfs:comment "A Type of Date: Approximate"@en .
+    rdfs:comment "A type of date: Approximate. This type denotes the imprecision of a date or that the date lies within a specified period of time or before / after a certain point in time."@en .
 <https://sk.acdh.oeaw.ac.at/types/event/burial> a cidoc:E55_Type ;
     rdfs:label "Burial"@en ;
-    rdfs:comment "A Type of Event: Burial"@en .
+    rdfs:comment "A Type of Event: Burial."@en .
 <https://sk.acdh.oeaw.ac.at/types/event/decl-dead> a cidoc:E55_Type ;
     rdfs:label "Declared Dead"@en ;
-    rdfs:comment "A Type of Event: Declared Dead"@en .
+    rdfs:comment "A Type of Event: A person being declared dead."@en .
 <https://sk.acdh.oeaw.ac.at/types/event/first> a cidoc:E55_Type ;
     rdfs:label "Initial Event (Premiere, First Oration)"@en ;
-    rdfs:comment "A Type of Event: Initial Event (Premiere, First Oration)"@en .
+    rdfs:comment "A Type of Event: Initial Event (Premiere, First Oration). This applies to the traditional domain of 'premieres' – in regard to dramatic texts – as well as to the first (and usually only) delivery of a public speech."@en .
 <https://sk.acdh.oeaw.ac.at/types/event/legal-case> a cidoc:E55_Type ;
     rdfs:label "Legal Case"@en ;
     rdfs:comment "A Type of Event: Legal Case"@en .
@@ -49,7 +49,7 @@ sk:general {
     rdfs:comment "A Type of Event: Mentioned"@en .
 <https://sk.acdh.oeaw.ac.at/types/event/missing> a cidoc:E55_Type ;
     rdfs:label "Missing"@en ;
-    rdfs:comment "A Type of Event: Missing"@en .
+    rdfs:comment "A Type of Event: A person being declared / going missing."@en .
 <https://sk.acdh.oeaw.ac.at/types/idno/geonames> a cidoc:E55_Type ;
     rdfs:label "geonames"@en ;
     rdfs:comment "A Type of Identification Number: geonames"@en .
@@ -138,82 +138,82 @@ sk:general {
     rdfs:comment "A Type of Identification Number: xml-id"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname> a cidoc:E55_Type ;
     rdfs:label "Organization Name"@en ;
-    rdfs:comment "A Type of Organization Name"@en .
+    rdfs:comment "A type of name: an organization name"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/alternative-name> a cidoc:E55_Type ;
     rdfs:label "Alternative Organization Name"@en ;
-    rdfs:comment "A Type of Organization Name: alternative-name"@en .
+    rdfs:comment "A type of organization name: an alternative name for an organization"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/full> a cidoc:E55_Type ;
     rdfs:label "Full Organization Name"@en ;
-    rdfs:comment "A Type of Organization Name: full"@en .
+    rdfs:comment "A type of organization name: a full name of an organization"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/orig-name> a cidoc:E55_Type ;
     rdfs:label "Original Organization Name"@en ;
-    rdfs:comment "A Type of Organization Name: orig-name"@en .
+    rdfs:comment "A type of organization name: the original name of an organization"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/pref> a cidoc:E55_Type ;
     rdfs:label "Preferred Organization Name"@en ;
-    rdfs:comment "A Type of Organization Name: pref"@en .
+    rdfs:comment "A type of organization name: a preferred name for an organization"@en .
 <https://sk.acdh.oeaw.ac.at/types/org/orgname/short> a cidoc:E55_Type ;
     rdfs:label "Short Organization Name"@en ;
-    rdfs:comment "A Type of Organization Name: short"@en .
+    rdfs:comment "A type of organization name: a short name for an organization"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname> a cidoc:E55_Type ;
     rdfs:label "Person Name"@en ;
-    rdfs:comment "A Type of Person Name"@en .
+    rdfs:comment "A Type of name: a person name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/alt> a cidoc:E55_Type ;
     rdfs:label "Alternative Person Name"@en ;
-    rdfs:comment "A Type of Person Name: alt"@en .
+    rdfs:comment "A type of person name: an alternative person name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/alternative-name> a cidoc:E55_Type ;
     rdfs:label "Alternative Person Name"@en ;
-    rdfs:comment "A Type of Person Name: alternative-name"@en .
+    rdfs:comment "A type of person name: an alternative person name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/born> a cidoc:E55_Type ;
     rdfs:label "Birth Name"@en ;
-    rdfs:comment "A Type of Person Name: born"@en .
+    rdfs:comment "A type of person name: a person's birth name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/divorced> a cidoc:E55_Type ;
     rdfs:label "Name after Divorce"@en ;
-    rdfs:comment "A Type of Person Name: divorced"@en .
+    rdfs:comment "A type of person name: a person's name after divorce"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/female> a cidoc:E55_Type ;
     rdfs:label "Female Name"@en ;
-    rdfs:comment "A Type of Person Name: female"@en .
+    rdfs:comment "A type of person name: a female name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/full> a cidoc:E55_Type ;
     rdfs:label "Type: Person Name - full"@en ;
-    rdfs:comment "A Type of Person Name: full"@en .
+    rdfs:comment "A type of person name: a person's full name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/male> a cidoc:E55_Type ;
     rdfs:label "Male Name"@en ;
-    rdfs:comment "A Type of Person Name: male"@en .
+    rdfs:comment "A type of person name: a male person name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/married> a cidoc:E55_Type ;
     rdfs:label "Married Name"@en ;
-    rdfs:comment "A Type of Person Name: married name"@en .
+    rdfs:comment "A type of person name: a person's name after marriage"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/pref> a cidoc:E55_Type ;
     rdfs:label "Preferred Name"@en ;
-    rdfs:comment "A Type of Person Name: preferred name"@en .
+    rdfs:comment "A type of person name: a preferred name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/pseud> a cidoc:E55_Type ;
     rdfs:label "Pseudonym"@en ;
-    rdfs:comment "A Type of Person Name: Pseudonym"@en .
+    rdfs:comment "A type of person name: a pseudonym"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/sk> a cidoc:E55_Type ;
     rdfs:label "Person Name (SemanticKraus)"@en ;
-    rdfs:comment "A Type of Person Name: Name assigned in SemanticKraus Project"@en .
+    rdfs:comment "A type of person name: a name assigned in the SemanticKraus project context"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/taken> a cidoc:E55_Type ;
     rdfs:label "Taken Name"@en ;
-    rdfs:comment "A Type of Person Name: taken"@en .
+    rdfs:comment "A type of person name: an taken name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/widowed> a cidoc:E55_Type ;
     rdfs:label "Name (widowed)"@en ;
-    rdfs:comment "A Type of Person Name: widowed"@en .
+    rdfs:comment "A type of person name: an person's name after being widowed"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename> a cidoc:E55_Type ;
     rdfs:label "Place Name"@en ;
-    rdfs:comment "A Type of Place Name"@en .
+    rdfs:comment "A type of name: a place name"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/alternative-name> a cidoc:E55_Type ;
     rdfs:label "Alternative Place Name"@en ;
-    rdfs:comment "A Type of Place Name: alternative"@en .
+    rdfs:comment "A type of place name: an alternative name for a place"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/alt-label> a cidoc:E55_Type ;
     rdfs:label "Alternative Place Name"@en ;
-    rdfs:comment "A Type of Place Name: alternative"@en .
+    rdfs:comment "A type of place name: an alternative name for a place"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/orig-name> a cidoc:E55_Type ;
     rdfs:label "Original Place Name"@en ;
-    rdfs:comment "A Type of Place Name: Original Name"@en .
+    rdfs:comment "A type of place name: a place's original name"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/pref> a cidoc:E55_Type ;
     rdfs:label "Preferred Place Name"@en ;
-    rdfs:comment "A Type of Place Name: Preferred"@en .
+    rdfs:comment "A type of place name: a preferred name for a place"@en .
 <https://sk.acdh.oeaw.ac.at/types/place/placename/simple-name> a cidoc:E55_Type ;
     rdfs:label "Simple Place Name"@en ;
-    rdfs:comment "A Type of Place Name: simple-name"@en .
+    rdfs:comment "A type of place name: a simple name for a place"@en .
 <https://sk.acdh.oeaw.ac.at/types/role/AGV> a cidoc:E55_Type ;
     rdfs:label "Legal Representation of the Defendant"@en ;
     rdfs:comment "A Type of Role: Legal Representation of the Defendant"@en .
