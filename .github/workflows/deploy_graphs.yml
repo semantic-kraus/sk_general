@@ -9,6 +9,8 @@ jobs:
   upload_graphs:
     name: Upload graphs
     runs-on: ubuntu-latest
+    env:
+        R_ENDPOINT_V: ${{ secrets.R_ENDPOINT_V }}
     steps:
     - uses: actions/checkout@v3
     - name: Update Graphs
