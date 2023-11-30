@@ -126,7 +126,7 @@ for y in same_as.values():
         elif graph2 == named_graph_fa:
             g_fa.add((identifier2, OWL["sameAs"], identifier1))
         try:
-            g_fa.add((identifier1, OWL["sameAs"], identifier3))
+            g_dw.add((identifier1, OWL["sameAs"], identifier3))
             if graph3 == named_graph_lk:
                 g_lk.add((identifier3, OWL["sameAs"], identifier1))
             elif graph3 == named_graph_fa:
