@@ -1,0 +1,29 @@
+name: Deploy graphs
+
+on: 
+  schedule:
+    - cron: "30 04/24 * * *"
+  workflow_dispatch:
+
+jobs:
+  upload_graphs:
+    name: Upload graphs
+    runs-on: ubuntu-latest
+    env:
+        SK_USER: ${{ secrets.SK_USER }}
+        SK_PSSWD: ${{ secrets.SK_PSSWD }}
+    steps:
+    - uses: actions/checkout@v3
+    - name: install packages
+      run: |
+        pip install -U pip
+        pip install -r requirements.txt
+    - name: query data
+      run: |
+        python sparql.py
+    - name: create same as triples
+      run: |
+        python same_as.py
+    - name: Update Graphs
+      run: |
+        ./update_graph_same_as.sh
