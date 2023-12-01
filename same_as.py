@@ -76,14 +76,28 @@ g_dw.bind("sk", SK)
 g_dw.bind("dw", DW)
 g_dw.bind("owl", OWL)
 
+
+def assign_to_graph(graph, *args):
+    graphs = {
+        "https://sk.acdh.oeaw.ac.at/project/legal-kraus": g_lk, 
+        "https://sk.acdh.oeaw.ac.at/project/fackel": g_fa,
+        "https://sk.acdh.oeaw.ac.at/project/dritte-walpurgisnacht": g_dw
+    }
+    if len(args) == 2:
+        graphs[graph].add((args[0], OWL["sameAs"], args[1]))
+    elif len(args) == 3:
+        graphs[graph].add((args[0], OWL["sameAs"], args[1]))
+        graphs[graph].add((args[0], OWL["sameAs"], args[2]))
+    return print(f"added {len(args)} triples to {graph}")
+
+
 for y in same_as.values():
     identifier1 = URIRef(y[0]["identifier"])
     identifier2 = URIRef(y[1]["identifier"])
+    identifier3 = False
     graph1 = y[0]["graph"]
     graph2 = y[1]["graph"]
-    named_graph_lk = "https://sk.acdh.oeaw.ac.at/project/legal-kraus"
-    named_graph_fa = "https://sk.acdh.oeaw.ac.at/project/fackel"
-    named_graph_dw = "https://sk.acdh.oeaw.ac.at/project/dritte-walpurgisnacht"
+    graph3 = False
     try:
         graph3 = y[2]["graph"]
     except IndexError:
@@ -92,48 +106,13 @@ for y in same_as.values():
         identifier3 = URIRef(y[2]["identifier"])
     except IndexError:
         print("error 2: no third identifier")
-    if graph1 == named_graph_lk:
-        g_lk.add((identifier1, OWL["sameAs"], identifier2))
-        if graph2 == named_graph_fa:
-            g_fa.add((identifier2, OWL["sameAs"], identifier1))
-        elif graph2 == named_graph_dw:
-            g_dw.add((identifier2, OWL["sameAs"], identifier1))
-        try:
-            g_lk.add((identifier1, OWL["sameAs"], identifier3))
-            if graph3 == named_graph_fa:
-                g_fa.add((identifier3, OWL["sameAs"], identifier1))
-            elif graph3 == named_graph_dw:
-                g_dw.add((identifier3, OWL["sameAs"], identifier1))
-        except NameError:
-            print("error 3: no third identifier")
-    elif graph1 == named_graph_fa:
-        g_fa.add((identifier1, OWL["sameAs"], identifier2))
-        if graph2 == named_graph_lk:
-            g_lk.add((identifier2, OWL["sameAs"], identifier1))
-        elif graph2 == named_graph_dw:
-            g_dw.add((identifier2, OWL["sameAs"], identifier1))
-        try:
-            g_fa.add((identifier1, OWL["sameAs"], identifier3))
-            if graph3 == named_graph_lk:
-                g_lk.add((identifier3, OWL["sameAs"], identifier1))
-            elif graph3 == named_graph_dw:
-                g_dw.add((identifier3, OWL["sameAs"], identifier1))
-        except NameError:
-            print("error 4: no third identifier")
-    elif graph1 == named_graph_dw:
-        g_dw.add((identifier1, OWL["sameAs"], identifier2))
-        if graph2 == named_graph_lk:
-            g_lk.add((identifier2, OWL["sameAs"], identifier1))
-        elif graph2 == named_graph_fa:
-            g_fa.add((identifier2, OWL["sameAs"], identifier1))
-        try:
-            g_dw.add((identifier1, OWL["sameAs"], identifier3))
-            if graph3 == named_graph_lk:
-                g_lk.add((identifier3, OWL["sameAs"], identifier1))
-            elif graph3 == named_graph_fa:
-                g_fa.add((identifier3, OWL["sameAs"], identifier1))
-        except NameError:
-            print("error 5: no third identifier")
+    if graph3:
+        assign_to_graph(graph1, identifier1, identifier2, identifier3)
+        assign_to_graph(graph2, identifier2, identifier1, identifier3)
+        assign_to_graph(graph3, identifier3, identifier1, identifier2)
+    else:
+        assign_to_graph(graph1, identifier1, identifier2)
+        assign_to_graph(graph2, identifier2, identifier1)
 
 g_all = ConjunctiveGraph(store=project_store)
 g_all.serialize("same_as.trig", format="trig")
