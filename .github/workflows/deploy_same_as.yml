@@ -1,4 +1,4 @@
-name: Deploy graphs
+name: Deploy graphs sameAs
 
 on: 
   schedule:
@@ -12,6 +12,7 @@ jobs:
     env:
         SK_USER: ${{ secrets.SK_USER }}
         SK_PSSWD: ${{ secrets.SK_PSSWD }}
+        R_ENDPOINT_V: ${{ secrets.R_ENDPOINT_V }}
     steps:
     - uses: actions/checkout@v3
     - name: install packages
