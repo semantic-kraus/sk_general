@@ -1,4 +1,4 @@
-name: Deploy graphs
+name: Deploy graphs sameAs
 
 on: 
   schedule:
