@@ -51,6 +51,7 @@ SK = Namespace(domain)
 
 store = plugin.get("Memory", Store)()
 project_store = plugin.get("Memory", Store)()
+
 project_uri = URIRef(f"{SK}project/legal-kraus")
 g_lk = Graph(identifier=project_uri, store=project_store)
 g_lk.bind("cidoc", CIDOC)
@@ -86,11 +87,11 @@ for y in same_as.values():
     try:
         graph3 = y[2]["graph"]
     except IndexError:
-        continue
+        print("error 1: no third graph")
     try:
         identifier3 = URIRef(y[2]["identifier"])
     except IndexError:
-        continue
+        print("error 2: no third identifier")
     if graph1 == named_graph_lk:
         g_lk.add((identifier1, OWL["sameAs"], identifier2))
         if graph2 == named_graph_fa:
@@ -103,8 +104,8 @@ for y in same_as.values():
                 g_fa.add((identifier3, OWL["sameAs"], identifier1))
             elif graph3 == named_graph_dw:
                 g_dw.add((identifier3, OWL["sameAs"], identifier1))
-        except IndexError:
-            continue
+        except NameError:
+            print("error 3: no third identifier")
     elif graph1 == named_graph_fa:
         g_fa.add((identifier1, OWL["sameAs"], identifier2))
         if graph2 == named_graph_lk:
@@ -117,8 +118,8 @@ for y in same_as.values():
                 g_lk.add((identifier3, OWL["sameAs"], identifier1))
             elif graph3 == named_graph_dw:
                 g_dw.add((identifier3, OWL["sameAs"], identifier1))
-        except IndexError:
-            continue
+        except NameError:
+            print("error 4: no third identifier")
     elif graph1 == named_graph_dw:
         g_dw.add((identifier1, OWL["sameAs"], identifier2))
         if graph2 == named_graph_lk:
@@ -131,8 +132,8 @@ for y in same_as.values():
                 g_lk.add((identifier3, OWL["sameAs"], identifier1))
             elif graph3 == named_graph_fa:
                 g_fa.add((identifier3, OWL["sameAs"], identifier1))
-        except IndexError:
-            continue
+        except NameError:
+            print("error 5: no third identifier")
 
 g_all = ConjunctiveGraph(store=project_store)
 g_all.serialize("same_as.trig", format="trig")
