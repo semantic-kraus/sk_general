@@ -77,9 +77,9 @@ g_dw.bind("dw", DW)
 g_dw.bind("owl", OWL)
 
 GRAPHS = {
-    "https://sk.acdh.oeaw.ac.at/project/legal-kraus": g_lk, 
-    "https://sk.acdh.oeaw.ac.at/project/fackel": g_fa,
-    "https://sk.acdh.oeaw.ac.at/project/dritte-walpurgisnacht": g_dw
+    "legal_kraus": g_lk, 
+    "fackel": g_fa,
+    "dritte_walpurgisnacht": g_dw
 }
 
 
@@ -93,11 +93,11 @@ for y in same_as.values():
     identifier1 = URIRef(y[0]["identifier"])
     identifier2 = URIRef(y[1]["identifier"])
     identifier3 = False
-    graph1 = y[0]["graph"]
-    graph2 = y[1]["graph"]
+    graph1 = y[0]["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
+    graph2 = y[1]["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
     graph3 = False
     try:
-        graph3 = y[2]["graph"]
+        graph3 = y[2]["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
     except IndexError:
         print("error 1: no third graph")
     try:
