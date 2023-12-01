@@ -77,7 +77,7 @@ g_dw.bind("dw", DW)
 g_dw.bind("owl", OWL)
 
 GRAPHS = {
-    "legal_kraus": g_lk, 
+    "legal_kraus": g_lk,
     "fackel": g_fa,
     "dritte_walpurgisnacht": g_dw
 }
