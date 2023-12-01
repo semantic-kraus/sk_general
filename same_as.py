@@ -25,11 +25,11 @@ for r in ret["results"]["bindings"]:
             ]
     except KeyError:
         unique[r["value"]["value"]] = [
-                {
-                    "identifier": r["eThisGraph"]["value"],
-                    "graph": r["thisGraph"]["value"]
-                }
-            ]
+            {
+                "identifier": r["eThisGraph"]["value"],
+                "graph": r["thisGraph"]["value"]
+            }
+        ]
 
 with open("same_as_unique.json", "w") as f:
     json.dump(unique, f, indent=2)
