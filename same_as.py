@@ -76,19 +76,17 @@ g_dw.bind("sk", SK)
 g_dw.bind("dw", DW)
 g_dw.bind("owl", OWL)
 
+GRAPHS = {
+    "https://sk.acdh.oeaw.ac.at/project/legal-kraus": g_lk, 
+    "https://sk.acdh.oeaw.ac.at/project/fackel": g_fa,
+    "https://sk.acdh.oeaw.ac.at/project/dritte-walpurgisnacht": g_dw
+}
 
-def assign_to_graph(graph, *args):
-    graphs = {
-        "https://sk.acdh.oeaw.ac.at/project/legal-kraus": g_lk, 
-        "https://sk.acdh.oeaw.ac.at/project/fackel": g_fa,
-        "https://sk.acdh.oeaw.ac.at/project/dritte-walpurgisnacht": g_dw
-    }
-    if len(args) == 2:
-        graphs[graph].add((args[0], OWL["sameAs"], args[1]))
-    elif len(args) == 3:
-        graphs[graph].add((args[0], OWL["sameAs"], args[1]))
-        graphs[graph].add((args[0], OWL["sameAs"], args[2]))
-    return print(f"added {len(args)} triples to {graph}")
+
+def assign_to_graph(*objects, graph=False, subject=False):
+    for obj in objects:
+        GRAPHS[graph].add((subject, OWL["sameAs"], obj))
+    return print(f"added {len(objects)} triples to {graph}")
 
 
 for y in same_as.values():
@@ -107,12 +105,12 @@ for y in same_as.values():
     except IndexError:
         print("error 2: no third identifier")
     if graph3:
-        assign_to_graph(graph1, identifier1, identifier2, identifier3)
-        assign_to_graph(graph2, identifier2, identifier1, identifier3)
-        assign_to_graph(graph3, identifier3, identifier1, identifier2)
+        assign_to_graph(identifier2, identifier3, graph=graph1, subject=identifier1)
+        assign_to_graph(identifier1, identifier3, graph=graph2, subject=identifier2)
+        assign_to_graph(identifier1, identifier2, graph=graph3, subject=identifier3)
     else:
-        assign_to_graph(graph1, identifier1, identifier2)
-        assign_to_graph(graph2, identifier2, identifier1)
+        assign_to_graph(identifier2, graph=graph1, subject=identifier1)
+        assign_to_graph(identifier1, graph=graph2, subject=identifier2)
 
 g_all = ConjunctiveGraph(store=project_store)
 g_all.serialize("same_as.trig", format="trig")
