@@ -229,61 +229,82 @@ sk:general {
 <https://sk.acdh.oeaw.ac.at/types/role/RIC> a cidoc:E55_Type ;
     rdfs:label "Judge"@en ;
     rdfs:comment "A Type of Role: Judge"@en .
+<https://sk.acdh.oeaw.ac.at/types/text/chiffre> a cidoc:E55_Type ;
+    rdfs:label "Signed with Chiffre"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/And> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with St. Andrew's Cross"@en ;
     rdfs:comment "A Type of Text: Signed with St. Andrew's Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Aus> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Exclamation Mark"@en ;
     rdfs:comment "A Type of Text: Signed with Exclamation Mark"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Bat> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Baton"@en ;
     rdfs:comment "A Type of Text: Signed with Baton"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/DQu> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Crossed Square"@en ;
     rdfs:comment "A Type of Text: Signed with Crossed Square"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Fra> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Question Mark"@en ;
     rdfs:comment "A Type of Text: Signed with Question Mark"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GDr> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Equilateral Triangle"@en ;
     rdfs:comment "A Type of Text: Signed with Equilateral Triangle"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GeK> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Common Cross"@en ;
     rdfs:comment "A Type of Text: Signed with Common Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GLK> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Large Empty Circle"@en ;
     rdfs:comment "A Type of Text: Signed with Large Empty Circle"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GSt> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Large Asterisk"@en ;
     rdfs:comment "A Type of Text: Signed with Large Asterisk"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/GuP> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with 'Equal and Parallel To'-Character"@en ;
     rdfs:comment "A Type of Text: Signed with 'Equal and Parallel To'-Character"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/HoO> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Horizontal Oval"@en ;
     rdfs:comment "A Type of Text: Signed with Horizontal Oval"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/LaK> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Latin Cross"@en ;
     rdfs:comment "A Type of Text: Signed with Latin Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/LeK> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Empty Circle"@en ;
     rdfs:comment "A Type of Text: Signed with Empty Circle"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/leQ> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Empty Square"@en ;
     rdfs:comment "A Type of Text: Signed with Empty Square"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/LiH> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Left Wound Crosier"@en ;
     rdfs:comment "A Type of Text: Signed with Left Wound Crosier"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/Par> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Paragraph Sign"@en ;
     rdfs:comment "A Type of Text: Signed with Paragraph Sign"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/reH> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Right Wound Crosier"@en ;
     rdfs:comment "A Type of Text: Signed with Right Wound Crosier"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/RLK> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Right Leaning Latin Cross"@en ;
     rdfs:comment "A Type of Text: Signed with Right Leaning Latin Cross"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/chiffre/ZAn> a cidoc:E55_Type ;
+    cidoc:P127i_has_broader_term <https://sk.acdh.oeaw.ac.at/types/text/chiffre> ;
     rdfs:label "Signed with Two St. Andrew's Crosses"@en ;
     rdfs:comment "A Type of Text: Signed with Two St. Andrew's Crosses"@en .
 <https://sk.acdh.oeaw.ac.at/types/text/rubric/Abf> a cidoc:E55_Type ;
