@@ -83,7 +83,11 @@ GRAPHS = {
 }
 
 
-def assign_to_graph(objects, graph=False, subject=False):
+def assign_to_graph(
+    objects: [],
+    graph: str,
+    subject: str
+) -> None:
     for obj in objects:
         if subject is not obj:
             GRAPHS[graph].add((URIRef(subject), OWL["sameAs"], URIRef(obj)))
