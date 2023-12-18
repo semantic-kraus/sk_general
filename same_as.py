@@ -83,34 +83,19 @@ GRAPHS = {
 }
 
 
-def assign_to_graph(*objects, graph=False, subject=False):
+def assign_to_graph(objects, graph=False, subject=False):
     for obj in objects:
-        GRAPHS[graph].add((subject, OWL["sameAs"], obj))
+        if subject is not obj:
+            GRAPHS[graph].add((URIRef(subject), OWL["sameAs"], URIRef(obj)))
     return print(f"added {len(objects)} triples to {graph}")
 
 
 for y in same_as.values():
-    identifier1 = URIRef(y[0]["identifier"])
-    identifier2 = URIRef(y[1]["identifier"])
-    identifier3 = False
-    graph1 = y[0]["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
-    graph2 = y[1]["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
-    graph3 = False
-    try:
-        graph3 = y[2]["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
-    except IndexError:
-        print("error 1: no third graph")
-    try:
-        identifier3 = URIRef(y[2]["identifier"])
-    except IndexError:
-        print("error 2: no third identifier")
-    if graph3:
-        assign_to_graph(identifier2, identifier3, graph=graph1, subject=identifier1)
-        assign_to_graph(identifier1, identifier3, graph=graph2, subject=identifier2)
-        assign_to_graph(identifier1, identifier2, graph=graph3, subject=identifier3)
-    else:
-        assign_to_graph(identifier2, graph=graph1, subject=identifier1)
-        assign_to_graph(identifier1, graph=graph2, subject=identifier2)
+    objects = [ident["identifier"] for ident in y]
+    for x in y:
+        subject = x["identifier"]
+        graph = x["graph"].replace("https://sk.acdh.oeaw.ac.at/project/", "").replace("-", "_")
+        assign_to_graph(objects, graph=graph, subject=subject)
 
 g_all = ConjunctiveGraph(store=project_store)
 g_all.serialize("same_as.trig", format="trig")
