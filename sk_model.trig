@@ -7,14 +7,16 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix model: <https://sk.acdh.oeaw.ac.at/model/> .
+@prefix model: <https://sk.acdh.oeaw.ac.at/model> .
 @prefix sk: <https://sk.acdh.oeaw.ac.at/> .
 
 sk:provenance {
-model: rdfs:label "SemanticKraus Project Ontology" ;
-        dc11:creator "Bernhard Oberreither"^^xsd:string ;
-        dc:title "SemanticKraus Project Ontology"@en ;
-        owl:versionInfo "BETA 202310"^^xsd:string .
+    sk:model a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
+    rdfs:label "The SemanticKraus Project Ontology"@en ;
+    dc11:creator "Bernhard Oberreither"^^xsd:string ;
+    dc:title "SemanticKraus Project Ontology"@en ;
+    owl:versionInfo "BETA 202310"^^xsd:string ;
+    rdfs:comment "The SemanticKraus project ontology provides classes and properties for modeling biographical data, bibliographical data, and the interrelations between them. This scope is derived from the domains of the data extracted from the SK source projects. The ontology combines classes and properties from several semantic web ontologies, mostly from the well-established CIDOC-CRM ontology family, without adding any custom concepts."^^xsd:string .
 
 }
 model: {
