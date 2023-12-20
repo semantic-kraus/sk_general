@@ -8,14 +8,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sk:provenance {
-    sk:model a <http://www.w3.org/ns/sparql-service-description#NamedGraph> .
+    sk:model a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
+    rdfs:label "The SemanticKraus Project Ontology"@en ;
+    rdfs:comment "The SemanticKraus project ontology provides classes and properties for modeling biographical data, bibliographical data, and the interrelations between them. This scope is derived from the domains of the data extracted from the SK source projects. The ontology combines classes and properties from several semantic web ontologies, mostly from the well-established CIDOC-CRM ontology family, without adding any custom concepts." .
 
     sk:general a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
-    rdfs:label "This named graph provides general information about the SemanticKraus project." ;
-    rdfs:comment """The Austrian satirist Karl Kraus shaped Viennese culture from the Fin de Siècle to the end of the First Republic and has had a lasting impact ever since; research on him – ‘traditional’ as well as digital – is rich and growing. In the course of the CLARIAH-AT funded research project SemanticKraus (October 2022 to December 2023), research data gained from three different edition projects on Karl Kraus was accumulated and transformed to RDF. This platform allows the exploration of this data. 
-    You may start your exploration by chosing one of our selected samples, or you can just use the search bar below.
-    This platform also provides a SPARQL interface; see the "SPARQL" section.
-    The SemanticKraus project invites other digital research and/or edition projects to contribute to a Linked Data Cloud centered around Karl Kraus, his work and his era. For more information, see the 'Contact' section.
-    Project data currently accumulated:
-    'Karl Kraus Rechtsakten' | 'Die Fackel online' | 'Dritte Walpurgisnacht'""" .
+    rdfs:label "General information about the SemanticKraus project"@en ;
+    rdfs:comment "The Austrian satirist Karl Kraus shaped Viennese culture from the Fin de Siècle to the end of the First Republic and has had a lasting impact ever since; research on him – ‘traditional’ as well as digital – is rich and growing. In the course of the CLARIAH-AT funded research project SemanticKraus (October 2022 to December 2023), research data gained from different edition projects on Karl Kraus was accumulated and transformed to RDF. This platform allows the exploration of this data. You may start your exploration by chosing one of our selected samples, or you can just use the search bar below. This platform also provides a SPARQL interface; see the SPARQL section. The SemanticKraus project invites other digital research and/or edition projects to contribute to a Linked Data Cloud centered around Karl Kraus, his work and his era. For more information, see the Contact section." .
 }
