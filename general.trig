@@ -173,7 +173,7 @@ sk:general {
     rdfs:label "Female Name"@en ;
     rdfs:comment "A type of person name: a female name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/full> a cidoc:E55_Type ;
-    rdfs:label "Type: Person Name - full"@en ;
+    rdfs:label "Full Name"@en ;
     rdfs:comment "A type of person name: a person's full name"@en .
 <https://sk.acdh.oeaw.ac.at/types/person/persname/male> a cidoc:E55_Type ;
     rdfs:label "Male Name"@en ;
