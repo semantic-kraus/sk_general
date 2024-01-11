@@ -1,17 +1,21 @@
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dc11: <http://purl.org/dc/elements/1.1/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ns0: <https://schema.org/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix model: <https://sk.acdh.oeaw.ac.at/model> .
+@prefix ns0: <https://schema.org/> .
+@prefix ns1: <http://purl.org/dc/dcam/> .
+@prefix ns2: <http://purl.org/dc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix sk: <https://sk.acdh.oeaw.ac.at/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sk:provenance {
-    sk:model a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
+    sk:model a sd:NamedGraph ;
+    sd:name "The SemanticKraus Project Ontology" ;
     rdfs:label "The SemanticKraus Project Ontology"@en ;
     dc11:creator "Bernhard Oberreither"^^xsd:string ;
     dc:title "SemanticKraus Project Ontology"@en ;
@@ -23,7 +27,7 @@ model: {
     <https://sk.acdh.oeaw.ac.at/sk_model>
   a owl:Ontology ;
   dc11:title "SemanticKraus Project Ontology"@en ;
-  rdfs:label "sk_model"^^xsd:string ;
+  rdfs:label "SemanticKraus Model"@en ;
   rdfs:comment """
 			This is the project ontology for SemanticKraus - Connecting Kraus Scholarship to the Linked Data Cloud. 
 			It consists entirely of re-used classes and properties from other ontologies.
@@ -1453,5 +1457,57 @@ prov:atLocation
   rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> ;
   rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> ;
   rdfs:isDefinedBy "https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html"^^xsd:string . 
+
+
+sd:NamedGraph
+  a rdfs:Class ;
+  rdfs:label "Named Graph" ;
+  rdfs:comment "An instance of sd:NamedGraph represents a named graph having a name (via sd:name) and an optional graph description (via sd:graph)." .
+
+sd:name
+  a rdf:Property ;
+  rdfs:domain sd:NamedGraph ;
+  rdfs:label "name" ;
+  rdfs:comment "Relates a named graph to the name by which it may be referenced in a FROM/FROM NAMED clause. The object of the sd:name property is an IRI." .
+
+dc:title
+  rdfs:label "Title"@en ;
+  rdfs:comment "A name given to the resource."@en ;
+  a rdf:Property ;
+  rdfs:range rdfs:Literal ;
+  rdfs:subPropertyOf dc11:title ;
+  ns2:termsissued "2008-01-14"^^xsd:date ;
+  rdfs:isDefinedBy dc: .
+
+dc:bibliographicCitation
+  rdfs:label "Bibliographic Citation"@en ;
+  rdfs:comment "A bibliographic reference for the resource."@en ;
+  ns2:termsdescription "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en ;
+  a rdf:Property ;
+  rdfs:range rdfs:Literal ;
+  rdfs:subPropertyOf dc11:identifier, dc:identifier ;
+  ns2:termsissued "2003-02-15"^^xsd:date ;
+  rdfs:isDefinedBy dc: .
+
+dc:contributor
+  rdfs:label "Contributor"@en ;
+  rdfs:comment "An entity responsible for making contributions to the resource."@en ;
+  ns2:termsdescription "The guidelines for using names of persons or organizations as creators apply to contributors."@en ;
+  a rdf:Property ;
+  ns1:rangeIncludes dc:Agent ;
+  rdfs:subPropertyOf dc11:contributor ;
+  ns2:termsissued "2008-01-14"^^xsd:date ;
+  rdfs:isDefinedBy dc: .
+
+dc:source
+  rdfs:label "Source"@en ;
+  rdfs:comment "A related resource from which the described resource is derived."@en ;
+  ns2:termsdescription "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system."@en ;
+  a rdf:Property ;
+  rdfs:subPropertyOf dc11:source, dc:relation ;
+  ns2:termsissued "2008-01-14"^^xsd:date ;
+  rdfs:isDefinedBy dc: .
+
+
 
 }
