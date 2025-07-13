@@ -1,8 +1,6 @@
 name: Deploy graphs sameAs
 
-on: 
-  schedule:
-    - cron: "30 04/24 * * *"
+on:
   workflow_dispatch:
 
 jobs:

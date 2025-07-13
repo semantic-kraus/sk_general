@@ -1,8 +1,6 @@
-name: Deploy graphs
+name: Deploy graphs model
 
-on: 
-  schedule:
-    - cron: "30 22/24 * * *"
+on:
   workflow_dispatch:
 
 jobs:

@@ -6,9 +6,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 
 sk:provenance {
     sk:general a <http://www.w3.org/ns/sparql-service-description#NamedGraph> ;
+    sd:name "SemanticKraus General" ;
     rdfs:label "SemanticKraus General"@en ;
     dcterms:source "https://semantickraus.acdh.oeaw.ac.at" ;
     rdfs:comment "This named graph contains definitions for the E55 Types used throughout the project in all the data sets." .
