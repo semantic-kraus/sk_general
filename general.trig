@@ -427,6 +427,18 @@ sk:general {
     cidoc:P127_has_broader_term <https://sk.acdh.oeaw.ac.at/types> ;
     rdfs:label "Provisional Title"@en ;
     rdfs:comment "A Type of Title: Provisional Title"@en .
+<https://sk.acdh.oeaw.ac.at/types/title/ullmann> a cidoc:E55_Type ;
+    cidoc:P127_has_broader_term <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
+    rdfs:label "Provisional Title by Ludwig Ullmann"@en ;
+    rdfs:comment "A Type of Title: Provisional title derived (via the AAC Fackel) from Ludwig Ullmann's Fackel text index"@en .
+<https://sk.acdh.oeaw.ac.at/types/title/samek> a cidoc:E55_Type ;
+    cidoc:P127_has_broader_term <https://sk.acdh.oeaw.ac.at/types/title/prov> ;
+    rdfs:label "Provisional Title by Oskar Samek"@en ;
+    rdfs:comment "A Type of Title: Provisional title derived (via the AAC Fackel) from Oskar Samek's Fackel text index"@en .
+<https://sk.acdh.oeaw.ac.at/types/title/prov> a cidoc:E55_Type ;
+    cidoc:P127_has_broader_term <https://sk.acdh.oeaw.ac.at/types> ;
+    rdfs:label "Provisional Title"@en ;
+    rdfs:comment "A Type of Title: Provisional Title"@en .
 <https://sk.acdh.oeaw.ac.at/types/title/sub> a cidoc:E55_Type ;
     cidoc:P127_has_broader_term <https://sk.acdh.oeaw.ac.at/types> ;
     rdfs:label "Subtitle"@en ;
